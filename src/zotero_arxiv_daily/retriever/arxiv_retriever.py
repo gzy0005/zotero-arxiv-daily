@@ -133,10 +133,11 @@ class ArxivRetriever(BaseRetriever):
 
         # Get full information of each paper from arxiv api
         bar = tqdm(total=len(all_paper_ids))
+        batch_size = 10
         max_batch_retries = 5
         batch_retry_delay = 30
-        for i in range(0, len(all_paper_ids), 20):
-            search = arxiv.Search(id_list=all_paper_ids[i:i + 20])
+        for i in range(0, len(all_paper_ids), batch_size):
+            search = arxiv.Search(id_list=all_paper_ids[i:i + batch_size])
             for attempt in range(max_batch_retries):
                 try:
                     batch = list(client.results(search))
@@ -145,12 +146,15 @@ class ArxivRetriever(BaseRetriever):
                     break
                 except arxiv.HTTPError as exc:
                     if exc.status in (429, 502, 503, 504) and attempt < max_batch_retries - 1:
-                        wait = batch_retry_delay * (attempt + 1)
-                        logger.warning(f"arXiv API {exc.status} on batch {i // 20}, retry {attempt + 1}/{max_batch_retries} in {wait}s")
+                        if exc.status == 429:
+                            wait = 60 * (attempt + 1)
+                        else:
+                            wait = batch_retry_delay * (attempt + 1)
+                        logger.warning(f"arXiv API {exc.status} on batch {i // batch_size}, retry {attempt + 1}/{max_batch_retries} in {wait}s")
                         sleep(wait)
                     else:
                         raise
-            if i + 20 < len(all_paper_ids):
+            if i + batch_size < len(all_paper_ids):
                 sleep(3)
         bar.close()
 
