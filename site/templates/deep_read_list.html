@@ -8,14 +8,14 @@
   {% for paper in papers %}
   <div class="paper-item">
     <div class="paper-title">
-      <a href="papers/{{ paper.arxiv_id }}/">{{ paper.title }}</a>
+      <a href="{{ site_base }}papers/{{ paper.arxiv_id }}/">{{ paper.title }}</a>
     </div>
     <div class="paper-meta">
       {{ paper.authors|join(', ') }} · 分析日期：{{ paper.analysis_date }} · {{ paper.domain }}
     </div>
     <div class="paper-actions">
       <span class="score-badge">★ {{ "%.1f"|format(paper.overall_score) }}</span>
-      <a href="papers/{{ paper.arxiv_id }}/" class="btn-deepread done">查看分析 →</a>
+      <a href="{{ site_base }}papers/{{ paper.arxiv_id }}/" class="btn-deepread done">查看分析</a>
     </div>
   </div>
   {% endfor %}

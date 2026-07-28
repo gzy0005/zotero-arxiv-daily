@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Static site generator for arXiv Daily website."""
 import json
+import os
 import shutil
+import sys
 from datetime import datetime
 from pathlib import Path
 
@@ -49,7 +51,7 @@ def get_available_dates() -> list[str]:
     return dates
 
 
-def build_daily_pages(analyzed_ids: set[str]) -> list[str]:
+def build_daily_pages(analyzed_ids: set[str], site_base: str) -> list[str]:
     dates = get_available_dates()
     today = datetime.now().strftime("%Y-%m-%d")
     template = jinja_env.get_template("daily.html")
@@ -63,6 +65,7 @@ def build_daily_pages(analyzed_ids: set[str]) -> list[str]:
         next_date = dates[i - 1] if i > 0 else None
 
         html = template.render(
+            site_base=site_base,
             today=today,
             active_tab="daily",
             date=date_str,
@@ -79,7 +82,7 @@ def build_daily_pages(analyzed_ids: set[str]) -> list[str]:
     return dates
 
 
-def build_analysis_pages():
+def build_analysis_pages(site_base: str):
     analysis_dir = DATA_DIR / "analysis"
     if not analysis_dir.exists():
         return []
@@ -94,35 +97,34 @@ def build_analysis_pages():
         if not paper:
             continue
 
-        # Render markdown sections to HTML
         if "sections" in paper:
             for key, content in paper["sections"].items():
                 if content:
                     paper["sections"][key] = render_markdown(content)
 
-        html = template.render(today=today, active_tab="deepread", paper=paper)
+        html = template.render(site_base=site_base, today=today, active_tab="deepread", paper=paper)
 
         out_dir = DOCS_DIR / "papers" / paper["arxiv_id"]
         out_dir.mkdir(parents=True, exist_ok=True)
         (out_dir / "index.html").write_text(html, encoding="utf-8")
 
 
-def build_deep_read_list():
+def build_deep_read_list(site_base: str):
     index = load_json(DATA_DIR / "analysis" / "index.json") or []
     template = jinja_env.get_template("deep_read_list.html")
     today = datetime.now().strftime("%Y-%m-%d")
 
-    html = template.render(today=today, active_tab="deepread", papers=index)
+    html = template.render(site_base=site_base, today=today, active_tab="deepread", papers=index)
     out_dir = DOCS_DIR / "deep-read"
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "index.html").write_text(html, encoding="utf-8")
 
 
-def build_index():
+def build_index(site_base: str):
     dates = get_available_dates()
     if dates:
         latest = dates[0]
-        redirect_html = f'<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;url=daily/{latest}/"></head><body></body></html>'
+        redirect_html = f'<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;url={site_base}daily/{latest}/"></head><body></body></html>'
     else:
         redirect_html = '<!DOCTYPE html><html><head><meta charset="utf-8"><title>arXiv Daily</title></head><body><p>No papers yet.</p></body></html>'
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
@@ -130,24 +132,26 @@ def build_index():
 
 
 def copy_static_assets():
-    """Copy CSS and other static files to docs/."""
     css_src = TEMPLATES_DIR.parent / "style.css"
     if css_src.exists():
         shutil.copy2(css_src, DOCS_DIR / "style.css")
 
 
 def main():
+    local = "--local" in sys.argv
+    site_base = os.environ.get("SITE_BASE", "/" if local else "/zotero-arxiv-daily/")
+
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
 
     analyzed_ids = load_analyzed_ids()
 
-    build_daily_pages(analyzed_ids)
-    build_analysis_pages()
-    build_deep_read_list()
-    build_index()
+    build_daily_pages(analyzed_ids, site_base)
+    build_analysis_pages(site_base)
+    build_deep_read_list(site_base)
+    build_index(site_base)
     copy_static_assets()
 
-    print(f"Site built to {DOCS_DIR}")
+    print(f"Site built to {DOCS_DIR} (site_base={site_base!r})")
 
 
 if __name__ == "__main__":
