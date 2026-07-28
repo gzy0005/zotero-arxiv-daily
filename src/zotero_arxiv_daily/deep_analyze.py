@@ -49,51 +49,25 @@ Rules:
 
 
 def fetch_paper_info(arxiv_id: str) -> dict | None:
-    """Fetch paper metadata from arXiv API with retry on rate limit."""
-    import time
-    import urllib.request
-    import urllib.error
-    import xml.etree.ElementTree as ET
+    """Fetch paper metadata using the arxiv library with built-in retry."""
+    import arxiv
 
-    url = f"http://export.arxiv.org/api/query?id_list={arxiv_id}&max_results=1"
-    for attempt in range(5):
-        try:
-            with urllib.request.urlopen(url, timeout=30) as resp:
-                xml_data = resp.read().decode("utf-8")
-            break
-        except urllib.error.HTTPError as e:
-            if e.code in (429, 503, 502, 504):
-                wait = 2 ** attempt + 1
-                print(f"arXiv API {e.code}, retry {attempt + 1}/5 in {wait}s")
-                time.sleep(wait)
-                continue
-            print(f"Failed to fetch arXiv API: {e}")
-            return None
-        except Exception as e:
-            print(f"Failed to fetch arXiv API: {e}")
-            return None
-    else:
-        print("arXiv API failed after 5 retries")
+    client = arxiv.Client(page_size=1, delay_seconds=3, num_retries=5)
+    search = arxiv.Search(id_list=[arxiv_id])
+    try:
+        result = next(client.results(search))
+    except StopIteration:
+        print(f"No paper found for {arxiv_id}")
+        return None
+    except Exception as e:
+        print(f"Failed to fetch arXiv paper {arxiv_id}: {e}")
         return None
 
-    ns = {"atom": "http://www.w3.org/2005/Atom"}
-    root = ET.fromstring(xml_data)
-    entry = root.find("atom:entry", ns)
-    if entry is None:
-        return None
-
-    title_el = entry.find("atom:title", ns)
-    summary_el = entry.find("atom:summary", ns)
-    title = title_el.text.strip() if title_el is not None and title_el.text else ""
-    abstract = summary_el.text.strip() if summary_el is not None and summary_el.text else ""
-
-    authors = []
-    for author_el in entry.findall("atom:author", ns):
-        name_el = author_el.find("atom:name", ns)
-        if name_el is not None and name_el.text:
-            authors.append(name_el.text.strip())
-
-    return {"title": title, "abstract": abstract, "authors": authors}
+    return {
+        "title": result.title or "",
+        "abstract": result.summary or "",
+        "authors": [a.name for a in result.authors],
+    }
 
 
 def call_llm(arxiv_id: str, paper_info: dict) -> dict:
