@@ -48,7 +48,7 @@ Rules:
 - Output ONLY the JSON object. No markdown code fences, no explanation."""
 
 
-def fetch_paper_info(arxiv_id: str) -> dict:
+def fetch_paper_info(arxiv_id: str) -> dict | None:
     """Fetch paper metadata from arXiv API."""
     import urllib.request
     import xml.etree.ElementTree as ET
@@ -59,13 +59,13 @@ def fetch_paper_info(arxiv_id: str) -> dict:
             xml_data = resp.read().decode("utf-8")
     except Exception as e:
         print(f"Failed to fetch arXiv API: {e}")
-        return {}
+        return None
 
     ns = {"atom": "http://www.w3.org/2005/Atom"}
     root = ET.fromstring(xml_data)
     entry = root.find("atom:entry", ns)
     if entry is None:
-        return {}
+        return None
 
     title_el = entry.find("atom:title", ns)
     summary_el = entry.find("atom:summary", ns)
