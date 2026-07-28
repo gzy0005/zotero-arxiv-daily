@@ -6,9 +6,12 @@ on:
         description: 'arXiv ID (e.g. 2402.12345)'
         required: true
         type: string
+  issues:
+    types: [opened]
 
 jobs:
   analyze:
+    if: ${{ github.event.issue == null || contains(github.event.issue.labels.*.name, 'deep-read') }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -20,20 +23,33 @@ jobs:
       - name: Setup uv
         uses: astral-sh/setup-uv@v7
 
+      - name: Extract arXiv ID
+        id: extract
+        run: |
+          if [ -n "${{ inputs.arxiv_id }}" ]; then
+            echo "arxiv_id=${{ inputs.arxiv_id }}" >> $GITHUB_OUTPUT
+          else
+            TITLE="${{ github.event.issue.title }}"
+            ID=$(echo "$TITLE" | grep -oP '\d{4}\.\d{4,5}' | head -1)
+            echo "arxiv_id=$ID" >> $GITHUB_OUTPUT
+            echo "issue_number=${{ github.event.issue.number }}" >> $GITHUB_OUTPUT
+          fi
+
       - name: Run deep analysis
+        if: steps.extract.outputs.arxiv_id != ''
         env:
-          ARXIV_ID: ${{ inputs.arxiv_id }}
+          ARXIV_ID: ${{ steps.extract.outputs.arxiv_id }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           OPENAI_API_BASE: ${{ secrets.OPENAI_API_BASE }}
           MODEL_NAME: ${{ secrets.MODEL_NAME }}
         run: uv run python src/zotero_arxiv_daily/deep_analyze.py
 
       - name: Build site
-        env:
-          WORKER_URL: ${{ vars.WORKER_URL }}
+        if: steps.extract.outputs.arxiv_id != ''
         run: uv run python site/build.py
 
       - name: Commit and push analysis data
+        if: steps.extract.outputs.arxiv_id != ''
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -41,12 +57,20 @@ jobs:
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "chore: add deep analysis for ${{ inputs.arxiv_id }}"
+            git commit -m "chore: add deep analysis for ${{ steps.extract.outputs.arxiv_id }}"
             git pull --rebase --autostash
             git push
           fi
 
+      - name: Close issue
+        if: steps.extract.outputs.issue_number != ''
+        run: |
+          gh issue close ${{ steps.extract.outputs.issue_number }} -c "分析完成：[查看结果](https://helemnmmm.github.io/zotero-arxiv-daily/papers/${{ steps.extract.outputs.arxiv_id }}/)"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Deploy to GitHub Pages
+        if: steps.extract.outputs.arxiv_id != ''
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

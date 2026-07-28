@@ -32,10 +32,8 @@
       {% if paper.arxiv_id %}
         {% if paper.arxiv_id in analyzed_ids %}
         <a href="/papers/{{ paper.arxiv_id }}/" class="btn-deepread done">查看分析 →</a>
-        {% elif worker_url %}
-        <button class="btn-deepread" onclick="triggerAnalysis('{{ paper.arxiv_id }}', this)">精读 →</button>
         {% else %}
-        <a href="https://github.com/helemnmmm/zotero-arxiv-daily/actions/workflows/analyze.yml" target="_blank" class="btn-deepread">精读 →</a>
+        <a href="https://github.com/helemnmmm/zotero-arxiv-daily/issues/new?title=精读: {{ paper.arxiv_id }}&labels=deep-read&body=点击 Submit new issue 即可触发精读分析" target="_blank" class="btn-deepread">精读 →</a>
         {% endif %}
       {% endif %}
     </div>
@@ -47,29 +45,4 @@
   </div>
 {% endif %}
 
-{% if worker_url %}
-<script>
-async function triggerAnalysis(arxivId, btn) {
-  btn.disabled = true;
-  btn.textContent = "分析中 ⏳";
-  try {
-    const resp = await fetch("{{ worker_url }}/dispatch", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ arxiv_id: arxivId })
-    });
-    if (resp.ok) {
-      btn.textContent = "已触发 ✓";
-      btn.classList.add("done");
-    } else {
-      btn.textContent = "失败，重试";
-      btn.disabled = false;
-    }
-  } catch(e) {
-    btn.textContent = "失败，重试";
-    btn.disabled = false;
-  }
-}
-</script>
-{% endif %}
 {% endblock %}
