@@ -29,6 +29,8 @@ jobs:
         run: uv run python src/zotero_arxiv_daily/deep_analyze.py
 
       - name: Build site
+        env:
+          WORKER_URL: ${{ vars.WORKER_URL }}
         run: uv run python site/build.py
 
       - name: Commit and push analysis data

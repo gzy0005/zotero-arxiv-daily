@@ -1,0 +1,6 @@
+name = "arxiv-daily-dispatch"
+main = "src/index.js"
+compatibility_date = "2026-07-28"
+
+[[env.production]]
+name = "arxiv-daily-dispatch"

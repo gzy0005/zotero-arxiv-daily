@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Static site generator for arXiv Daily website."""
 import json
+import os
 import shutil
 from datetime import datetime
 from pathlib import Path
@@ -49,7 +50,7 @@ def get_available_dates() -> list[str]:
     return dates
 
 
-def build_daily_pages(analyzed_ids: set[str]) -> list[str]:
+def build_daily_pages(analyzed_ids: set[str], worker_url: str = "") -> list[str]:
     dates = get_available_dates()
     today = datetime.now().strftime("%Y-%m-%d")
     template = jinja_env.get_template("daily.html")
@@ -70,6 +71,7 @@ def build_daily_pages(analyzed_ids: set[str]) -> list[str]:
             next_date=next_date,
             papers=daily_data.get("papers", []),
             analyzed_ids=analyzed_ids,
+            worker_url=worker_url,
         )
 
         out_dir = DOCS_DIR / "daily" / date_str
@@ -137,11 +139,13 @@ def copy_static_assets():
 
 
 def main():
+    worker_url = os.environ.get("WORKER_URL", "")
+
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
 
     analyzed_ids = load_analyzed_ids()
 
-    build_daily_pages(analyzed_ids)
+    build_daily_pages(analyzed_ids, worker_url)
     build_analysis_pages()
     build_deep_read_list()
     build_index()

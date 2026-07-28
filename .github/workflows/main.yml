@@ -47,6 +47,8 @@ jobs:
           fi
 
       - name: Build site
+        env:
+          WORKER_URL: ${{ vars.WORKER_URL }}
         run: uv run python site/build.py
 
       - name: Deploy to GitHub Pages
