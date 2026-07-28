@@ -29,8 +29,6 @@ jobs:
         run: uv run python src/zotero_arxiv_daily/deep_analyze.py
 
       - name: Build site
-        env:
-          WORKFLOW_DISPATCH_TOKEN: ${{ secrets.WORKFLOW_DISPATCH_TOKEN }}
         run: uv run python site/build.py
 
       - name: Commit and push analysis data

@@ -33,7 +33,7 @@
         {% if paper.arxiv_id in analyzed_ids %}
         <a href="/papers/{{ paper.arxiv_id }}/" class="btn-deepread done">查看分析 →</a>
         {% else %}
-        <button class="btn-deepread" onclick="triggerAnalysis('{{ paper.arxiv_id }}', this)">精读 →</button>
+        <a href="https://github.com/helemnmmm/zotero-arxiv-daily/actions/workflows/analyze.yml" target="_blank" class="btn-deepread">精读 →</a>
         {% endif %}
       {% endif %}
     </div>
@@ -44,25 +44,5 @@
     <p>今天没有推荐论文。</p>
   </div>
 {% endif %}
-
-<script>
-const DISPATCH_TOKEN = "{{ dispatch_token }}";
-async function triggerAnalysis(arxivId, btn) {
-  if (!DISPATCH_TOKEN) { alert("Workflow dispatch token not configured."); return; }
-  btn.disabled = true;
-  btn.textContent = "分析中 ⏳";
-  try {
-    const resp = await fetch("https://api.github.com/repos/helemnmmm/zotero-arxiv-daily/actions/workflows/analyze.yml/dispatches", {
-      method: "POST",
-      headers: { "Authorization": "Bearer " + DISPATCH_TOKEN, "Accept": "application/vnd.github+json" },
-      body: JSON.stringify({ ref: "main", inputs: { arxiv_id: arxivId } })
-    });
-    if (!resp.ok) { btn.textContent = "失败，重试"; btn.disabled = false; }
-  } catch(e) {
-    btn.textContent = "失败，重试";
-    btn.disabled = false;
-  }
-}
-</script>
 
 {% endblock %}

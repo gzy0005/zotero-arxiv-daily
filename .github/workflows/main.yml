@@ -47,8 +47,6 @@ jobs:
           fi
 
       - name: Build site
-        env:
-          WORKFLOW_DISPATCH_TOKEN: ${{ secrets.WORKFLOW_DISPATCH_TOKEN }}
         run: uv run python site/build.py
 
       - name: Deploy to GitHub Pages
