@@ -122,7 +122,7 @@ def build_index():
     dates = get_available_dates()
     if dates:
         latest = dates[0]
-        redirect_html = f'<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;url=/daily/{latest}/"></head><body></body></html>'
+        redirect_html = f'<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0;url=daily/{latest}/"></head><body></body></html>'
     else:
         redirect_html = '<!DOCTYPE html><html><head><meta charset="utf-8"><title>arXiv Daily</title></head><body><p>No papers yet.</p></body></html>'
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
