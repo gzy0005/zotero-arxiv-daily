@@ -23,7 +23,8 @@ def test_render_email_shows_top_5():
     html = render_email(papers)
     assert "Paper 0" in html
     assert "Paper 4" in html
-    assert "共推荐 10" in html
+    assert "共推荐" in html
+    assert "<strong>10</strong>" in html
     # Papers beyond top 5 should not appear
     assert "Paper 5" not in html
     assert "Paper 9" not in html
