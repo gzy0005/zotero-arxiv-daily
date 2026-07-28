@@ -2,25 +2,25 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
-  <base href="/zotero-arxiv-daily/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% block title %}arXiv Daily{% endblock %}</title>
+  <base href="/zotero-arxiv-daily/">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
     onload="renderMathInElement(document.body, {delimiters: [{left:'$$',right:'$$',display:true},{left:'$',right:'$',display:false}]});"></script>
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div class="container container-main py-4">
 
   <header class="site-header">
-    <h1><a href="/">arXiv Daily</a></h1>
+    <h1><a href="./">arXiv Daily</a></h1>
     <nav class="site-nav">
-      <a href="/daily/{{ today }}/" class="{% if active_tab == 'daily' %}active{% endif %}">每日推荐</a>
-      <a href="/deep-read/" class="{% if active_tab == 'deepread' %}active{% endif %}">精读论文</a>
+      <a href="daily/{{ today }}/" class="{% if active_tab == 'daily' %}active{% endif %}">每日推荐</a>
+      <a href="deep-read/" class="{% if active_tab == 'deepread' %}active{% endif %}">精读论文</a>
     </nav>
   </header>
 
