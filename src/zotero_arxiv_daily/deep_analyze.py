@@ -33,12 +33,10 @@ Output strictly this JSON structure (no markdown fences, no extra text):
     "equations": "## 关键公式 / 理论基础\\n\\n(如有重要公式，用 $...$ 行内和 $$...$$ 块级 LaTeX 写出；如无公式，此节留空字符串)",
     "results": "## 实验结果\\n\\n### 实验设置\\n\\n...\\n\\n### 主要结果\\n\\n...",
     "deep_analysis": "## 深度分析\\n\\n### 研究价值评估\\n\\n...\\n\\n### 方法优势详解\\n\\n...\\n\\n### 局限性分析\\n\\n...",
-    "comparison": "## 与相关论文对比\\n\\n...\\n\\n(用 Markdown 表格对比)",
     "roadmap": "## 技术路线定位\\n\\n...",
     "future_work": "## 未来工作建议\\n\\n...",
     "assessment": "## 我的综合评价\\n\\n### 价值评分\\n\\n...\\n\\n### 突出亮点\\n\\n...\\n\\n### 可借鉴点\\n\\n...\\n\\n### 批判性思考\\n\\n..."
   },
-  "related_papers": [{"id": "arxiv_id", "title": "title", "relationship": "extends/compares/follows/related"}]
 }
 
 Rules:

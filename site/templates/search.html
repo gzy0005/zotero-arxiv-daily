@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block title %}搜索 · arXiv Daily{% endblock %}
+{% block content %}
+
+<h2 class="section-title">搜索论文</h2>
+
+<div style="margin-bottom:1.5rem;">
+  <input type="text" id="search-input" class="search-input" placeholder="输入关键词搜索标题、作者、摘要..." autofocus>
+  <span id="search-count" class="search-count"></span>
+</div>
+
+<div id="search-results"></div>
+
+<script>
+(function() {
+  const input = document.getElementById('search-input');
+  const results = document.getElementById('search-results');
+  const count = document.getElementById('search-count');
+  let index = [];
+  let loaded = false;
+
+  function render(papers) {
+    if (!papers.length) {
+      results.innerHTML = '<div class="empty-state"><p>没有找到匹配的论文。</p></div>';
+      return;
+    }
+    const siteBase = '{{ site_base }}';
+    const html = papers.map(p => {
+      const score = p.score != null ? '★ ' + p.score.toFixed(1) : '';
+      const cats = (p.categories || []).map(c => '<span class="category-tag">' + c + '</span>').join('');
+      return '<div class="paper-item">' +
+        '<div class="paper-title"><a href="' + p.url + '" target="_blank">' + p.title + '</a></div>' +
+        '<div class="paper-meta">' + p.date + ' · ' + (p.authors || []).slice(0,3).join(', ') + (p.authors && p.authors.length > 3 ? ' et al.' : '') + '</div>' +
+        '<div class="paper-tldr">' + (p.tldr || '') + '</div>' +
+        '<div class="paper-actions">' +
+        (score ? '<span class="score-badge">' + score + '</span>' : '') +
+        cats +
+        (p.arxiv_id ? ' <a href="' + siteBase + 'papers/' + p.arxiv_id + '/" class="btn-deepread done">查看分析</a>' : '') +
+        '</div></div>';
+    }).join('');
+    results.innerHTML = html;
+    count.textContent = '共 ' + papers.length + ' 篇';
+  }
+
+  fetch('{{ site_base }}search-index.json')
+    .then(r => r.json())
+    .then(data => { index = data; loaded = true; filter(); })
+    .catch(() => { results.innerHTML = '<div class="empty-state"><p>搜索索引加载失败。</p></div>'; });
+
+  function filter() {
+    const q = input.value.trim().toLowerCase();
+    if (!q) { render(index.slice(0, 100)); return; }
+    const words = q.split(/\s+/);
+    const matched = index.filter(p => {
+      const haystack = [p.title, (p.authors||[]).join(' '), p.abstract, p.tldr].join(' ').toLowerCase();
+      return words.every(w => haystack.includes(w));
+    });
+    render(matched);
+  }
+
+  input.addEventListener('input', filter);
+})();
+</script>
+
+{% endblock %}

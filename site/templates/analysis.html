@@ -34,23 +34,11 @@
 
 <div class="analysis-content">
   {% for key, content in paper.sections.items() %}
-    {% if content %}
+    {% if key != 'comparison' and content %}
     {{ content | safe }}
     {% endif %}
   {% endfor %}
 </div>
 
-{% if paper.related_papers %}
-<h2 class="section-title">相关论文</h2>
-<ul>
-  {% for rp in paper.related_papers %}
-  <li>
-    {{ rp.title }}
-    {% if rp.id %}(<a href="https://arxiv.org/abs/{{ rp.id }}">arXiv:{{ rp.id }}</a>){% endif %}
-    {% if rp.relationship %} — {{ rp.relationship }}{% endif %}
-  </li>
-  {% endfor %}
-</ul>
-{% endif %}
 
 {% endblock %}

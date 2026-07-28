@@ -10,9 +10,13 @@
 
 <h2 class="section-title">{{ date }} 每日推荐</h2>
 
+<div class="category-filter-bar">
+  <span class="filter-tag active" data-filter="all">全部</span>
+</div>
+
 {% if papers %}
   {% for paper in papers %}
-  <div class="paper-item">
+  <div class="paper-item" data-cats="{{ paper.categories|join(',') if paper.categories else '' }}">
     <div class="paper-title">
       <a href="{{ paper.url }}" target="_blank">{{ paper.title }}</a>
     </div>
@@ -44,5 +48,37 @@
     <p>今天没有推荐论文。</p>
   </div>
 {% endif %}
+
+<script>
+(function() {
+  const bar = document.querySelector('.category-filter-bar');
+  if (!bar) return;
+  const items = document.querySelectorAll('.paper-item');
+  const cats = new Set();
+  items.forEach(el => {
+    const val = el.getAttribute('data-cats') || '';
+    val.split(',').forEach(c => { if (c.trim()) cats.add(c.trim()); });
+  });
+  if (cats.size === 0) { bar.style.display = 'none'; return; }
+  [...cats].sort().forEach(cat => {
+    const span = document.createElement('span');
+    span.className = 'filter-tag';
+    span.textContent = cat;
+    span.setAttribute('data-filter', cat);
+    bar.appendChild(span);
+  });
+  bar.addEventListener('click', e => {
+    if (!e.target.classList.contains('filter-tag')) return;
+    bar.querySelectorAll('.filter-tag').forEach(t => t.classList.remove('active'));
+    e.target.classList.add('active');
+    const filter = e.target.getAttribute('data-filter');
+    items.forEach(el => {
+      if (filter === 'all') { el.style.display = ''; return; }
+      const elCats = (el.getAttribute('data-cats') || '').split(',').map(c => c.trim());
+      el.style.display = elCats.includes(filter) ? '' : 'none';
+    });
+  });
+})();
+</script>
 
 {% endblock %}

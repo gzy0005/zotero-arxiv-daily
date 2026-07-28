@@ -85,6 +85,30 @@ a:hover { color: #5c0f0f; text-decoration: underline; text-underline-offset: 3px
   font-size: 0.8rem;
   font-family: monospace;
 }
+.category-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 1.5rem;
+}
+.filter-tag {
+  background: #f5f0e8;
+  color: #6b5544;
+  padding: 3px 10px;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  font-family: monospace;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background 0.2s, border-color 0.2s;
+  user-select: none;
+}
+.filter-tag:hover { background: #e0d8cc; }
+.filter-tag.active {
+  background: #8b1a1a;
+  color: white;
+  border-color: #8b1a1a;
+}
 .btn-deepread {
   background: #8b1a1a;
   color: white;
@@ -185,5 +209,23 @@ footer {
 .empty-state {
   text-align: center;
   padding: 3rem 0;
+  color: #999;
+}
+.search-input {
+  width: 100%;
+  padding: 10px 16px;
+  border: 1.5px solid #d5cdbc;
+  border-radius: 4px;
+  font-family: "EB Garamond", Georgia, serif;
+  font-size: 1.15rem;
+  background: white;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.search-input:focus { border-color: #8b1a1a; }
+.search-count {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.9rem;
   color: #999;
 }

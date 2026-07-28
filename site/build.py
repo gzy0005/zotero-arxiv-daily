@@ -131,6 +131,42 @@ def build_index(site_base: str):
     (DOCS_DIR / "index.html").write_text(redirect_html, encoding="utf-8")
 
 
+def build_search_index():
+    daily_dir = DATA_DIR / "daily"
+    papers = []
+    if daily_dir.exists():
+        for f in sorted(daily_dir.glob("*.json"), reverse=True):
+            daily_data = load_json(f)
+            if not daily_data:
+                continue
+            date_str = f.stem
+            for p in daily_data.get("papers", []):
+                papers.append({
+                    "title": p.get("title", ""),
+                    "authors": p.get("authors", []),
+                    "abstract": p.get("abstract", ""),
+                    "tldr": p.get("tldr", ""),
+                    "categories": p.get("categories", []),
+                    "arxiv_id": p.get("arxiv_id"),
+                    "date": date_str,
+                    "score": p.get("score"),
+                    "url": p.get("url", ""),
+                })
+    out_path = DOCS_DIR / "search-index.json"
+    with open(out_path, "w", encoding="utf-8") as f:
+        json.dump(papers, f, ensure_ascii=False)
+    print(f"Search index with {len(papers)} papers written to {out_path}")
+
+
+def build_search_page(site_base: str):
+    template = jinja_env.get_template("search.html")
+    today = datetime.now().strftime("%Y-%m-%d")
+    html = template.render(site_base=site_base, today=today, active_tab="search")
+    out_dir = DOCS_DIR / "search"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    (out_dir / "index.html").write_text(html, encoding="utf-8")
+
+
 def copy_static_assets():
     css_src = TEMPLATES_DIR.parent / "style.css"
     if css_src.exists():
@@ -148,6 +184,8 @@ def main():
     build_daily_pages(analyzed_ids, site_base)
     build_analysis_pages(site_base)
     build_deep_read_list(site_base)
+    build_search_index()
+    build_search_page(site_base)
     build_index(site_base)
     copy_static_assets()
 
