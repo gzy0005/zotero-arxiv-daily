@@ -6,7 +6,7 @@ zotero:
 
 source:
   arxiv:
-    category: ["gr-qc", "astro-ph.HE", "astro-ph.GA", "astro-ph.CO", "astro-ph.IM"]
+    category: ["astro-ph.GA","astro-ph.HE","astro-ph.CO","gr-qc","astro-ph.SR","astro-ph.IM"]
     include_cross_list: true
   biorxiv:
     category: null
