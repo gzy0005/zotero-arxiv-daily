@@ -49,16 +49,31 @@ Rules:
 
 
 def fetch_paper_info(arxiv_id: str) -> dict | None:
-    """Fetch paper metadata from arXiv API."""
+    """Fetch paper metadata from arXiv API with retry on rate limit."""
+    import time
     import urllib.request
+    import urllib.error
     import xml.etree.ElementTree as ET
 
     url = f"http://export.arxiv.org/api/query?id_list={arxiv_id}&max_results=1"
-    try:
-        with urllib.request.urlopen(url, timeout=30) as resp:
-            xml_data = resp.read().decode("utf-8")
-    except Exception as e:
-        print(f"Failed to fetch arXiv API: {e}")
+    for attempt in range(5):
+        try:
+            with urllib.request.urlopen(url, timeout=30) as resp:
+                xml_data = resp.read().decode("utf-8")
+            break
+        except urllib.error.HTTPError as e:
+            if e.code in (429, 503, 502, 504):
+                wait = 2 ** attempt + 1
+                print(f"arXiv API {e.code}, retry {attempt + 1}/5 in {wait}s")
+                time.sleep(wait)
+                continue
+            print(f"Failed to fetch arXiv API: {e}")
+            return None
+        except Exception as e:
+            print(f"Failed to fetch arXiv API: {e}")
+            return None
+    else:
+        print("arXiv API failed after 5 retries")
         return None
 
     ns = {"atom": "http://www.w3.org/2005/Atom"}
