@@ -103,6 +103,27 @@ class Paper:
 
         return affiliations
     
+    def to_dict(self) -> dict:
+        import re
+        arxiv_id = None
+        if self.url:
+            cleaned = re.sub(r'(\.pdf|v\d+)$', '', self.url)
+            m = re.search(r'/(?:abs|pdf)/([\w./-]+)$', cleaned)
+            if m:
+                arxiv_id = m.group(1)
+        return {
+            "source": self.source,
+            "arxiv_id": arxiv_id,
+            "title": self.title,
+            "authors": self.authors,
+            "abstract": self.abstract,
+            "url": self.url,
+            "pdf_url": self.pdf_url,
+            "tldr": self.tldr,
+            "affiliations": self.affiliations,
+            "score": round(self.score, 1) if self.score else None,
+        }
+
     def generate_affiliations(self, openai_client:OpenAI,llm_params:dict) -> Optional[list[str]]:
         try:
             affiliations = self._generate_affiliations_with_llm(openai_client,llm_params)

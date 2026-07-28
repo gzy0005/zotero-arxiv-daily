@@ -11,6 +11,8 @@ from .construct_email import render_email
 from .utils import send_email
 from openai import OpenAI
 from tqdm import tqdm
+import json
+from pathlib import Path
 
 
 def normalize_path_patterns(patterns: list[str] | ListConfig | None, config_key: str) -> list[str] | None:
@@ -90,6 +92,19 @@ class Executor:
         return corpus
 
     
+    def save_results(self, papers: list):
+        date_str = datetime.now().strftime("%Y-%m-%d")
+        data_dir = Path("data/daily")
+        data_dir.mkdir(parents=True, exist_ok=True)
+        output = {
+            "date": date_str,
+            "papers": [p.to_dict() for p in papers],
+        }
+        filepath = data_dir / f"{date_str}.json"
+        with open(filepath, "w", encoding="utf-8") as f:
+            json.dump(output, f, ensure_ascii=False, indent=2)
+        logger.info(f"Saved {len(papers)} papers to {filepath}")
+
     def run(self):
         corpus = self.fetch_zotero_corpus()
         corpus = self.filter_corpus(corpus)
@@ -115,6 +130,8 @@ class Executor:
             for p in tqdm(reranked_papers):
                 p.generate_tldr(self.openai_client, self.config.llm)
                 p.generate_affiliations(self.openai_client, self.config.llm)
+            logger.info("Saving results...")
+            self.save_results(reranked_papers)
         elif not self.config.executor.send_empty:
             logger.info("No new papers found. No email will be sent.")
             return
