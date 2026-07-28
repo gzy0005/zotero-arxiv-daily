@@ -178,6 +178,7 @@ class ArxivRetriever(BaseRetriever):
             url=raw_paper.entry_id,
             pdf_url=pdf_url,
             full_text=full_text,
+            categories=[c for c in raw_paper.categories],
         )
 
 

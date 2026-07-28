@@ -20,6 +20,7 @@ class Paper:
     tldr: Optional[str] = None
     affiliations: Optional[list[str]] = None
     score: Optional[float] = None
+    categories: Optional[list[str]] = None
 
     def _generate_tldr_with_llm(self, openai_client:OpenAI,llm_params:dict) -> str:
         lang = llm_params.get('language', 'English')
@@ -122,6 +123,7 @@ class Paper:
             "tldr": self.tldr,
             "affiliations": self.affiliations,
             "score": round(self.score, 1) if self.score else None,
+            "categories": self.categories or [],
         }
 
     def generate_affiliations(self, openai_client:OpenAI,llm_params:dict) -> Optional[list[str]]:
