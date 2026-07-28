@@ -49,25 +49,35 @@ Rules:
 
 
 def fetch_paper_info(arxiv_id: str) -> dict | None:
-    """Fetch paper metadata using the arxiv library with built-in retry."""
+    """Fetch paper metadata with robust retry loop."""
+    import time
+    import random
     import arxiv
 
-    client = arxiv.Client(page_size=1, delay_seconds=3, num_retries=5)
-    search = arxiv.Search(id_list=[arxiv_id])
-    try:
-        result = next(client.results(search))
-    except StopIteration:
-        print(f"No paper found for {arxiv_id}")
-        return None
-    except Exception as e:
-        print(f"Failed to fetch arXiv paper {arxiv_id}: {e}")
-        return None
-
-    return {
-        "title": result.title or "",
-        "abstract": result.summary or "",
-        "authors": [a.name for a in result.authors],
-    }
+    max_retries = 8
+    for attempt in range(max_retries):
+        try:
+            client = arxiv.Client(page_size=1, delay_seconds=3, num_retries=0)
+            search = arxiv.Search(id_list=[arxiv_id])
+            result = next(client.results(search))
+            return {
+                "title": result.title or "",
+                "abstract": result.summary or "",
+                "authors": [a.name for a in result.authors],
+            }
+        except StopIteration:
+            print(f"No paper found for {arxiv_id}")
+            return None
+        except Exception as e:
+            msg = str(e)
+            if attempt < max_retries - 1:
+                wait = min(2 ** attempt + random.uniform(1, 3), 60)
+                print(f"arXiv API error (attempt {attempt + 1}/{max_retries}): {msg[:100]}")
+                print(f"  Retrying in {wait:.0f}s...")
+                time.sleep(wait)
+            else:
+                print(f"Failed after {max_retries} attempts: {msg[:100]}")
+                return None
 
 
 def call_llm(arxiv_id: str, paper_info: dict) -> dict:
