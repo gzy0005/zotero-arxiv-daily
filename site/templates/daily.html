@@ -8,7 +8,11 @@
   {% if next_date %}<a href="{{ site_base }}daily/{{ next_date }}/">{{ next_date }} &rarr;</a>{% else %}<span></span>{% endif %}
 </div>
 
-<h2 class="section-title">{{ date }} 每日推荐</h2>
+<h2 class="section-title">{{ date }} 每日推荐
+{% if delete_pat %}
+<button class="btn-delete" onclick="deleteData('daily', '{{ date }}')" title="删除此日推荐">🗑</button>
+{% endif %}
+</h2>
 
 <div class="category-filter-bar">
   <span class="filter-tag active" data-filter="all">全部</span>
@@ -50,6 +54,26 @@
 {% endif %}
 
 <script>
+{% if delete_pat %}
+function deleteData(type, id) {
+  if (!confirm('确认删除 ' + id + ' 吗？此操作不可撤销。')) return;
+  fetch('https://api.github.com/repos/helemnmmm/zotero-arxiv-daily/actions/workflows/delete.yml/dispatches', {
+    method: 'POST',
+    headers: {
+      'Authorization': 'Bearer {{ delete_pat }}',
+      'Accept': 'application/vnd.github+json',
+    },
+    body: JSON.stringify({ ref: 'main', inputs: { type: type, id: id } })
+  }).then(r => {
+    if (r.ok) {
+      alert('已提交删除请求，约 30 秒后生效。');
+      window.location.href = '{{ site_base }}';
+    } else {
+      r.json().then(j => alert('删除失败: ' + (j.message || r.status)));
+    }
+  }).catch(e => alert('网络错误: ' + e));
+}
+{% endif %}
 (function() {
   const bar = document.querySelector('.category-filter-bar');
   if (!bar) return;

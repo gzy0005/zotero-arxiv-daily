@@ -2,8 +2,11 @@
 {% block title %}{{ paper.title }} · 精读分析 · arXiv Daily{% endblock %}
 {% block content %}
 
-<p style="margin-bottom:0.5rem;">
+<p style="margin-bottom:0.5rem; display:flex; justify-content:space-between; align-items:center;">
   <a href="{{ site_base }}deep-read/">&larr; 返回精读论文列表</a>
+  {% if delete_pat %}
+  <button class="btn-delete" onclick="deleteAnalysis('{{ paper.arxiv_id }}')" title="删除此分析">🗑 删除分析</button>
+  {% endif %}
 </p>
 
 <div class="analysis-header">
@@ -40,5 +43,27 @@
   {% endfor %}
 </div>
 
+{% if delete_pat %}
+<script>
+function deleteAnalysis(id) {
+  if (!confirm('确认删除 ' + id + ' 的分析吗？此操作不可撤销。')) return;
+  fetch('https://api.github.com/repos/helemnmmm/zotero-arxiv-daily/actions/workflows/delete.yml/dispatches', {
+    method: 'POST',
+    headers: {
+      'Authorization': 'Bearer {{ delete_pat }}',
+      'Accept': 'application/vnd.github+json',
+    },
+    body: JSON.stringify({ ref: 'main', inputs: { type: 'analysis', id: id } })
+  }).then(r => {
+    if (r.ok) {
+      alert('已提交删除请求，约 30 秒后生效。');
+      window.location.href = '{{ site_base }}deep-read/';
+    } else {
+      r.json().then(j => alert('删除失败: ' + (j.message || r.status)));
+    }
+  }).catch(e => alert('网络错误: ' + e));
+}
+</script>
+{% endif %}
 
 {% endblock %}

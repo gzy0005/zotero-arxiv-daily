@@ -21,6 +21,13 @@ jinja_env = Environment(
 )
 markdown = mistune.create_markdown(escape=False)
 
+DELETE_PAT = os.environ.get("DELETE_PAT", "")
+
+
+def template_kwargs(site_base: str, **extra) -> dict:
+    today = datetime.now().strftime("%Y-%m-%d")
+    return {"site_base": site_base, "today": today, "delete_pat": DELETE_PAT, **extra}
+
 
 def render_markdown(text: str) -> str:
     return markdown(text)
@@ -73,6 +80,7 @@ def build_daily_pages(analyzed_ids: set[str], site_base: str) -> list[str]:
             next_date=next_date,
             papers=daily_data.get("papers", []),
             analyzed_ids=analyzed_ids,
+            delete_pat=DELETE_PAT,
         )
 
         out_dir = DOCS_DIR / "daily" / date_str
@@ -102,7 +110,7 @@ def build_analysis_pages(site_base: str):
                 if content:
                     paper["sections"][key] = render_markdown(content)
 
-        html = template.render(site_base=site_base, today=today, active_tab="deepread", paper=paper)
+        html = template.render(site_base=site_base, today=today, active_tab="deepread", paper=paper, delete_pat=DELETE_PAT)
 
         out_dir = DOCS_DIR / "papers" / paper["arxiv_id"]
         out_dir.mkdir(parents=True, exist_ok=True)
@@ -114,7 +122,7 @@ def build_deep_read_list(site_base: str):
     template = jinja_env.get_template("deep_read_list.html")
     today = datetime.now().strftime("%Y-%m-%d")
 
-    html = template.render(site_base=site_base, today=today, active_tab="deepread", papers=index)
+    html = template.render(site_base=site_base, today=today, active_tab="deepread", papers=index, delete_pat=DELETE_PAT)
     out_dir = DOCS_DIR / "deep-read"
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "index.html").write_text(html, encoding="utf-8")
@@ -161,7 +169,7 @@ def build_search_index():
 def build_search_page(site_base: str):
     template = jinja_env.get_template("search.html")
     today = datetime.now().strftime("%Y-%m-%d")
-    html = template.render(site_base=site_base, today=today, active_tab="search")
+    html = template.render(site_base=site_base, today=today, active_tab="search", delete_pat=DELETE_PAT)
     out_dir = DOCS_DIR / "search"
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "index.html").write_text(html, encoding="utf-8")

@@ -47,6 +47,8 @@ jobs:
       - name: Build site
         if: steps.extract.outputs.arxiv_id != ''
         run: uv run python site/build.py
+        env:
+          DELETE_PAT: ${{ secrets.DELETE_PAT }}
 
       - name: Commit and push analysis data
         if: steps.extract.outputs.arxiv_id != ''

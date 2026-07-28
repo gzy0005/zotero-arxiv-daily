@@ -126,6 +126,17 @@ a:hover { color: #5c0f0f; text-decoration: underline; text-underline-offset: 3px
   background: #4a7c59;
 }
 .btn-deepread.done:hover { background: #3a6348; }
+.btn-delete {
+  background: none;
+  border: 1px solid #d5cdbc;
+  color: #999;
+  padding: 2px 10px;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+.btn-delete:hover { color: #c0392b; border-color: #c0392b; }
 .date-switcher {
   display: flex;
   align-items: center;
