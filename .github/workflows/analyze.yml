@@ -11,7 +11,7 @@ on:
 
 jobs:
   analyze:
-    if: ${{ github.event.issue == null || contains(github.event.issue.labels.*.name, 'deep-read') }}
+    if: ${{ github.event.issue == null || startsWith(github.event.issue.title, '精读:') }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
