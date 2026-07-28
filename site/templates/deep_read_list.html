@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}精读论文 · arXiv Daily{% endblock %}
+{% block content %}
+
+<h2 class="section-title">精读论文</h2>
+
+{% if papers %}
+  {% for paper in papers %}
+  <div class="paper-item">
+    <div class="paper-title">
+      <a href="/papers/{{ paper.arxiv_id }}/">{{ paper.title }}</a>
+    </div>
+    <div class="paper-meta">
+      {{ paper.authors|join(', ') }} · 分析日期：{{ paper.analysis_date }} · {{ paper.domain }}
+    </div>
+    <div class="paper-actions">
+      <span class="score-badge">★ {{ "%.1f"|format(paper.overall_score) }}</span>
+      <a href="/papers/{{ paper.arxiv_id }}/" class="btn-deepread done">查看分析 →</a>
+    </div>
+  </div>
+  {% endfor %}
+{% else %}
+  <div class="empty-state">
+    <p>还没有精读过的论文。</p>
+    <p style="font-size:0.9rem;">在每日推荐中点击"精读"按钮开始。</p>
+  </div>
+{% endif %}
+
+{% endblock %}

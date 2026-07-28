@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% block title %}{{ paper.title }} · 精读分析 · arXiv Daily{% endblock %}
+{% block content %}
+
+<p style="margin-bottom:0.5rem;">
+  <a href="/deep-read/">&larr; 返回精读论文列表</a>
+</p>
+
+<div class="analysis-header">
+  <h2 style="font-family:'Playfair Display',Georgia,serif;font-size:1.5rem;margin-bottom:0.5rem;">{{ paper.title }}</h2>
+  <p style="color:#666;">
+    {{ paper.authors|join(', ') }}<br>
+    <a href="https://arxiv.org/abs/{{ paper.arxiv_id }}">arXiv:{{ paper.arxiv_id }}</a>
+    · 分析日期：{{ paper.analysis_date }}
+    · 领域：{{ paper.domain }}
+  </p>
+</div>
+
+<div class="analysis-score-card">
+  <div class="total-score">{{ "%.1f"|format(paper.overall_score) }} / 10</div>
+  <div class="sub-scores">
+    创新 {{ paper.scores.innovation }} · 技术质量 {{ paper.scores.technical_quality }} · 实验 {{ paper.scores.experiment }} · 写作 {{ paper.scores.writing }} · 实用 {{ paper.scores.practicality }}
+  </div>
+</div>
+
+{% if paper.highlights %}
+<div style="background:#f9f6f0;border-radius:6px;padding:1rem 1.2rem;margin-bottom:1.5rem;">
+  <strong>亮点</strong>
+  <ul style="margin:0.5rem 0 0;">
+  {% for h in paper.highlights %}<li>{{ h }}</li>{% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+<div class="analysis-content">
+  {% for key, content in paper.sections.items() %}
+    {% if content %}
+    {{ content | safe }}
+    {% endif %}
+  {% endfor %}
+</div>
+
+{% if paper.related_papers %}
+<h2 class="section-title">相关论文</h2>
+<ul>
+  {% for rp in paper.related_papers %}
+  <li>
+    {{ rp.title }}
+    {% if rp.id %}(<a href="https://arxiv.org/abs/{{ rp.id }}">arXiv:{{ rp.id }}</a>){% endif %}
+    {% if rp.relationship %} — {{ rp.relationship }}{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
+
+{% endblock %}

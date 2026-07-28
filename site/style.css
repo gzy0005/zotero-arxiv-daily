@@ -1,0 +1,189 @@
+body {
+  font-family: "EB Garamond", Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+  color: #1a1a1a;
+  background: #fdfaf5;
+  line-height: 1.8;
+}
+a { color: #8b1a1a; text-decoration: none; transition: color 0.2s; }
+a:hover { color: #5c0f0f; text-decoration: underline; text-underline-offset: 3px; }
+.container-main { max-width: 820px; margin: 0 auto; }
+.site-header {
+  border-bottom: 1.5px solid #8b1a1a;
+  padding: 1.5rem 0 0.8rem;
+  margin-bottom: 2rem;
+}
+.site-header h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+.site-header h1 a { color: #1a1a1a; }
+.site-header h1 a:hover { color: #8b1a1a; text-decoration: none; }
+.site-nav {
+  display: flex;
+  gap: 2rem;
+  margin-top: 0.6rem;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.05rem;
+}
+.site-nav a { color: #6b5544; }
+.site-nav a.active { color: #8b1a1a; font-weight: 600; border-bottom: 2px solid #8b1a1a; }
+.site-nav a:hover { color: #8b1a1a; text-decoration: none; }
+.section-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 600;
+  font-size: 1.35rem;
+  border-bottom: 1.5px solid #8b1a1a;
+  padding-bottom: 0.4rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.01em;
+}
+.paper-item {
+  border-bottom: 1px solid #e0d8cc;
+  padding: 1rem 0;
+}
+.paper-item:last-child { border-bottom: none; }
+.paper-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+.paper-meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0.3rem 0;
+}
+.paper-tldr {
+  font-size: 1rem;
+  color: #333;
+  margin: 0.4rem 0;
+  line-height: 1.6;
+}
+.paper-actions {
+  margin-top: 0.4rem;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.score-badge {
+  background: #8b1a1a;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 0.85rem;
+  font-family: "Playfair Display", Georgia, serif;
+}
+.category-tag {
+  background: #f0ebe3;
+  color: #6b5544;
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-family: monospace;
+}
+.btn-deepread {
+  background: #8b1a1a;
+  color: white;
+  border: none;
+  padding: 4px 14px;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  font-family: "Playfair Display", Georgia, serif;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.btn-deepread:hover { background: #5c0f0f; }
+.btn-deepread:disabled { background: #ccc; cursor: not-allowed; }
+.btn-deepread.done {
+  background: #4a7c59;
+}
+.btn-deepread.done:hover { background: #3a6348; }
+.date-switcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.1rem;
+}
+.date-switcher a { color: #8b1a1a; }
+.date-switcher .current-date { font-weight: 600; color: #1a1a1a; }
+.analysis-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.analysis-score-card {
+  background: white;
+  border: 2px solid #8b1a1a;
+  border-radius: 6px;
+  padding: 1.2rem 1.5rem;
+  margin: 1.5rem 0;
+  text-align: center;
+}
+.analysis-score-card .total-score {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #8b1a1a;
+}
+.analysis-score-card .sub-scores {
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+.analysis-content h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  border-bottom: 1px solid #d5cdbc;
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+.analysis-content h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+}
+.analysis-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+.analysis-content table th,
+.analysis-content table td {
+  border: 1px solid #d5cdbc;
+  padding: 0.5rem 0.7rem;
+  text-align: left;
+}
+.analysis-content table th {
+  background: #f5f0e8;
+  font-weight: 600;
+}
+.analysis-content blockquote {
+  border-left: 3px solid #8b1a1a;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  background: #f9f6f0;
+  color: #555;
+}
+footer {
+  margin-top: 3rem;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #999;
+  border-top: 1px solid #d5cdbc;
+}
+.empty-state {
+  text-align: center;
+  padding: 3rem 0;
+  color: #999;
+}

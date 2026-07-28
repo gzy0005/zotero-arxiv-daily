@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block title %}{{ date }} · arXiv Daily{% endblock %}
+{% block content %}
+
+<div class="date-switcher">
+  {% if prev_date %}<a href="/daily/{{ prev_date }}/">&larr; {{ prev_date }}</a>{% else %}<span></span>{% endif %}
+  <span class="current-date">{{ date }}</span>
+  {% if next_date %}<a href="/daily/{{ next_date }}/">{{ next_date }} &rarr;</a>{% else %}<span></span>{% endif %}
+</div>
+
+<h2 class="section-title">{{ date }} 每日推荐</h2>
+
+{% if papers %}
+  {% for paper in papers %}
+  <div class="paper-item">
+    <div class="paper-title">
+      <a href="{{ paper.url }}" target="_blank">{{ paper.title }}</a>
+    </div>
+    <div class="paper-meta">
+      {{ paper.authors[:5]|join(', ') }}{% if paper.authors|length > 5 %} et al.{% endif %}
+      {% if paper.affiliations %} · {{ paper.affiliations[:3]|join(', ') }}{% endif %}
+    </div>
+    <div class="paper-tldr">{{ paper.tldr }}</div>
+    <div class="paper-actions">
+      <span class="score-badge">★ {{ "%.1f"|format(paper.score) }}</span>
+      {% for cat in paper.categories or [] %}
+      <span class="category-tag">{{ cat }}</span>
+      {% endfor %}
+      {% if paper.pdf_url %}
+      <a href="{{ paper.pdf_url }}" class="category-tag" style="text-decoration:none;">PDF</a>
+      {% endif %}
+      {% if paper.arxiv_id %}
+        {% if paper.arxiv_id in analyzed_ids %}
+        <a href="/papers/{{ paper.arxiv_id }}/" class="btn-deepread done">查看分析 →</a>
+        {% else %}
+        <button class="btn-deepread" onclick="triggerAnalysis('{{ paper.arxiv_id }}', this)">精读 →</button>
+        {% endif %}
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+{% else %}
+  <div class="empty-state">
+    <p>今天没有推荐论文。</p>
+  </div>
+{% endif %}
+
+<script>
+const DISPATCH_TOKEN = "{{ dispatch_token }}";
+async function triggerAnalysis(arxivId, btn) {
+  if (!DISPATCH_TOKEN) { alert("Workflow dispatch token not configured."); return; }
+  btn.disabled = true;
+  btn.textContent = "分析中 ⏳";
+  try {
+    const resp = await fetch("https://api.github.com/repos/helemnmmm/zotero-arxiv-daily/actions/workflows/analyze.yml/dispatches", {
+      method: "POST",
+      headers: { "Authorization": "Bearer " + DISPATCH_TOKEN, "Accept": "application/vnd.github+json" },
+      body: JSON.stringify({ ref: "main", inputs: { arxiv_id: arxivId } })
+    });
+    if (!resp.ok) { btn.textContent = "失败，重试"; btn.disabled = false; }
+  } catch(e) {
+    btn.textContent = "失败，重试";
+    btn.disabled = false;
+  }
+}
+</script>
+
+{% endblock %}
