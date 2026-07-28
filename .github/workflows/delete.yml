@@ -51,15 +51,7 @@ jobs:
           # Update index.json
           INDEX="data/analysis/index.json"
           if [ -f "$INDEX" ]; then
-            uv run python -c "
-      import json
-      with open('$INDEX') as f:
-          idx = json.load(f)
-      idx = [e for e in idx if e.get('arxiv_id') != '${{ inputs.id }}']
-      with open('$INDEX', 'w') as f:
-          json.dump(idx, f, ensure_ascii=False, indent=2)
-      print(f'Removed ${{ inputs.id }} from index ({len(idx)} entries remain)')
-      "
+            uv run python -c "import json; idx = json.load(open('$INDEX')); idx = [e for e in idx if e.get('arxiv_id') != '${{ inputs.id }}']; json.dump(idx, open('$INDEX', 'w'), ensure_ascii=False, indent=2); print(f'Removed ${{ inputs.id }} from index ({len(idx)} entries remain)')"
           fi
 
       - name: Commit and push deletion
