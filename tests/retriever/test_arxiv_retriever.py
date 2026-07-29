@@ -19,7 +19,7 @@ def _raise_runtime_error() -> None:
 
 
 def test_arxiv_retriever(config, mock_feedparser, monkeypatch):
-    # The RSS fixture provides all paper metadata directly — no arXiv API calls.
+    config.source.arxiv.include_cross_list = False
     new_entries = [
         e for e in mock_feedparser.entries
         if e.get("arxiv_announce_type", "new") == "new"
