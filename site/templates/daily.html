@@ -9,9 +9,7 @@
 </div>
 
 <h2 class="section-title">{{ date }} 每日推荐
-{% if delete_pat %}
 <button class="btn-delete" onclick="deleteData('daily', '{{ date }}')" title="删除此日推荐">🗑</button>
-{% endif %}
 </h2>
 
 <div class="category-filter-bar">
@@ -40,10 +38,8 @@
       {% if paper.arxiv_id %}
         {% if paper.arxiv_id in analyzed_ids %}
         <a href="{{ site_base }}papers/{{ paper.arxiv_id }}/" class="btn-deepread done">查看分析</a>
-        {% elif delete_pat %}
-        <button class="btn-deepread" onclick="triggerAnalysis('{{ paper.arxiv_id }}', this)">精读</button>
         {% else %}
-        <a href="https://github.com/helemnmmm/zotero-arxiv-daily/issues/new?title=精读: {{ paper.arxiv_id }}&labels=deep-read&body=点击 Submit new issue 即可触发精读分析" target="_blank" class="btn-deepread">精读</a>
+        <button class="btn-deepread" onclick="triggerAnalysis('{{ paper.arxiv_id }}', this)">精读</button>
         {% endif %}
       {% endif %}
     </div>
@@ -56,13 +52,24 @@
 {% endif %}
 
 <script>
-{% if delete_pat %}
+function requirePAT() {
+  const pat = localStorage.getItem('github_pat');
+  if (!pat) {
+    alert('请先在设置页面配置 GitHub PAT');
+    window.location.href = '{{ site_base }}settings/';
+    return null;
+  }
+  return pat;
+}
+
 function deleteData(type, id) {
   if (!confirm('确认删除 ' + id + ' 吗？此操作不可撤销。')) return;
+  const pat = requirePAT();
+  if (!pat) return;
   fetch('https://api.github.com/repos/helemnmmm/zotero-arxiv-daily/actions/workflows/delete.yml/dispatches', {
     method: 'POST',
     headers: {
-      'Authorization': 'Bearer {{ delete_pat }}',
+      'Authorization': 'Bearer ' + pat,
       'Accept': 'application/vnd.github+json',
     },
     body: JSON.stringify({ ref: 'main', inputs: { type: type, id: id } })
@@ -77,12 +84,14 @@ function deleteData(type, id) {
 }
 function triggerAnalysis(arxivId, btn) {
   if (!confirm('提交精读分析: ' + arxivId + '？')) return;
+  const pat = requirePAT();
+  if (!pat) return;
   btn.textContent = '提交中...';
   btn.disabled = true;
   fetch('https://api.github.com/repos/helemnmmm/zotero-arxiv-daily/actions/workflows/analyze.yml/dispatches', {
     method: 'POST',
     headers: {
-      'Authorization': 'Bearer {{ delete_pat }}',
+      'Authorization': 'Bearer ' + pat,
       'Accept': 'application/vnd.github+json',
     },
     body: JSON.stringify({ ref: 'main', inputs: { arxiv_id: arxivId } })
@@ -101,7 +110,6 @@ function triggerAnalysis(arxivId, btn) {
     btn.disabled = false;
   });
 }
-{% endif %}
 (function() {
   const bar = document.querySelector('.category-filter-bar');
   if (!bar) return;

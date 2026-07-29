@@ -4,9 +4,7 @@
 
 <p style="margin-bottom:0.5rem; display:flex; justify-content:space-between; align-items:center;">
   <a href="{{ site_base }}deep-read/">&larr; 返回精读论文列表</a>
-  {% if delete_pat %}
   <button class="btn-delete" onclick="deleteAnalysis('{{ paper.arxiv_id }}')" title="删除此分析">🗑 删除分析</button>
-  {% endif %}
 </p>
 
 <div class="analysis-header">
@@ -43,14 +41,19 @@
   {% endfor %}
 </div>
 
-{% if delete_pat %}
 <script>
 function deleteAnalysis(id) {
   if (!confirm('确认删除 ' + id + ' 的分析吗？此操作不可撤销。')) return;
+  const pat = localStorage.getItem('github_pat');
+  if (!pat) {
+    alert('请先在设置页面配置 GitHub PAT');
+    window.location.href = '{{ site_base }}settings/';
+    return;
+  }
   fetch('https://api.github.com/repos/helemnmmm/zotero-arxiv-daily/actions/workflows/delete.yml/dispatches', {
     method: 'POST',
     headers: {
-      'Authorization': 'Bearer {{ delete_pat }}',
+      'Authorization': 'Bearer ' + pat,
       'Accept': 'application/vnd.github+json',
     },
     body: JSON.stringify({ ref: 'main', inputs: { type: 'analysis', id: id } })
@@ -64,6 +67,5 @@ function deleteAnalysis(id) {
   }).catch(e => alert('网络错误: ' + e));
 }
 </script>
-{% endif %}
 
 {% endblock %}

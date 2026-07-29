@@ -17,8 +17,6 @@ jobs:
 
       - name: Build site
         run: uv run python site/build.py
-        env:
-          DELETE_PAT: ${{ secrets.DELETE_PAT }}
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
