@@ -19,7 +19,7 @@ jinja_env = Environment(
     loader=FileSystemLoader(str(TEMPLATES_DIR)),
     autoescape=select_autoescape(["html"]),
 )
-markdown = mistune.create_markdown(escape=False)
+markdown = mistune.create_markdown(escape=False, plugins=["table"])
 
 
 def render_markdown(text: str) -> str:
@@ -51,7 +51,7 @@ def get_available_dates() -> list[str]:
     return dates
 
 
-def build_daily_pages(analyzed_ids: set[str], site_base: str) -> list[str]:
+def build_daily_pages(analyzed_ids: set[str], site_base: str, daily_url: str) -> list[str]:
     dates = get_available_dates()
     today = datetime.now().strftime("%Y-%m-%d")
     template = jinja_env.get_template("daily.html")
@@ -67,6 +67,7 @@ def build_daily_pages(analyzed_ids: set[str], site_base: str) -> list[str]:
         html = template.render(
             site_base=site_base,
             today=today,
+            daily_url=daily_url,
             active_tab="daily",
             date=date_str,
             prev_date=prev_date,
@@ -82,7 +83,7 @@ def build_daily_pages(analyzed_ids: set[str], site_base: str) -> list[str]:
     return dates
 
 
-def build_analysis_pages(site_base: str):
+def build_analysis_pages(site_base: str, daily_url: str):
     analysis_dir = DATA_DIR / "analysis"
     if not analysis_dir.exists():
         return []
@@ -102,19 +103,19 @@ def build_analysis_pages(site_base: str):
                 if content:
                     paper["sections"][key] = render_markdown(content)
 
-        html = template.render(site_base=site_base, today=today, active_tab="deepread", paper=paper)
+        html = template.render(site_base=site_base, today=today, daily_url=daily_url, active_tab="deepread", paper=paper)
 
         out_dir = DOCS_DIR / "papers" / paper["arxiv_id"]
         out_dir.mkdir(parents=True, exist_ok=True)
         (out_dir / "index.html").write_text(html, encoding="utf-8")
 
 
-def build_deep_read_list(site_base: str):
+def build_deep_read_list(site_base: str, daily_url: str):
     index = load_json(DATA_DIR / "analysis" / "index.json") or []
     template = jinja_env.get_template("deep_read_list.html")
     today = datetime.now().strftime("%Y-%m-%d")
 
-    html = template.render(site_base=site_base, today=today, active_tab="deepread", papers=index)
+    html = template.render(site_base=site_base, today=today, daily_url=daily_url, active_tab="deepread", papers=index)
     out_dir = DOCS_DIR / "deep-read"
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "index.html").write_text(html, encoding="utf-8")
@@ -131,7 +132,7 @@ def build_index(site_base: str):
     (DOCS_DIR / "index.html").write_text(redirect_html, encoding="utf-8")
 
 
-def build_search_index():
+def build_search_index(analyzed_ids: set[str]):
     daily_dir = DATA_DIR / "daily"
     papers = []
     if daily_dir.exists():
@@ -151,6 +152,7 @@ def build_search_index():
                     "date": date_str,
                     "score": p.get("score"),
                     "url": p.get("url", ""),
+                    "has_analysis": p.get("arxiv_id") in analyzed_ids,
                 })
     out_path = DOCS_DIR / "search-index.json"
     with open(out_path, "w", encoding="utf-8") as f:
@@ -158,19 +160,19 @@ def build_search_index():
     print(f"Search index with {len(papers)} papers written to {out_path}")
 
 
-def build_search_page(site_base: str):
+def build_search_page(site_base: str, daily_url: str):
     template = jinja_env.get_template("search.html")
     today = datetime.now().strftime("%Y-%m-%d")
-    html = template.render(site_base=site_base, today=today, active_tab="search")
+    html = template.render(site_base=site_base, today=today, daily_url=daily_url, active_tab="search")
     out_dir = DOCS_DIR / "search"
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "index.html").write_text(html, encoding="utf-8")
 
 
-def build_settings_page(site_base: str):
+def build_settings_page(site_base: str, daily_url: str):
     template = jinja_env.get_template("settings.html")
     today = datetime.now().strftime("%Y-%m-%d")
-    html = template.render(site_base=site_base, today=today, active_tab="settings")
+    html = template.render(site_base=site_base, today=today, daily_url=daily_url, active_tab="settings")
     out_dir = DOCS_DIR / "settings"
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "index.html").write_text(html, encoding="utf-8")
@@ -189,13 +191,15 @@ def main():
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
 
     analyzed_ids = load_analyzed_ids()
+    dates = get_available_dates()
+    daily_url = f"{site_base}daily/{dates[0]}/" if dates else site_base
 
-    build_daily_pages(analyzed_ids, site_base)
-    build_analysis_pages(site_base)
-    build_deep_read_list(site_base)
-    build_search_index()
-    build_search_page(site_base)
-    build_settings_page(site_base)
+    build_daily_pages(analyzed_ids, site_base, daily_url)
+    build_analysis_pages(site_base, daily_url)
+    build_deep_read_list(site_base, daily_url)
+    build_search_index(analyzed_ids)
+    build_search_page(site_base, daily_url)
+    build_settings_page(site_base, daily_url)
     build_index(site_base)
     copy_static_assets()
 

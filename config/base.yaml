@@ -27,6 +27,8 @@ llm:
   generation_kwargs:
     max_tokens: 16384
     model: deepseek-v4-flash
+  full_text_chunk_tokens: 6000
+  full_text_chunk_overlap_tokens: 300
   language: Chinese
 
 reranker:
@@ -45,5 +47,6 @@ executor:
   debug: false
   send_empty: false
   max_paper_num: 50
+  full_text_brief_paper_num: 20
   source: ['arxiv']
   reranker: local

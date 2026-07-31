@@ -55,6 +55,15 @@ def test_tldr_truncates_long_prompt(llm_params):
     assert result is not None
 
 
+def test_tldr_abstract_tier_records_its_source(llm_params):
+    client = make_stub_openai_client()
+    paper = make_sample_paper(full_text="This text must not be used for an abstract brief.")
+
+    paper.generate_tldr(client, llm_params, use_full_text=False)
+
+    assert paper.summary_source == "abstract"
+
+
 # ---------------------------------------------------------------------------
 # generate_affiliations
 # ---------------------------------------------------------------------------

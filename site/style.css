@@ -63,6 +63,8 @@ a:hover { color: #5c0f0f; text-decoration: underline; text-underline-offset: 3px
   margin: 0.4rem 0;
   line-height: 1.6;
 }
+.paper-tldr.collapsed { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+.btn-expand { background: none; border: none; color: #8b1a1a; padding: 0; cursor: pointer; font: inherit; }
 .paper-actions {
   margin-top: 0.4rem;
   display: flex;
@@ -191,6 +193,8 @@ a:hover { color: #5c0f0f; text-decoration: underline; text-underline-offset: 3px
   border-collapse: collapse;
   margin: 1rem 0;
   font-size: 0.95rem;
+  display: block;
+  overflow-x: auto;
 }
 .analysis-content table th,
 .analysis-content table td {

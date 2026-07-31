@@ -127,8 +127,15 @@ class Executor:
             reranked_papers = self.reranker.rerank(all_papers, corpus)
             reranked_papers = reranked_papers[:self.config.executor.max_paper_num]
             logger.info("Generating TLDR and affiliations...")
-            for p in tqdm(reranked_papers):
-                p.generate_tldr(self.openai_client, self.config.llm)
+            full_text_limit = self.config.executor.get("full_text_brief_paper_num", 20)
+            for index, p in enumerate(tqdm(reranked_papers)):
+                use_full_text = index < full_text_limit
+                if use_full_text:
+                    try:
+                        self.retrievers[p.source].enrich_full_text(p)
+                    except Exception as exc:
+                        logger.warning(f"Full-text enrichment failed for {p.url}: {exc}")
+                p.generate_tldr(self.openai_client, self.config.llm, use_full_text=use_full_text)
                 p.generate_affiliations(self.openai_client, self.config.llm)
             logger.info("Saving results...")
             self.save_results(reranked_papers)

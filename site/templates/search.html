@@ -31,11 +31,13 @@
       return '<div class="paper-item">' +
         '<div class="paper-title"><a href="' + p.url + '" target="_blank">' + p.title + '</a></div>' +
         '<div class="paper-meta">' + p.date + ' · ' + (p.authors || []).slice(0,3).join(', ') + (p.authors && p.authors.length > 3 ? ' et al.' : '') + '</div>' +
-        '<div class="paper-tldr">' + (p.tldr || '') + '</div>' +
+        '<div class="paper-tldr collapsed">' + (p.tldr || '') + '</div>' +
+        '<button class="btn-expand" onclick="toggleBrief(this)">展开</button>' +
         '<div class="paper-actions">' +
         (score ? '<span class="score-badge">' + score + '</span>' : '') +
         cats +
-        (p.arxiv_id ? ' <a href="' + siteBase + 'papers/' + p.arxiv_id + '/" class="btn-deepread done">查看分析</a>' : '') +
+        (p.has_analysis ? ' <a href="' + siteBase + 'papers/' + p.arxiv_id + '/" class="btn-deepread done">已审阅</a>' :
+          (p.arxiv_id ? ' <button class="btn-deepread" onclick="triggerAnalysis(\'' + p.arxiv_id + '\', this)">精读</button>' : '')) +
         '</div></div>';
     }).join('');
     results.innerHTML = html;
@@ -60,6 +62,21 @@
 
   input.addEventListener('input', filter);
 })();
+
+function toggleBrief(button) {
+  const brief = button.previousElementSibling;
+  const collapsed = brief.classList.toggle('collapsed');
+  button.textContent = collapsed ? '展开' : '收起';
+}
+function triggerAnalysis(arxivId, btn) {
+  const pat = localStorage.getItem('github_pat');
+  if (!pat) { window.location.href = '{{ site_base }}settings/'; return; }
+  btn.disabled = true;
+  fetch('https://api.github.com/repos/helemnmmm/zotero-arxiv-daily/actions/workflows/analyze.yml/dispatches', {
+    method: 'POST', headers: {'Authorization': 'Bearer ' + pat, 'Accept': 'application/vnd.github+json'},
+    body: JSON.stringify({ref: 'main', inputs: {arxiv_id: arxivId}})
+  }).then(r => { if (r.ok) { btn.textContent = '已提交'; } else { btn.textContent = '精读'; btn.disabled = false; } });
+}
 </script>
 
 {% endblock %}

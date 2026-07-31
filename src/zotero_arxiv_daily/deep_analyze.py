@@ -43,6 +43,7 @@ Rules:
 - Each section value must be Markdown-formatted Chinese text (2-5 paragraphs for substantive sections).
 - Use $...$ for inline LaTeX and $$...$$ for block LaTeX on separate lines.
 - Use Markdown table syntax for comparison tables.
+- Every Markdown table must use one header row, one separator row, and one data row per physical line.
 - Output ONLY the JSON object. No markdown code fences, no explanation."""
 
 

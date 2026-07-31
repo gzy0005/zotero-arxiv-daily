@@ -21,6 +21,8 @@ class Paper:
     affiliations: Optional[list[str]] = None
     score: Optional[float] = None
     categories: Optional[list[str]] = None
+    summary_source: Optional[str] = None
+    summary_error: Optional[str] = None
 
     def _generate_tldr_with_llm(self, openai_client:OpenAI,llm_params:dict) -> str:
         lang = llm_params.get('language', 'English')
@@ -57,15 +59,56 @@ class Paper:
         tldr = response.choices[0].message.content
         return tldr
     
-    def generate_tldr(self, openai_client:OpenAI,llm_params:dict) -> str:
+    def _chat(self, openai_client: OpenAI, llm_params: dict, prompt: str, system: str) -> str:
+        response = openai_client.chat.completions.create(
+            messages=[{"role": "system", "content": system}, {"role": "user", "content": prompt}],
+            **llm_params.get("generation_kwargs", {}),
+        )
+        return response.choices[0].message.content
+
+    def _full_text_chunks(self, llm_params: dict) -> list[str]:
+        chunk_size = int(llm_params.get("full_text_chunk_tokens", 6000))
+        overlap = int(llm_params.get("full_text_chunk_overlap_tokens", 300))
+        if chunk_size <= 0 or overlap < 0 or overlap >= chunk_size:
+            raise ValueError("Invalid full-text chunk configuration")
+        tokens = tiktoken.encoding_for_model("gpt-4o").encode(self.full_text or "")
+        step = chunk_size - overlap
+        return [tiktoken.encoding_for_model("gpt-4o").decode(tokens[i:i + chunk_size]) for i in range(0, len(tokens), step)]
+
+    def generate_tldr(self, openai_client:OpenAI, llm_params:dict, *, use_full_text: bool = True) -> str:
         try:
-            tldr = self._generate_tldr_with_llm(openai_client,llm_params)
+            lang = llm_params.get("language", "Chinese")
+            if not self.abstract and not self.full_text:
+                logger.warning(f"Neither full text nor abstract is provided for {self.url}")
+                self.tldr = "Failed to generate TLDR. Neither full text nor abstract is provided"
+                self.summary_source = "fallback_abstract"
+                return self.tldr
+            if not use_full_text or not self.full_text:
+                prompt = f"Write one {lang} research brief of 150-250 Chinese characters. Cover the research problem, method or data, and main result. Use only the title and abstract; do not infer unstated details.\n\nTitle: {self.title}\n\nAbstract: {self.abstract}"
+                tldr = self._chat(openai_client, llm_params, prompt, "You summarize scientific papers accurately.")
+                self.summary_source = "abstract"
+            else:
+                facts = []
+                for index, chunk in enumerate(self._full_text_chunks(llm_params), start=1):
+                    prompt = f"Extract only source-grounded facts from part {index} of this paper. Record research objective, method, data or setup, results, conclusions, and limitations when present. Do not infer missing facts.\n\n{chunk}"
+                    try:
+                        facts.append(self._chat(openai_client, llm_params, prompt, "You extract factual evidence from scientific papers."))
+                    except Exception as exc:
+                        logger.warning(f"Failed to extract evidence from {self.url} part {index}: {exc}")
+                if not facts:
+                    raise ValueError("No full-text evidence extracted")
+                prompt = f"Using only the evidence below, write one {lang} research brief of 150-250 Chinese characters. Cover the research problem, core method or data, and main result or contribution. Do not add unsupported claims.\n\n" + "\n\n".join(facts)
+                tldr = self._chat(openai_client, llm_params, prompt, "You summarize scientific papers accurately.")
+                self.summary_source = "full_text"
             self.tldr = tldr
+            self.summary_error = None
             return tldr
         except Exception as e:
             logger.warning(f"Failed to generate tldr of {self.url}: {e}")
             tldr = self.abstract
             self.tldr = tldr
+            self.summary_source = "fallback_abstract"
+            self.summary_error = str(e)
             return tldr
 
     def _generate_affiliations_with_llm(self, openai_client:OpenAI,llm_params:dict) -> Optional[list[str]]:
@@ -124,6 +167,8 @@ class Paper:
             "affiliations": self.affiliations,
             "score": round(self.score, 1) if self.score else None,
             "categories": self.categories or [],
+            "summary_source": self.summary_source,
+            "summary_error": self.summary_error,
         }
 
     def generate_affiliations(self, openai_client:OpenAI,llm_params:dict) -> Optional[list[str]]:

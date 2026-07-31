@@ -149,11 +149,6 @@ class ArxivRetriever(BaseRetriever):
         authors = [a.name for a in raw_paper.authors]
         abstract = raw_paper.summary
         pdf_url = raw_paper.pdf_url
-        full_text = extract_text_from_tar(raw_paper)
-        if full_text is None:
-            full_text = extract_text_from_html(raw_paper)
-        if full_text is None:
-            full_text = extract_text_from_pdf(raw_paper)
         return Paper(
             source=self.name,
             title=title,
@@ -161,9 +156,22 @@ class ArxivRetriever(BaseRetriever):
             abstract=abstract,
             url=raw_paper.entry_id,
             pdf_url=pdf_url,
-            full_text=full_text,
+            full_text=None,
             categories=[c for c in raw_paper.categories],
         )
+
+    def enrich_full_text(self, paper: Paper) -> None:
+        raw_paper = SimpleNamespace(
+            title=paper.title,
+            entry_id=paper.url,
+            pdf_url=paper.pdf_url,
+            source_url=lambda: paper.url.replace("/abs/", "/e-print/"),
+        )
+        paper.full_text = extract_text_from_tar(raw_paper)
+        if paper.full_text is None:
+            paper.full_text = extract_text_from_html(raw_paper)
+        if paper.full_text is None:
+            paper.full_text = extract_text_from_pdf(raw_paper)
 
 
 def extract_text_from_html(paper: Any) -> str | None:

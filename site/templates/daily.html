@@ -26,7 +26,8 @@
       {{ paper.authors[:5]|join(', ') }}{% if paper.authors|length > 5 %} et al.{% endif %}
       {% if paper.affiliations %} · {{ paper.affiliations[:3]|join(', ') }}{% endif %}
     </div>
-    <div class="paper-tldr">{{ paper.tldr }}</div>
+    <div class="paper-tldr collapsed">{{ paper.tldr }}</div>
+    <button class="btn-expand" onclick="toggleBrief(this)">展开</button>
     <div class="paper-actions">
       <span class="score-badge">★ {{ "%.1f"|format(paper.score) }}</span>
       {% for cat in paper.categories or [] %}
@@ -60,6 +61,11 @@ function requirePAT() {
     return null;
   }
   return pat;
+}
+function toggleBrief(button) {
+  const brief = button.previousElementSibling;
+  const collapsed = brief.classList.toggle('collapsed');
+  button.textContent = collapsed ? '展开' : '收起';
 }
 
 function deleteData(type, id) {
