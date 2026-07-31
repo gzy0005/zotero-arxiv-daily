@@ -12,6 +12,11 @@
     </div>
     <div class="paper-meta">
       {{ paper.authors|join(', ') }} · 分析日期：{{ paper.analysis_date }} · {{ paper.domain }}
+      {% if paper.analysis_type == 'full_text_companion' %}
+        · 全文伴读报告（{{ paper.text_source }}）
+      {% else %}
+        · 旧版摘要分析
+      {% endif %}
     </div>
     <div class="paper-actions">
       <span class="score-badge">★ {{ "%.1f"|format(paper.overall_score) }}</span>
