@@ -1,5 +1,23 @@
 [
   {
+    "arxiv_id": "2607.26269",
+    "title": "ATLAS. II. Extremely High Incidence of Balmer Line Absorption with Predominant Blueshifts in LRDs: Statistical Insights through Comparison with Type 1 AGNs",
+    "authors": [
+      "Hiroto Yanagisawa",
+      "Masami Ouchi",
+      "Tomokazu Kiyota",
+      "Makoto Ando",
+      "Yuichi Harikane",
+      "Yuta Kageura",
+      "Minami Nakane",
+      "Yoshiaki Ono",
+      "Yui Takeda"
+    ],
+    "analysis_date": "2026-07-31",
+    "overall_score": 8.0,
+    "domain": "高红移星系与活动星系核（AGN）"
+  },
+  {
     "arxiv_id": "2607.26177",
     "title": "How to raise a supermassive black hole: interpreting early JWST AGN with the AESOPICA simulations",
     "authors": [
