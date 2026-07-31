@@ -61,6 +61,27 @@ The public daily page continues to render `tldr`. The internal source and error 
 
 Each paper card renders a two-line clamped preview of its brief and a compact expand control. Selecting it reveals the complete brief in the same card; selecting it again collapses the text. The card layout must not shift unpredictably or reveal technical implementation labels.
 
+## Site Correctness Fixes
+
+The same implementation also corrects three existing site defects.
+
+### Search analysis state
+
+Build the search index with the set of analyzed arXiv IDs. Each indexed paper includes a derived `has_analysis` boolean. Search results use that value rather than merely testing for an arXiv ID:
+
+- `has_analysis: false`: render an actionable `精读` control that dispatches the existing deep-analysis workflow.
+- `has_analysis: true`: render a clickable `已审阅` link to the existing analysis page.
+
+The search-page control follows the same localStorage PAT requirement and workflow-dispatch behavior as the daily recommendation page.
+
+### Stable daily navigation
+
+Derive the navigation target from the newest date with an existing `data/daily/YYYY-MM-DD.json` file, not from the wall-clock date when the static site is built. Pass that target to every page template. The global `每日推荐` link must therefore always open the latest available daily page, including on days with no new arXiv release. If no daily data exists, it links to the site root.
+
+### Deep-analysis tables
+
+Enable Mistune's Markdown table plugin when rendering analysis sections so valid pipe-table syntax produces semantic HTML tables. Configure the analysis table container for horizontal scrolling on narrow screens without clipping its cells. Update the deep-analysis LLM prompt to require standard Markdown table structure: one header row, one separator row, and one data row per physical line. This improves model output consistency; the renderer remains responsible for displaying every valid table.
+
 ## Failure Handling
 
 - If TeX extraction fails, try arXiv HTML and then PDF.
@@ -91,7 +112,11 @@ Tests must verify:
 - persisted JSON contains the new summary fields;
 - static daily pages show a collapsed preview and working expand/collapse behavior;
 - existing email rendering remains compatible with the new `tldr` value.
+- search-index generation marks analyzed and unanalyzed papers correctly;
+- search rendering offers `精读` only for unanalyzed papers and links `已审阅` papers to their analysis page;
+- global daily navigation uses the latest available data date rather than the build date;
+- a representative Markdown table renders to a `table` element and remains horizontally accessible on a narrow viewport.
 
 ## Scope Boundaries
 
-This change does not alter relevance scoring, Zotero filtering, the paper sources, or the deep-read analysis workflow. It does not expose generated evidence, source diagnostics, or an evidence-quality badge in the reader-facing interface.
+This change does not alter relevance scoring, Zotero filtering, paper sources, or the substantive deep-analysis workflow. It changes only the deep-analysis prompt's table-format instruction and its website rendering. It does not expose generated evidence, source diagnostics, or an evidence-quality badge in the reader-facing interface.
