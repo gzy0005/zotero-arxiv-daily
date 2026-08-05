@@ -169,6 +169,12 @@ def call_llm(
 
     evidence_notes = []
     for index, chunk in enumerate(chunks, start=1):
+        evidence_kwargs = {
+            "model": model,
+            "max_tokens": EVIDENCE_MAX_TOKENS,
+        }
+        if model.startswith("deepseek-"):
+            evidence_kwargs["extra_body"] = {"thinking": {"type": "disabled"}}
         try:
             response = client.chat.completions.create(
                 messages=[
@@ -178,8 +184,7 @@ def call_llm(
                         "content": f"Paper arXiv ID: {arxiv_id}\nChunk {index}/{len(chunks)}:\n\n{chunk}",
                     },
                 ],
-                model=model,
-                max_tokens=EVIDENCE_MAX_TOKENS,
+                **evidence_kwargs,
             )
             note = response.choices[0].message.content
         except Exception as exc:
