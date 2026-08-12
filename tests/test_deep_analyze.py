@@ -1,3 +1,5 @@
+from types import SimpleNamespace
+
 import pytest
 
 from zotero_arxiv_daily import deep_analyze
@@ -11,6 +13,33 @@ def test_full_text_analysis_rejects_missing_document():
             full_text="",
             text_source="none",
         )
+
+
+def test_fetch_paper_info_from_abs_page_reads_citation_metadata(monkeypatch):
+    html = """
+    <html><head>
+      <meta name="citation_title" content="A &amp; B">
+      <meta name="citation_author" content="First Author">
+      <meta name="citation_author" content="Second Author">
+      <meta name="citation_abstract" content="A full abstract.">
+    </head></html>
+    """
+    calls = []
+
+    def get(url, *, headers, timeout):
+        calls.append((url, headers, timeout))
+        return SimpleNamespace(text=html, raise_for_status=lambda: None)
+
+    monkeypatch.setattr(deep_analyze, "requests", SimpleNamespace(get=get), raising=False)
+
+    paper_info = deep_analyze.fetch_paper_info_from_abs_page("2608.09929")
+
+    assert paper_info == {
+        "title": "A & B",
+        "abstract": "A full abstract.",
+        "authors": ["First Author", "Second Author"],
+    }
+    assert calls[0][0] == "https://arxiv.org/abs/2608.09929"
 
 
 def test_chunk_text_covers_the_complete_document():

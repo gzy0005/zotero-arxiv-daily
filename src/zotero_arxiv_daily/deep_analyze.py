@@ -5,10 +5,12 @@ import os
 import re
 import sys
 from datetime import datetime
+from html.parser import HTMLParser
 from pathlib import Path
 from types import SimpleNamespace
 
 from openai import OpenAI
+import requests
 import tiktoken
 
 from zotero_arxiv_daily.retriever.arxiv_retriever import (
@@ -61,36 +63,63 @@ Rules:
 EVIDENCE_SYSTEM_PROMPT = """You are extracting evidence from one contiguous chunk of an astrophysics paper's full text for a later companion report. Write concise Chinese Markdown notes. Cover only information present in this chunk: section/topic, assumptions, methods, equations, figure/table captions and references, results, limitations, and exact locations such as §, Fig., Table, Eq., or Appendix when visible. Do not infer missing content, do not summarize the whole paper, and do not claim to inspect figure pixels."""
 
 
-def fetch_paper_info(arxiv_id: str) -> dict | None:
-    """Fetch paper metadata with robust retry loop."""
-    import time
-    import random
-    import arxiv
+class _CitationMetadataParser(HTMLParser):
+    """Collect the citation metadata exposed by an arXiv abstract page."""
 
-    max_retries = 8
-    for attempt in range(max_retries):
-        try:
-            client = arxiv.Client(page_size=1, delay_seconds=3, num_retries=0)
-            search = arxiv.Search(id_list=[arxiv_id])
-            result = next(client.results(search))
-            return {
-                "title": result.title or "",
-                "abstract": result.summary or "",
-                "authors": [a.name for a in result.authors],
-            }
-        except StopIteration:
-            print(f"No paper found for {arxiv_id}")
-            return None
-        except Exception as e:
-            msg = str(e)
-            if attempt < max_retries - 1:
-                wait = min(2 ** attempt + random.uniform(1, 3), 60)
-                print(f"arXiv API error (attempt {attempt + 1}/{max_retries}): {msg[:100]}")
-                print(f"  Retrying in {wait:.0f}s...")
-                time.sleep(wait)
-            else:
-                print(f"Failed after {max_retries} attempts: {msg[:100]}")
-                return None
+    def __init__(self) -> None:
+        super().__init__()
+        self.title = ""
+        self.abstract = ""
+        self.authors: list[str] = []
+
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
+        if tag != "meta":
+            return
+
+        attributes = dict(attrs)
+        name = attributes.get("name", "").lower()
+        content = (attributes.get("content") or "").strip()
+        if name == "citation_title":
+            self.title = content
+        elif name == "citation_abstract":
+            self.abstract = content
+        elif name == "citation_author" and content:
+            self.authors.append(content)
+
+
+def fetch_paper_info_from_abs_page(arxiv_id: str) -> dict:
+    """Fetch metadata from arXiv's public abstract page, not export.arxiv.org."""
+    response = requests.get(
+        f"https://arxiv.org/abs/{arxiv_id}",
+        headers={
+            "User-Agent": (
+                "zotero-arxiv-daily/1.0 "
+                "(+https://github.com/helemnmmm/zotero-arxiv-daily)"
+            )
+        },
+        timeout=(10, 60),
+    )
+    response.raise_for_status()
+
+    parser = _CitationMetadataParser()
+    parser.feed(response.text)
+    parser.close()
+    if not parser.title or not parser.abstract:
+        raise ValueError("arXiv abstract page did not contain complete citation metadata")
+    return {
+        "title": parser.title,
+        "abstract": parser.abstract,
+        "authors": parser.authors,
+    }
+
+
+def fetch_paper_info(arxiv_id: str) -> dict | None:
+    """Fetch metadata without depending on the rate-limited export arXiv API."""
+    try:
+        return fetch_paper_info_from_abs_page(arxiv_id)
+    except (requests.RequestException, ValueError) as exc:
+        print(f"Failed to fetch arXiv abstract-page metadata: {exc}")
+        return None
 
 
 def chunk_full_text(
