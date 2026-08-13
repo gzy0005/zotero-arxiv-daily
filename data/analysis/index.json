@@ -1,5 +1,27 @@
 [
   {
+    "arxiv_id": "2608.10306",
+    "title": "Scaling Relations of Galactic Outflows Across Cosmic Time: New Insights from Cosmic Noon",
+    "authors": [
+      "Liou, Tiffany",
+      "Xu, Xinfeng",
+      "Strom, Allison L.",
+      "Cuestas, Nathalie A. Korhonen",
+      "Faucher-Giguère, Claude-André",
+      "Miller, Tim B.",
+      "Rudie, Gwen",
+      "Trainor, Ryan F.",
+      "Reddy, Naveen A.",
+      "Steidel, Charles C.",
+      "Chen, Yuguang"
+    ],
+    "analysis_date": "2026-08-13",
+    "overall_score": 8.0,
+    "domain": "星系天体物理",
+    "analysis_type": "full_text_companion",
+    "text_source": "TeX"
+  },
+  {
     "arxiv_id": "2608.09929",
     "title": "Realization Variance of Gravitational Wave Background Anisotropies from Shot Noise for Pulsar Timing Arrays",
     "authors": [
