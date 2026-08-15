@@ -237,13 +237,18 @@ FULL-TEXT EVIDENCE NOTES:
 
 Provide a complete analysis following the system prompt instructions. Output ONLY valid JSON (no markdown code fences, no extra text)."""
 
+    llm_kwargs = {
+        "model": model,
+        "max_tokens": 16384,
+    }
+    if model.startswith("deepseek-"):
+        llm_kwargs["extra_body"] = {"thinking": {"type": "disabled"}}
     response = client.chat.completions.create(
         messages=[
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": user_prompt},
         ],
-        model=model,
-        max_tokens=16384,
+        **llm_kwargs,
     )
     return _parse_llm_json(response.choices[0].message.content)
 
