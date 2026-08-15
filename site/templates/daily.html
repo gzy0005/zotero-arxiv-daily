@@ -72,7 +72,7 @@ function deleteData(type, id) {
   if (!confirm('确认删除 ' + id + ' 吗？此操作不可撤销。')) return;
   const pat = requirePAT();
   if (!pat) return;
-  fetch('https://api.github.com/repos/helemnmmm/zotero-arxiv-daily/actions/workflows/delete.yml/dispatches', {
+  fetch('https://api.github.com/repos/gzy0005/zotero-arxiv-daily/actions/workflows/delete.yml/dispatches', {
     method: 'POST',
     headers: {
       'Authorization': 'Bearer ' + pat,
@@ -94,7 +94,7 @@ function triggerAnalysis(arxivId, btn) {
   if (!pat) return;
   btn.textContent = '提交中...';
   btn.disabled = true;
-  fetch('https://api.github.com/repos/helemnmmm/zotero-arxiv-daily/actions/workflows/analyze.yml/dispatches', {
+  fetch('https://api.github.com/repos/gzy0005/zotero-arxiv-daily/actions/workflows/analyze.yml/dispatches', {
     method: 'POST',
     headers: {
       'Authorization': 'Bearer ' + pat,
