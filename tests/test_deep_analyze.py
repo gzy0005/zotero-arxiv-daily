@@ -108,7 +108,7 @@ def test_deepseek_evidence_extraction_disables_thinking(monkeypatch):
     )
 
     assert requests[0]["extra_body"] == {"thinking": {"type": "disabled"}}
-    assert "extra_body" not in requests[1]
+    assert requests[1]["extra_body"] == {"thinking": {"type": "disabled"}}
 
 
 def test_full_text_prefers_source_and_never_uses_abstract(monkeypatch):
