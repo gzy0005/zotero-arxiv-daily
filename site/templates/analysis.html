@@ -56,7 +56,7 @@ function deleteAnalysis(id) {
     window.location.href = '{{ site_base }}settings/';
     return;
   }
-  fetch('https://api.github.com/repos/helemnmmm/zotero-arxiv-daily/actions/workflows/delete.yml/dispatches', {
+  fetch('https://api.github.com/repos/gzy0005/zotero-arxiv-daily/actions/workflows/delete.yml/dispatches', {
     method: 'POST',
     headers: {
       'Authorization': 'Bearer ' + pat,
