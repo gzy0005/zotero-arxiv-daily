@@ -72,7 +72,7 @@ function triggerAnalysis(arxivId, btn) {
   const pat = localStorage.getItem('github_pat');
   if (!pat) { window.location.href = '{{ site_base }}settings/'; return; }
   btn.disabled = true;
-  fetch('https://api.github.com/repos/helemnmmm/zotero-arxiv-daily/actions/workflows/analyze.yml/dispatches', {
+  fetch('https://api.github.com/repos/gzy0005/zotero-arxiv-daily/actions/workflows/analyze.yml/dispatches', {
     method: 'POST', headers: {'Authorization': 'Bearer ' + pat, 'Accept': 'application/vnd.github+json'},
     body: JSON.stringify({ref: 'main', inputs: {arxiv_id: arxivId}})
   }).then(r => { if (r.ok) { btn.textContent = '已提交'; } else { btn.textContent = '精读'; btn.disabled = false; } });
