@@ -1,0 +1,1498 @@
+{
+  "date": "2026-08-19",
+  "papers": [
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.14788",
+      "title": "Mixing stochasticity relinquishes evidence for magnetorotational hypernovae",
+      "authors": [
+        "Anmol Aggarwal",
+        "Ralph Schoenrich"
+      ],
+      "abstract": "A recent work claimed by fitting the observed elemental abundance pattern of a halo star with the total yields from single super-/hypernova events that only a magnetorotational hypernova event (a very energetic supernova event that also produces r-process elements) could be the source of the observed abundances. Here, we show that the star's peculiar abundance pattern is better fitted within the framework of mixing stochasticity with yields from a normal core collapse supernova (ccSN; Energy$_{\\rm exp}$ $\\sim 10^{51}$ erg.) and a neutron star merger (NSM). The stochastic mixing model outperforms the hypernova fitting significantly, (r.m.s 0.24 vs 0.44) i.e., favours the composition from common events (ccSN + NSM) over the magnetorotational hypernova scenario. We also discuss the origin of the star and the possibility of enrichment of its birth cloud by both a ccSN and a NSM.",
+      "url": "https://arxiv.org/abs/2608.14788v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14788v1",
+      "tldr": "针对晕星SMSS J200322.54-114203.3，研究其元素丰度模式是由磁转动超新星还是普通核坍缩超新星+中子星并合解释。利用含SN壳层系数与NSM产额的混合随机性模型拟合实测[X/Fe]，并计算r.m.s.、χ²等统计量。结果显示SN+NSM拟合的r.m.s.=0.24，显著优于磁转动超新星模型的0.44，χ²_eff≈1.02；对Ba至Nd等元素符合更好。作者认为该星更可能由普通ccSN与NSM共同增丰，而非单一磁转动超新星，且其运动学支持晚期吸积起源。",
+      "affiliations": [
+        "University College London"
+      ],
+      "score": 4.9,
+      "categories": [
+        "astro-ph.GA",
+        "astro-ph.HE",
+        "astro-ph.SR"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.15572",
+      "title": "Theoretical emission lines and metallicity calibrations of H II regions in ASTRID simulation",
+      "authors": [
+        "Yao Yao",
+        "Kathryn Grasha",
+        "Stuart Wyithe",
+        "Enci Wang",
+        "Nianyi Chen",
+        "Patrick Lachance",
+        "Tiziana Di Matteo",
+        "Yihao Zhou"
+      ],
+      "abstract": "We present a theoretical framework to derive redshift-dependent metallicity calibrations for galaxies at $z$=2-7. The ionization parameter ($U$) and gas pressure ($P$) in our approach are not assumed, but are predicted self-consistently. By combining the ASTRID cosmological simulation with stellar population synthesis (SPS) and MAPPINGS V photoionization modeling, we evolve young star clusters under an analytic wind-driven bubble model. This directly couples stellar feedback to the local ISM density, allowing \\hii{} region properties to emerge from the underlying physics rather than being treated as free parameters. The emission-line predictions are validated against observed star-formation rate indicators (deviation <0.05 dex) and the \\oiii{} luminosity function. We derive calibrations for common optical (e.g. R23, O3N2, N2, O32) and UV (e.g. C3O3, N3O3) diagnostics. We find significant redshift evolution in these relations, driven primarily by changing ionization conditions. A Bayesian analysis quantifies calibration performance under varying signal-to-noise, enabling diagnostic recommendations as a function of redshift and data quality. The R23 calibration performs well at all redshifts with minimal error in our model, while nitrogen- and carbon-based calibrations are highly sensitive to the abundance enrichment process and should be used with caution. These results provide a practical framework for interpreting JWST spectroscopy and tracing chemical evolution from cosmic noon to the epoch of reionization.",
+      "url": "https://arxiv.org/abs/2608.15572v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15572v1",
+      "tldr": "研究问题：现有星系金属丰度标定多依赖经验关系，缺乏自洽物理框架。核心方法：结合ASTRID宇宙学模拟、Starburst99恒星合成与MAPPINGS V光致电离，采用风驱动气泡模型，由恒星反馈与局地气体密度自洽预测电离参数和气压，对z=2–7星系推导光学与紫外强线标定。主要结果：模型重现Hα、[O II]恒星形成率指示剂及JWST [O III]光度函数；R23标定最稳健，弥散约0.1 dex；氮基标定受模拟氮丰度限制，可能高估氧丰度，需谨慎；紫外诊断弥散较大。提供各红移多项式标定系数。",
+      "affiliations": [
+        "Australian National University",
+        "Institute for Advanced Study",
+        "University of Science and Technology of China",
+        "Carnegie Mellon University"
+      ],
+      "score": 4.5,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.15782",
+      "title": "The Low-Mass Baryon Cycle in QUEST Dwarf Galaxies I: Sample definition and first results",
+      "authors": [
+        "Ava Polzin",
+        "Hsiao-Wen Chen",
+        "Zhijie Qu",
+        "Erin Boettcher",
+        "Allison Strom",
+        "Tsang Keung Chan"
+      ],
+      "abstract": "We introduce the QUEST Dwarfs program, which connects low-mass galaxies' stellar populations, interstellar medium, and circumgalactic medium in a large and coherently analyzed sample using a combination of optical spectroscopy, broadband imaging, and FUV absorption spectra of bright background sources .We present initial results from the first-release sample, comprising 14 galaxies with stellar mass $M_\\mathrm{star} \\leq 10^9 M_\\odot$ at $z\\approx0.001-0.017$, each with at least one CGM absorption probe at projected distances $d_\\mathrm{proj}\\lesssim 100$ kpc. This representative sample triples the number of available probes within 1/3 of the halo radius of dwarf galaxies outside of the Local Group. We find that the total silicon column density declines much more rapidly with projected distance than \\textsc{Hi}, implying that chemically enriched cool gas is preferentially concentrated in the inner CGM, while the increasing ionization fraction of hydrogen with radius likely enhances this contrast. Accounting for unobserved silicon in higher ionization stages, we infer total metal masses of $\\log M_Z/M_\\odot\\approx4.8$ and $6.5$ in the cool CGM within $0.3 R_\\mathrm{vir}$ for dwarfs with median $\\log M_\\mathrm{star}/M_\\odot=7.6$ and 8.6, respectively. These reservoirs correspond to $\\approx3$% and $\\approx16$% of the total metals produced over the galaxies' lifetimes. More massive galaxies also exhibit systematically stronger metal absorption, suggesting that projected distance governs the radial decline of metal absorption while stellar mass sets the normalization of the CGM metal profile. Individual ions reveal a multiphase structure, with low-ionization species concentrated in the inner halo and higher-ionization species extending farther. The full QUEST Dwarfs survey will provide the statistical power needed to isolate the dominant drivers of CGM enrichment in low-mass halos.",
+      "url": "https://arxiv.org/abs/2608.15782v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15782v1",
+      "tldr": "QUEST Dwarfs项目旨在揭示低质量星系恒星族群、星际介质与星系周介质（CGM）的联系。首批样本含14个恒星质量≤10⁹ M☉的矮星系，利用背景类星体远紫外吸收光谱追踪CGM，并结合光学光谱与多波段测光约束星系性质。研究发现：总硅柱密度随投影距离快速下降，表明富金属冷气体集中于CGM内部；固定投影距离下，质量越大星系金属吸收越强，即距离决定径向分布，恒星质量设定归一化。低电离离子集中于内晕，高电离离子延伸更远。0.3 R_vir内硅覆盖分数为0.40，高质星系冷CGM内金属质量约10^6.5 M☉。",
+      "affiliations": [
+        "NASA/GSFC",
+        "The Chinese University of Hong Kong",
+        "University of Maryland",
+        "Northwestern University",
+        "The University of Chicago",
+        "Tsinghua University"
+      ],
+      "score": 4.4,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.16456",
+      "title": "CO rotational line emission in very red carbon stars in the Magellanic Clouds",
+      "authors": [
+        "M. A. T. Groenewegen",
+        "A. Nanni",
+        "M. L. Boyer",
+        "L. Decin",
+        "S. R. Goldman",
+        "K. Justtanont",
+        "F. Kerschbaum",
+        "I. McDonald",
+        "H. Olofsson",
+        "R. Sahai",
+        "G. C. Sloan",
+        "J. Th. van Loon",
+        "W. H. T. Vlemmings",
+        "A. A. Zijlstra"
+      ],
+      "abstract": "Stars of low and intermediate initial mass lose most of their stellar mass at the end of their lives during the asymptotic giant branch (AGB) phase. Determining their gas and dust mass-loss rates (MLRs) is crucial for quantifying the contribution of evolved stars to the life cycle of dust and gas in the Universe. The Atacama Large Millimeter/submillimeter Array was used to observe 38 carbon stars (C stars) in the large Magellanic cloud (LMC) and three C stars in the small Magellanic cloud (SMC) in the CO J= 2-1 line. Line profiles were fitted to derive stellar velocities and wind-expansion velocities (Vexp). CO emission is detected in two C stars in the SMC and 33 C stars in the LMC. This is the first detection of carbon monoxide around an AGB star in the SMC. One object in the LMC shows emission in $^{13}$CO. The wind-expansion velocity ranges from \\sim7.5 to \\sim30 km/s. Archival data were used to determine the pulsation periods as well as construct and model the spectral energy distributions using two dust radiative transfer codes. Mass-loss rates were independently derived from these two codes as well as from the intensity of the CO line, using a simple formula. On average, the dust-based MLRs higher than the MLRs based on the CO line by a factor of 1.6. Additional CO data in other transitions, combined with proper modelling, is required to further investigate this possible discrepancy. Mass-loss rates, pulsation periods, and expansion velocities were compared to a sample of Galactic C stars. There is a strong bias, as the Magellanic Cloud targets sample the highest MLRs and luminosities, yet they represent only a minority of stars in a Galactic sample. Comparing this sample with a similarly extreme set of Galactic stars with periods longer than 500 days, we identify no correlation between metallicity and either the MLR or Vexp.",
+      "url": "https://arxiv.org/abs/2608.16456v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16456v1",
+      "tldr": "针对麦哲伦云碳星AGB星质量损失率研究，为检验Gr16初步结论，利用ALMA Band 6对41颗碳星进行CO J=2–1观测，结合谱线拟合与两套辐射转移模型SED拟合导出气体/尘埃质量损失率。结果：35颗检测到CO，其中SMC AGB星首次探测到CO（2/3），LMC探测数由4增至37，并首次在LMC碳星中检测到13CO；尘埃与CO质量损失率平均相差1.6倍。样本总质量损失率约8×10⁻⁴ M⊙/yr，约占LMC全部碳星回馈的6%。",
+      "affiliations": [
+        "National Centre for Nuclear Research",
+        "California Institute of Technology",
+        "University of North Carolina at Chapel Hill",
+        "Keele University",
+        "Chalmers University of Technology",
+        "Space Telescope Science Institute",
+        "University of Leuven",
+        "University of Vienna",
+        "Koninklijke Sterrenwacht van België",
+        "The University of Manchester",
+        "INAF - Osservatorio astronomico d'Abruzzo"
+      ],
+      "score": 4.4,
+      "categories": [
+        "astro-ph.SR",
+        "astro-ph.GA"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.15849",
+      "title": "Planetary systems in the light of asteroseismology: metallicity threshold for the planetary systems and age-metallicity relation",
+      "authors": [
+        "M. Y{\\i}ld{\\i}z",
+        "A. Demirkol",
+        "S. \\\"Ortel",
+        "T. \\c{C}ak{\\i}r Alsa\\c{c}",
+        "T. Daylan"
+      ],
+      "abstract": "We compiled data for 127 hosts (plus six candidates) and used them as constraints to construct interior models of the hosts using the {\\small MESA} code. Two significant conclusions emerge from these models. First, except for a few stars, the hosts' metallicity ($Z_0$) is greater than 0.007. This suggests a possible suppression of the occurrence of planets below $Z_0\\approx0.007$. Second, it concerns how chemical evolution unfolds in the galactic disc. For a given $Z_0$ value, considering the oldest stars, there is a linear relationship between $Z_0$ and age ($t_9$). This line is around $t_9=13.4$ Gyr at $Z_0=0$, a value consistent with the age of the Galaxy. The linear relationship continues until around $t_9=6$ Gyr, and the maximum value of $Z_0$ remains constant between $t_9=2-6$ Gyr. We further modelled 12 hosts classified as red clump (RC) stars in the literature, explicitly accounting for mass loss along the red giant branch. These models highlight the critical role of mass-loss assumptions in determining the initial masses and ages of RC hosts, and their implications for the survival and evolution of close-in planets. Another key outcome of this study is the discovery of the relationship between $Z_0$ and the observed metallicity ($Z_{\\rm s}$) for the hosts. We obtain a useful expression for $Z_0$, the input parameter for the models, as a function of stellar mass, radius, and $Z_{\\rm s}$. This expression can be used to estimate $Z_0$ based on the reduced surface metallicity due to microscopic diffusion. We also derive an expression for planetary mass relative to the orbital semimajor axis and host mass. This expression may indicate a mass distribution near the inner disc where these planets formed, except for hot-Jupiters. Planet radii appear to depend on the planet's mass and irradiation energy, as well as the orbital period.",
+      "url": "https://arxiv.org/abs/2608.15849v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15849v1",
+      "tldr": "研究问题：利用星震学整体刻画行星系统，获得更可靠的恒星与行星参数。方法：汇编127颗行星宿主星及6颗候选体数据，用MESA构建内部模型，以Δν、表面金属丰度Zs等为约束，采用多种建模方法。结果：除少数恒星外，宿主初始金属丰度Z0>0.007，提示低于该阈值行星形成可能被抑制；最老恒星呈现Z0-年龄线性关系；微观扩散使部分恒星表面Zs显著低于Z0，低表面金属丰度不代表低初始丰度；行星半径依赖质量、辐照和轨道周期。贡献：建立133个系统的参考星表并给出参数关系。",
+      "affiliations": [
+        "Ege University",
+        "Washington University"
+      ],
+      "score": 4.3,
+      "categories": [
+        "astro-ph.SR",
+        "astro-ph.EP"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.15040",
+      "title": "Panchromatic JWST Observations and Models of the Dim Type Iax Supernova 2024vjm at 200 days",
+      "authors": [
+        "E Baron",
+        "J. M. DerKacy",
+        "C. Ashall",
+        "M. Shahbandeh",
+        "Peter H. Hauschildt",
+        "T. Barman",
+        "J. P. Aufdenberg",
+        "C. R. Burns",
+        "N. Morrell",
+        "M. D. Stritzinger",
+        "P. Hoeflich",
+        "K. Medler",
+        "E. Fereidouni",
+        "C. M. Pfeffer",
+        "T. Mera",
+        "W. B. Hoogendam",
+        "S. Shiber",
+        "P. J. Brown",
+        "Divya Mishra",
+        "Inma Dominguez",
+        "L. Galbany",
+        "Paolo Mazzali",
+        "E. Y. Hsiao",
+        "Huangfei Xiao",
+        "T. de Jaeger",
+        "S. Kumar"
+      ],
+      "abstract": "We report JWST spectra and photometry of the underluminous SN Iax 2024vjm obtained 202.8 restframe days post-explosion. The spectrum exhibits a rich set of forbidden lines from low-ionization, intermediate-mass, and iron-group elements, notably the [Ni II] 6.64 micron resonance line, which is a direct indicator of stable nickel. Strong CO and SiO emission is detected alongside a warm dust continuum; the spectral properties are consistent with pre-existing rather than newly formed dust. Synthetic spectra were computed with the generalized stellar atmospheres code PHOENIX/1D using simplified ejecta models. The models reproduce the overall spectral energy distribution and the molecular emission features reasonably well, but substantially underestimate the strength of the mid-infrared atomic forbidden lines, leaving the synthetic spectrum dominated by molecular emission. Experiments in which the molecular opacity is suppressed do not recover the forbidden lines; instead, the emission peak migrates to Co and Fe transitions near 2 microns. We attribute this discrepancy to poorly constrained collisional rates and possibly to an excess of iron-group material in the current ejecta models. A prominent feature at 12.8 microns is not well accounted for by the [Ne II] 12.81 micron line, indicating that the 12.8 micron feature may be largely due to [Fe III]. The presence of CO, SiO, and stable nickel together with the non-detection of neon places tight constraints on the total ejecta mass and the nucleosynthetic yields of SNe Iax progenitor systems.",
+      "url": "https://arxiv.org/abs/2608.15040v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15040v1",
+      "tldr": "本研究利用JWST NIRSpec与MIRI/LRS光谱及测光，对最暗近邻Iax型超新星SN 2024vjm在爆发后约202.8天（静止系）进行观测，以探究谱线、分子与尘埃形成。数据覆盖0.7–14微米，并使用PHOENIX简化抛射物模型进行对比。结果显示探测到丰富低电离禁线，尤其[Ni II] 6.64微米指示稳定镍，并首次清晰探测到CO与SiO；尘埃连续谱约1400 K，可能为既有尘埃而非新生成。模型能大致再现SED与分子发射，但显著低估中红外原子禁线；12.8微米特征可能主要来自[Fe III]而非[Ne II]。CO、SiO、稳定镍与氖缺失对总抛射物质量及核合成产额构成强约束。",
+      "affiliations": [],
+      "score": 4.0,
+      "categories": [
+        "astro-ph.SR",
+        "astro-ph.HE"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.16179",
+      "title": "Star Formation in the H II Region Sh 2-205: 3D Morphology and Kinematics from Young Stars and Molecular Gas",
+      "authors": [
+        "Yiwei Dong",
+        "Chaojie Hao",
+        "Ye Xu",
+        "Yingjie Li",
+        "Zehao Lin",
+        "Dejian Liu",
+        "Yan Sun",
+        "Longhui Yang"
+      ],
+      "abstract": "Using Gaia astrometry of young stars combined with CO observations, we present the first systematic three-dimensional (3D) analysis of the structure, kinematics, and evolutionary history of the star-forming regions in the environs of the H II region Sh 2-205 (S205). S205 exhibits a complex morphology and coherent expansion on both global and subregional scales. We identify several O9-B1 stars and a 0.56 Myr old pulsar that are likely associated with the region. A momentum estimate suggests that feedback from these objects may account for the observed overall expansion. Trace-back analysis of the expansion, combined with color-magnitude diagram fitting for young star clusters, indicates at least two episodes of star formation. These results reveal a complex star-formation history of S205 and provide new insights into its 3D evolution.",
+      "url": "https://arxiv.org/abs/2608.16179v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16179v1",
+      "tldr": "本研究首次系统分析H II区S205周边恒星形成区的三维结构、运动学与演化历史。方法上结合Gaia DR3年轻恒星天体测量与MWISP CO分子谱线数据，通过DBSCAN识别分子云、交叉匹配YSOs并进行三维速度分解。结果显示S205距离约1070±15 pc，六个子区均呈向外膨胀，径向运动主导；整体膨胀动量约1.1×10⁵ M⊙ km/s。发现七颗大质量星及候选遗迹脉冲星PSR B0355+54，反馈或可解释观测膨胀。回溯与星族年龄表明至少存在约11–12 Myr和4–5 Myr两期恒星形成。贡献在于首次给出S205三维膨胀证据及多期反馈演化图景。",
+      "affiliations": [
+        "Guangxi University",
+        "University of Science and Technology of China",
+        "China Three Gorges University",
+        "Xinjiang Astronomical Observatory",
+        "Purple Mountain Observatory"
+      ],
+      "score": 3.9,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.16343",
+      "title": "RIOJA. Environmental Effects on Stellar Populations and Ionized Gas in a Protocluster at $z=7.88$",
+      "authors": [
+        "Wataru Osone",
+        "Takuya Hashimoto",
+        "Javier \\'Alvarez-M\\'arquez",
+        "Luis Colina",
+        "Akio K. Inoue",
+        "Ken Mawatari",
+        "Yuma Sugahara",
+        "Carmen Blanco-Prieto",
+        "Takeshi Hashigaya",
+        "Takahiro Morishita",
+        "Massimo Stiavelli",
+        "Santiago Arribas",
+        "Tom J. L. C. Bakx",
+        "Daniel Ceverino",
+        "Alejandro Crespo G\\'omez",
+        "Yoshinobu Fudamoto",
+        "Masato Hagimoto",
+        "Asahi Hamada",
+        "Rui Marques-Chaves",
+        "Yurina Nakazato",
+        "Hideki Umehata",
+        "Hidenobu Yajima",
+        "Hiroshi Matsuo",
+        "Naoki Yoshida",
+        "Yi W. Ren",
+        "Yoichi Tamura"
+      ],
+      "abstract": "Protoclusters in the epoch of reionization provide key laboratories for investigating how environment shapes early galaxy formation and evolution, and may also have contributed to cosmic reionization. We analyze 23 member galaxies of A2744-z7p9OD, a protocluster at $z=7.88$, using JWST/NIRCam and NIRSpec to investigate their stellar population properties, rest-frame UV sizes, and ionized-gas properties. We also quantify the internal structure of A2744-z7p9OD using the projected distance to the most massive galaxy ($D_{\\rm YD4}$), and to the nearest neighbor ($D_{\\rm nei}$), as global and local environmental indicators, respectively. Stellar mass, SFR on a 100 Myr timescale, dust attenuation, and galaxy size show significant correlations ($p<0.05$) with $D_{\\rm YD4}$, but not with $D_{\\rm nei}$, suggesting that these properties are primarily linked to the global protocluster structure. The member galaxies also show a large galaxy-to-galaxy variation in R23 ($=\\log{(([\\mathrm{O}\\text{\\textsc{iii}}]\\lambda\\lambda4960,5008\\rm{\\AA}+[\\mathrm{O}\\text{\\textsc{ii}}]\\lambda\\lambda3727,3730\\rm{\\AA})/\\rm{H}\\beta)}$), implying inhomogeneous chemical enrichment in the protocluster environment. O32 ($=\\log{([\\mathrm{O}\\text{\\textsc{iii}}]\\lambda5008\\rm{\\AA}/[\\mathrm{O}\\text{\\textsc{ii}}]\\lambda\\lambda3727,3730\\rm{\\AA})}$) correlates with $D_{\\rm YD4}$, indicating that the core region is characterized by low-ionization gas. Together with the non-detection of Ly$\\alpha$ emission, the possible neutral-gas reservoir traced by ALMA [C{\\sc ii}]~$158\\mu$m emission, and evidence for high-column-density neutral hydrogen in the core, this suggests a neutral-gas-rich protocluster core where the current escape of ionizing photons may be suppressed, even in a overdense environment during the EoR.",
+      "url": "https://arxiv.org/abs/2608.16343v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16343v1",
+      "tldr": "本研究利用JWST NIRCam成像与NIRSpec光谱分析z=7.88原星系团A2744-z7p9OD的23个成员星系，通过SED拟合和发射线诊断（R23、O32）探究环境效应。结果显示，恒星质量、100 Myr恒星形成率、尘埃消光A_V和UV尺寸与到最亮星系YD4的距离显著相关，但与最近邻距离无关；核心区O32低且Lyα未探测，可能含有中性气体储库。这表明环境效应主要与全球原星系团结构相关，再电离时期核心已形成低电离、富尘埃环境，可能抑制电离光子逃逸。",
+      "affiliations": [
+        "Waseda University",
+        "Tohoku University",
+        "University of Tsukuba",
+        "Universidad Autonoma de Madrid",
+        "Centro de Astrobiología (CAB)",
+        "Chalmers University of Technology",
+        "Space Telescope Science Institute",
+        "National Astronomical Observatory of Japan",
+        "Nagoya University",
+        "Kyoto University",
+        "Johns Hopkins University",
+        "Chiba University"
+      ],
+      "score": 3.8,
+      "categories": [
+        "astro-ph.GA",
+        "astro-ph.CO"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.16060",
+      "title": "Gaia DR3 Limits on Stellar Engine Technosignatures in Nearby Stars",
+      "authors": [
+        "Bo-Lun Huang",
+        "Zhen-Zhao Tao",
+        "Tong-Jie Zhang",
+        "Zhi-E Liu"
+      ],
+      "abstract": "An operating stellar engine that transfers momentum to its host star could produce an approximately persistent transverse acceleration during the Gaia Data Release 3 (DR3) observing epoch. We search for such accelerations among 406,984 quality-selected Gaia DR3 stars with nominal distances below 200 pc (about 650 light-years), using 8,890 published Acceleration7 solutions. Because long-period binaries and astrometric systematics can produce similar sky-plane curvature, we model these conventional explanations together with a broad component that can absorb any remaining persistent acceleration or model mismatch. At $a_0 = 2.60 \\times 10^{-4}$ m s$^{-2}$, where essentially the entire parent sample is searchable, mapping the residual weights evaluated at the one-sided 95% profile-limit point gives a parent-population fraction limit of $1.21 \\times 10^{-5}$. Multiplying this fraction by the parent-sample size gives a summed upper-limit weight of about five star-equivalents above the threshold. Toward the lowest acceleration thresholds, the searchable fraction declines rapidly, so the corresponding bounds primarily describe the reach of the search. No individual source is interpreted as a technological signal.",
+      "url": "https://arxiv.org/abs/2608.16060v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16060v1",
+      "tldr": "本简报基于Gaia DR3，研究邻近恒星中恒星引擎式持续横向加速度的上限。母样本为406,984颗G<14、视差>5 mas的恒星，采用8,890个高显著性A7加速度解。将显著性分布建模为星表系统效应、长周期双星和残余持续加速度的混合，并用轮廓似然约束残余组分比例。结果：在横向加速度阈值2.60×10⁻⁴ m s⁻²处，可搜索比例接近1，95%上限为1.21×10⁻⁵，相当于母样本中约5个恒星等效；较低阈值处可搜索比例下降，约束主要反映搜寻范围。未将任何个源解释为技术信号。",
+      "affiliations": [
+        "Beijing Normal University",
+        "Qilu Normal University",
+        "Dezhou University"
+      ],
+      "score": 3.8,
+      "categories": [
+        "astro-ph.GA",
+        "astro-ph.SR"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.16825",
+      "title": "Identifying AGNs from X-ray detections$-$II: Metallicity calibrations for the $\\rm N_2O_2$ and $\\rm N_2S_2$ diagnostics",
+      "authors": [
+        "Mark Armah",
+        "O. L. Dors",
+        "Rog\\'erio Riffel",
+        "M. V. Cardaci",
+        "G. F. H\\\"agele",
+        "Rogemar A. Riffel",
+        "J. M. V\\'ilchez"
+      ],
+      "abstract": "Emission-line ratios from ions with nearly identical ionization potentials offer a robust solution to the degeneracies inherent to traditional active galactic nuclei (AGNs) metallicity diagnostics. We introduce new semi-empirical metallicity calibrations for the $\\rm N_2O_2$ and $\\rm N_2S_2$ diagnostics, explicitly designed to isolate the chemical abundance from the incident radiation field. By coupling an extensive grid of CLOUDY photoionization simulations directly to the intrinsic 2$-$10 keV X-ray luminosity ($L_{\\rm X}$) and benchmarking against Seyfert~2 nuclei from the Burst Alert Telescope AGN Spectroscopic Survey (BASS), we establish robust relations valid across the metallicity regime of $8.0 \\lesssim 12+\\log({\\rm O/H}) \\lesssim 9.1$ ($0.2 \\lesssim Z/Z_{\\odot} \\lesssim 2.6$). The $\\rm N_2O_2$ and $\\rm N_2S_2$ indices trace co-spatial emitting volumes within the narrow-line regions (NLRs), enabling this framework to resolve the significant $L_{\\rm X}$-driven systematic biases we previously identified in the standard $\\rm N_2$ and $\\rm N_2O_3$ indices. While the $\\rm N_2O_2$ ratio proves to be virtually independent of nebular structural variations, the $\\rm N_2S_2$ index exhibits a subtle, yet discernible, electron density ($N_{\\rm e}$) susceptibility due to the low critical density ($N_{\\rm c}$) of the [S II]$\\lambda\\lambda6716,6731$ doublet. Nevertheless, both diagnostics yield highly precise metallicity constraints with tight root-mean-square residual dispersions of $\\sim 0.081$ dex for $\\rm N_2O_2$ and $\\sim 0.121$ dex for $\\rm N_2S_2$. We propose the $\\rm N_2O_2$ and $\\rm N_2S_2$ calibrations as highly optimized, unbiased metallicity tracers for AGNs.",
+      "url": "https://arxiv.org/abs/2608.16825v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16825v1",
+      "tldr": "研究问题：AGN窄线区金属丰度诊断存在X射线光度驱动的系统偏差。方法：基于Cloudy光致电离模型网格，以2–10 keV X射线光度替代经典电离参数，结合BASS DR2 Seyfert 2样本建立N2O2与N2S2半经验标定。结果：两种诊断对Lx不敏感，N2O2几乎不受星云结构变化影响，N2S2具轻微电子密度依赖；RMS弥散分别为0.081和0.121 dex，较N2/O3N2提高约2倍。贡献：提供优化的AGN金属丰度探针。",
+      "affiliations": [
+        "Instituto de Astrofísica de La Plata",
+        "Universidade do Vale do Paraíba",
+        "Universidade Federal de Santa Maria",
+        "Universidad Nacional de La Plata",
+        "CSIC",
+        "Universidade Federal do Rio Grande do Sul"
+      ],
+      "score": 3.7,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.16818",
+      "title": "Eta Carinae's historical light curve: evidence for cyclic Roche lobe overflow from the primary star",
+      "authors": [
+        "Augusto Damineli",
+        "Leonardo A. Almeida",
+        "Francisco J. Jablonski",
+        "Eduardo Fern\\'andez-Laj\\'us",
+        "Felipe Navarete",
+        "Eder Martioli",
+        "Gerd Weigelt",
+        "Rodrigo Capobiango"
+      ],
+      "abstract": "The large amount of ground-based photometric measurements of $\\eta$ Carinae obtained since 1940 have remained problematic for quantitative modeling due to the blending of flux from the stellar core and the surrounding circumstellar nebula. In the era of the Hubble Space Telescope, spatially resolved imaging & spectrophotometry have enabled disentanglement of these components, allowing recovery of the stellar core $V$-band brightness from ground-based observations. We isolate the $V$-band fluxes of the stellar core and nebula using 1999--2020 HST (ACS and STIS) observations, and use these to calibrate coeval ground-based photometry. The main finding is an orbital light curve with an amplitude $\\Delta m \\approx \\pm 0.2\\,$mag, many times higher than that modeled by ellipsoidal deformation of the primary. The observations suggest that Roche lobe overflow starts at $- 75$ days before periastron in coincidence with the start of rising in the orbital light curve, and remains for 150 days. An expanding (and afterwards dissipating) gas cloud reflecting the light from the primary would explain the observed large amplitude of the orbital light curve. A sharp periodic photometric peak occurs at $\\sim -18$ days from the periastron. It is followed by a broad minimum around the superior conjunction of the secondary (T$_0+5.2$ days), which we interpret as a partial eclipse of the ejected material, in coincidence with the \\emph{shallow minimum} in X-rays, which also has been attributed to an eclipse.",
+      "url": "https://arxiv.org/abs/2608.16818v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16818v1",
+      "tldr": "研究问题：解释船底座η星1963–2026年的光度事件，并分离星核与星云的V波段辐射。方法：联合1999–2020年HST ACS/STIS空间分辨观测与地面测光，利用星云V≈5.5等近乎恒定的特点，扣除后重建星核光变曲线。结果：星核轨道调制幅度约±0.2等，远大于椭球变形模型预测；光度峰出现在近星点前约18天，近星点后5.2天出现偏食极小。据此提出主星发生周期性洛希瓣溢流，抛出物质反射星光，从而解释大幅轨道光变。",
+      "affiliations": [
+        "Instituto Nacional de Pesquisas Espaciais",
+        "Laboratório Nacional de Astrofísica",
+        "CONICET/UNLP",
+        "Universidade Federal do Rio Grande do Norte",
+        "Max Planck Institute for Radio Astronomy",
+        "Universidade de São Paulo"
+      ],
+      "score": 3.7,
+      "categories": [
+        "astro-ph.SR",
+        "astro-ph.GA"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.15334",
+      "title": "Improved constraints on the Milky Way potential using the M68 stream and DESI spectroscopic data",
+      "authors": [
+        "Carles G. Palau",
+        "Wenting Wang",
+        "Jiaxin Han",
+        "J. Aguilar",
+        "S. Ahlen",
+        "F. Beutler",
+        "D. Bianchi",
+        "D. Brooks",
+        "A. Carnero Rosell",
+        "F. J. Castander",
+        "T. Claybaugh",
+        "A. Cuceu",
+        "A. de la Macorra",
+        "J. E. Forero-Romero",
+        "E. Gazta\\~naga",
+        "Satya Gontcho A Gontcho",
+        "G. Gutierrez",
+        "J. Guy",
+        "D. Kirkby",
+        "A. Kremin",
+        "M. Landriau",
+        "L. Le Guillou",
+        "A. Leauthaud",
+        "G. E. Medina",
+        "A. Meisner",
+        "R. Miquel",
+        "S. Nadathur",
+        "H. E. Noriega",
+        "E. Paillas",
+        "N. Palanque-Delabrouille",
+        "W. J. Percival",
+        "F. Prada",
+        "I. P\\'erez-R\\`afols",
+        "C. Ravoux",
+        "G. Rossi",
+        "R. Ruggeri",
+        "E. Sanchez",
+        "C. Saulder",
+        "D. Schlegel",
+        "M. Schubnell",
+        "M. Siudek",
+        "G. Tarl\\'e",
+        "B. A. Weaver",
+        "H. Zou"
+      ],
+      "abstract": "We present a selection of stars belonging to the stellar stream of the M68 (NGC 4590) globular cluster, also known as Fj\\\"orm. This star selection is an improvement on previous ones that used only Gaia data, as it incorporates spectroscopic measurements from the DESI survey and photometric data from the DESI Legacy Surveys. The selection contains 96 stars, each with five phase-space parameters from Gaia-DR3 and radial velocity from DESI, covering the entire observed section of the stream. This constitutes the largest selection of M68 stream stars with measured radial velocities to date. The observed stream is wider than expected from N-body simulations, and the stars farthest from the centre of the stream appear to be correlated in radial velocity space. This suggests that these stars cannot have been stripped from the cluster in a static axisymmetric potential. By modelling a mock sample of stream stars created using an N-body simulation, we found that we could reliably constrain the disc mass $M_{\\rm d}$ and the dark matter halo axis ratio $q_{\\rm h}$ of the Milky Way. This is because the stream flows close to and almost parallel to the disc. Using the 44 stars that are consistent with having been stripped from the cluster, combined with measurements of the Milky Way's rotation curve, we constrain the Galactic potential, obtaining $M_{\\rm d} = 5.34 \\pm 0.57 \\times 10^{10}$ M$_{\\rm sun}$ and an oblate halo of $q_{\\rm h} = 0.83^{+0.06}_{-0.05}$. Additionally, by fitting the stream track, we estimate the Heliocentric distance of M68 to be $r=10.55\\pm0.09$ kpc.",
+      "url": "https://arxiv.org/abs/2608.15334v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15334v1",
+      "tldr": "针对银河系势约束问题，本研究利用M68星流和DESI数据。方法上先用N体模拟与模拟观测星表检验拟合方法，再以DESI MWS三年光谱、Gaia DR3天测和Legacy Surveys测光筛选出96颗M68星流恒星，取其中44颗中央成分恒星并结合银河旋转曲线拟合轴对称势。结果显示盘质量Md=5.34±0.57×10^10太阳质量，暗晕扁率qh=0.83(+0.06/-0.05)，M68日心距10.55±0.09 kpc。贡献是迄今最大且最精确的M68星流光谱候选样本，并验证Md与qh可可靠约束。",
+      "affiliations": [],
+      "score": 3.7,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.14786",
+      "title": "JWST/NIRSpec Spectra for Three Ultracool Brown Dwarfs Detected in Extragalactic Surveys: Further Evidence for Phosphine Absorption",
+      "authors": [
+        "Kevin N. Hainline",
+        "Samuel A. Beiler",
+        "Adam J. Burgasser",
+        "Evan S. Chen",
+        "Jakob M. Helton",
+        "Jarron Leisenring",
+        "Brittany E. Miles",
+        "Mark S. Marley",
+        "Sagnick Mukherjee",
+        "Stefi Baum",
+        "Andrew J. Bunker",
+        "Stefano Carniani",
+        "Francesco D'Eugenio",
+        "Eiichi Egami",
+        "Tobias J. Looser",
+        "Pierluigi Rinaldi",
+        "Christopher N. A. Willmer"
+      ],
+      "abstract": "We present JWST NIRSpec prism spectra for three ultracool brown dwarfs discovered in extragalactic survey data, two from the JWST Advanced Deep Extragalactic Survey (JADES), and one from Public Release IMaging for Extragalactic Research (PRIMER) survey observed as part of the Mirage or Miracle (MoM) program. The spectra for these sources indicate that one is a T6 dwarf (JADES-GS-BD-11, T$_{\\mathrm{eff}} = \\sim 700$ K) and two are Y0-Y1 dwarfs (JADES-GS-BD-5, T$_{\\mathrm{eff}} = \\sim 400$ K, and MoM-239450, T$_{\\mathrm{eff}} = \\sim 500$ K). Model atmospheric fits with $\\texttt{NIFTY}$ to the spectra are consistent with this classification, and indicate that JADES-GS-BD-5 is only $\\sim 150$ pc from the Sun, MoM-239450 is $\\sim 700 - 800$ pc from the Sun, and JADES-GS-BD-11 is $\\sim 1$ kpc from the Sun, with these latter two more distant sources being best fit at sub-solar metallicities. JADES-GS-BD-5 has an observed spectrum with significantly weaker J and H band emission than Y dwarf atmospheric models, potentially indicating the presence of water ice clouds in the brown dwarf. The spectrum for JADES-GS-BD-11 has a feature at 4.3$\\mu$m consistent with absorption from the rarely seen phosphine molecule at $2.6\\sigma$ confidence. Given the low metallicity for this source ([M/H] $ = -0.7$), our finding supports the theory that detecting phosphine in brown dwarf atmospheres is tied to atmospheric metallicity. JWST/NIRSpec spectroscopy continues to be a powerful tool for understanding the properties of these distant, and very cold brown dwarfs.",
+      "url": "https://arxiv.org/abs/2608.14786v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14786v1",
+      "tldr": "本研究针对河外巡天中发现的三颗极冷褐矮星（JADES-GS-BD-5、JADES-GS-BD-11、MoM-239450），利用韦布空间望远镜近红外光谱仪棱镜光谱覆盖0.6至5.5微米，结合光谱分类与大气模型拟合及反演，确认其褐矮星身份并测定有效温度、距离和金属丰度。结果显示：JADES-GS-BD-11为T6型，有效温度约700开尔文，距离约1千秒差距，金属丰度偏低，在4.3微米处存在疑似磷化氢吸收；JADES-GS-BD-5与MoM-239450均为Y0至Y1型，温度约400与500开尔文，距离分别约150与700至800秒差距。该工作展示韦布望远镜研究远距离冷褐矮星的能力，并支持低金属丰度有利于探测磷化氢的理论。",
+      "affiliations": [
+        "Arizona State University",
+        "University of Manitoba",
+        "University of California, San Diego",
+        "Pennsylvania State University",
+        "Trinity College Dublin",
+        "University of Cambridge",
+        "Space Telescope Science Institute",
+        "Monta Vista High School",
+        "University of Arizona",
+        "University of Oxford",
+        "Center for Astrophysics | Harvard & Smithsonian",
+        "Scuola Normale Superiore"
+      ],
+      "score": 3.6,
+      "categories": [
+        "astro-ph.SR"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.15633",
+      "title": "Multiphase turbulence as the origin of OH+, H2O+ and H3+ column density scatter in the local ISM",
+      "authors": [
+        "Uri Malamud",
+        "Shmuel Bialy",
+        "Benjamin Godard",
+        "David Neufeld",
+        "Blakesley Burkhart"
+      ],
+      "abstract": "Observations of the reactive ions OH+, H2O+ and H3+ in the Galactic interstellar medium reveal large sight-line-to-sight-line scatter in their column densities, commonly interpreted as evidence for substantial variations in the cosmic-ray ionization rate (CRIR). We revisit this interpretation using high-resolution three-dimensional magneto-hydrodynamic simulations of the multiphase ISM with time-dependent chemistry for H, H2, H+ and electrons, building on the fiducial model of Godard et al. (2023). We find that a single CRIR of ~2 10^{-16} s^{-1}, together with standard Galactic-scale parameters, naturally produces broad column-density distributions for all three tracers in good agreement with the observed medians and percentile widths, with no fine tuning. Reaching this match requires that the post-processing of OH+, H2O+ and H3+ retain the time-dependent H2 field generated by the turbulent flow rather than assume chemical equilibrium: turbulence drives long-lived H2 enhancements in the unstable neutral medium where OH+ and H2O+ predominantly reside, and an equilibrium treatment under-predicts their columns substantially. H3+, which receives most of its column from denser CNM gas closer to equilibrium, is much less affected. Our results caution against interpreting sight-line-to-sight-line scatter as direct evidence for large CRIR fluctuations, and motivate a shift from independent 1D equilibrium analyses toward 3D dynamical frameworks when inferring ionization conditions in the ISM.",
+      "url": "https://arxiv.org/abs/2608.15633v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15633v1",
+      "tldr": "研究问题：检验OH⁺、H₂O⁺和H₃⁺柱密度观测弥散是否必须归因于宇宙射线电离率（CRIR）的大幅空间变化。方法：采用高分辨率三维MHD模拟（RAMSES），结合时变H₂/电子化学，后处理计算三种离子丰度，重建合成视线并与观测柱密度分布对比。结果：在单一CRIR≈2×10⁻¹⁶ s⁻¹下即可再现观测中位数与百分位宽度；非平衡H₂增丰对OH⁺/H₂O⁺至关重要，而H₃⁺主要来自近平衡的致密CNM。贡献：表明观测弥散可主要来自多相湍流结构而非CRIR剧烈波动。",
+      "affiliations": null,
+      "score": 3.6,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.16754",
+      "title": "High Velocity Neutral Gas in the Fermi Bubbles: New Kinematic Limits and Spatial Structure",
+      "authors": [
+        "Felix J. Lockman",
+        "Enrico M. Di Teodoro",
+        "Savannah Cary",
+        "Andrew J. Fox"
+      ],
+      "abstract": "We have detected hundreds of neutral clouds entrained in the Milky Way's nuclear wind using HI data from new surveys made with the Green Bank Telescope that cover about 500 sq-degrees around the Galactic center (GC). Galactic winds are common throughout the Universe, and these data at 9.1' angular resolution (22 pc at the GC) provide the most detailed analysis of the vertical profile of a neutral nuclear wind in any galaxy. A set of 228 of these Fermi Bubble clouds with the largest values of |VLSR| has been analyzed to examine the distribution and kinematics of the outflowing gas. The clouds span -335 km/s $\\leq$ VLSR $\\leq$ +438 km/s, the largest positive LSR velocities ever reported for neutral HI associated with the Milky Way disk. The highest velocities are found furthest from the GC, suggesting that clouds are accelerated from a low velocity near the nucleus to at least 500 km/s at a radial distance of $\\lesssim 4$ kpc. Clouds appear disrupted as they are accelerated: their line brightness and NHI decreases steadily with distance from the GC, and the population becomes more uniform. There is an abrupt cutoff in the neutral clouds at a vertical distance of $\\approx2$ kpc from the Galactic plane. Kinematic models of an outflowing cloud population that fills the FB volume are used to identify structure in the gas. The kinematics of the highest velocity, highest latitude clouds imply a past azimuthal asymmetry in the outflow.",
+      "url": "https://arxiv.org/abs/2608.16754v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16754v1",
+      "tldr": "本文利用绿岸望远镜（GBT）21cm中性氢巡天数据，研究费米气泡核外流中冷云的运动学。数据覆盖银心周围约500平方度，在|V_LSR|≥130 km/s下识别228个云。云速度介于-335至+438 km/s，为迄今银河系盘最快的HI发射；最高速云距银心最远，表明外流将云加速至至少500 km/s。云亮温与柱密度随距银心距离下降，云群更均匀；在z≈2 kpc处突然截断，b>10.6°处无正速度云。高速高纬云在经度-速度图上呈方位角不对称，反映外流结构不对称。",
+      "affiliations": [
+        "INAF",
+        "University of California Berkeley",
+        "Università di Firenze",
+        "Space Telescope Science Institute",
+        "National Radio Astronomy Observatory"
+      ],
+      "score": 3.6,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.14989",
+      "title": "Aromatics and Aliphatics in Local Star-Forming Galaxies as Probed by AKARI",
+      "authors": [
+        "Junhao Peng",
+        "Xuejuan Yang",
+        "Aigen Li"
+      ],
+      "abstract": "Polycyclic aromatic hydrocarbon (PAH) molecules are abundant and widespread in galaxies and their infrared (IR) emission traces star formation. PAH molecules in astronomical environments often have aliphatic contents as revealed by the detection of the 3.4 micron aliphatic C--H stretch, a weak satellite feature accompanying the 3.3 micron aromatic C--H stretch. Here, we selected 102 local star-forming galaxies from the AKARI archive, including 66 galaxies each of which hosts an active galactic nucleus (AGN). We analyzed their AKARI near-IR spectra, which exhibit pronounced 3.3 micron aromatic and 3.4 micron aliphatic C--H emission. We also compiled their multi-wavelength photometric data and performed a decompositional analysis of their spectral energy distributions (SEDs) from the ultraviolet (UV) to the far-IR to derive the star formation rates (SFRs), stellar masses, metallicities, and luminosity of the galaxies. We explored the 3.3 micron PAH emission luminosity ($L_{3.3}$) as a calibrator of the SFR and found a close agreement with previous studies. We also found that $L_{3.3}/L_{\\rm IR}$ and $L_{3.4}/L_{\\rm IR}$ exhibit a strong dependence on metallicity, but remain nearly constant above 12+log(O/H)$\\sim\\,$8.5, where $L_{\\rm IR}$ is the total luminosity emitted by dust, and $L_{3.4}$ is the luminosity of the 3.4 micron aliphatic emission. We derived from $L_{3.4}/L_{3.3}$ the PAH aliphatic fractions, defined as the fractions of carbon atoms in aliphatic units, to be in the range of $\\sim\\,$0.38%--6.8%, with a median fraction of $\\sim\\,$3.1%. The PAH aliphatic fractions are lower in AGN hosts and show a weak negative correlation with the SFR and $L_{\\rm IR}$, suggesting that UV photons in regions with AGN or strong star formation activities may photodissociate the aliphatic structures associated with PAH molecules.",
+      "url": "https://arxiv.org/abs/2608.14989v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14989v1",
+      "tldr": "本研究利用AKARI/IRC近红外光谱（2.5–5.0 μm）分析102个局域恒星形成星系（含66个AGN宿主）的3.3 μm芳香族与3.4 μm脂肪族PAH发射。结合紫外至远红外多波段测光，使用CIGALE进行SED分解，并对PAH特征进行谱拟合。结果显示：3.3 μm光度可作为恒星形成率（SFR）的标定器，与先前研究一致；L₃.₃/L_IR和L₃.₄/L_IR强依赖金属性，在12+log(O/H)≳8.5后趋平；脂肪族分数η_ali中位数约3.1%，AGN宿主中更低，且与SFR、比SFR及红外光度弱负相关，但与金属性无显著相关。研究揭示强紫外线可能光解离脂肪族结构，而PAH–金属性关系并非由该机制主导。",
+      "affiliations": [
+        "University of Missouri",
+        "Xiangtan University"
+      ],
+      "score": 3.5,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.15997",
+      "title": "The Koi Pond: A Strongly Lensed Protocluster Core hosting a Diverse Population of DSFGs",
+      "authors": [
+        "Nicholas Foo",
+        "Kevin C. Harrington",
+        "Brenda L. Frye",
+        "Patrick S. Kamieneski",
+        "Melanie Kaasinen",
+        "Rafael Ortiz III",
+        "Alex Pigarelli",
+        "Gibson B. Bowling",
+        "Bel\\'en Alcalde Pampliega",
+        "Joe Bhangal",
+        "Timothy Carleton",
+        "Jianhang Chen",
+        "Seth H. Cohen",
+        "Camila de S\\'a-Freitas",
+        "Jose Diego",
+        "Rom\\'an Fern\\'andez Aranda",
+        "Carlos Garcia Diaz",
+        "Nikhil Garuda",
+        "Eric F. Jim\\'enez-Andrade",
+        "Daizhong Liu",
+        "James D. Lowenthal",
+        "Allison Man",
+        "Allison Noble",
+        "Massimo Pascale",
+        "Francesca Rizzo",
+        "Hannah R. Stacey",
+        "Amit Vishwas",
+        "Q. Daniel Wang",
+        "Rogier A. Windhorst",
+        "Ilsang Yoon",
+        "Min S. Yun",
+        "Dazhi Zhou"
+      ],
+      "abstract": "We present James Webb Space Telescope (JWST) and Atacama Large Millimeter Array (ALMA) observations of PJ0846+15, \\textit{The Koi Pond}, a strongly lensed protocluster core at Cosmic Noon. This field offers a magnified view of 11 dusty star-forming galaxies (DSFGs) all at $z=2.67$ (within $\\Delta V=800$ km s$^{-1}$) spanning a projected extent of $>300$ kpc lensed by a $z=0.77$ foreground cluster. NIRCam and ALMA Band 6 continuum measurements map the stellar distribution and thermal dust emission respectively at a spatial resolution of $\\sim$0.15$^{\\prime\\prime}$. This analysis reveals a diverse population of DSFGs, with evidence of both interacting and non-interacting systems exhibiting a wide range of morphological features including spiral arms, bars, bulges, clumps/stellar clusters, tidal tails/debris and displaced molecular gas reservoirs. Comparing the rest-frame J- band continuum (F444W) vs (i-J) color (F277W$-$F444W), we find a wide range of values, suggesting a $>$1-dex spread in stellar mass and a dust attenuation reddening of $\\Delta A_{\\mathrm{V}} > 1$ mag. The DSFG members exhibit varying dust sizes relative to the stellar emission, ranging from compact dusty cores to galaxy-wide emission. Resolved color maps of individual sources showing a spread as high as F277W$-$F444W$=2$ mag suggesting complex stellar-to-dust geometry. Although gas-rich mergers are identified in the core, the most red and dust emitting members are disks exhibiting clumpy structure indicating secular growth can drive these starburst events. Such a remarkable range in properties within this sample suggest DSFGs in protocluster core environments follow diverse evolutionary pathways towards their transition into quiescent, elliptical cluster galaxies.",
+      "url": "https://arxiv.org/abs/2608.15997v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15997v1",
+      "tldr": "本研究利用JWST/NIRCam与ALMA Band 6连续辐射观测，以约0.15角秒分辨率解析了红移2.67强透镜原星系团核“The Koi Pond”（PJ0846+15）中11个尘埃恒星形成星系（DSFG）的恒星结构与尘埃分布。结果显示成员星系形态高度多样，包含旋臂、棒、核球、星团及潮汐尾等；恒星质量跨度>1 dex，尘埃消光ΔA_V>1 mag，且尘埃辐射普遍比恒星辐射更致密。多个并合系统及盘状星系的团块结构表明，无并合的内禀增长亦可驱动星暴；DSFG可能经由多样路径向宁静椭圆星系演化。",
+      "affiliations": null,
+      "score": 3.4,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.14984",
+      "title": "Detection of Aliphatically Deuterated Aromatic Hydrocarbons in the Large Magellanic Cloud 30 Doradus Star-Forming Complex",
+      "authors": [
+        "Junhao Peng",
+        "Xuejuan Yang",
+        "Aigen Li"
+      ],
+      "abstract": "The unidentified infrared (IR) emission (UIE) bands at 3.3, 6.2, 7.7, 8.6, 11.3 and 12.7 micron are ubiquitously seen in a wide variety of astrophysical environments. While the exact assignment of these UIE bands remains controversial, they are generally ascribed to C--H and C--C stretching and bending vibrations of aromatic hydrocarbon molecules. Here, based on observations made with the Near Infrared Spectrograph (NIRSpec) and the Mid Infrared Instrument (MIRI) aboard the James Webb Space Telescope (JWST), we report that the UIE emitters in the 30 Doradus star-forming complex in the Large Magellanic Cloud (LMC) are deuterated and have an appreciable amount of aliphatic content. The spatially resolved NIRSpec and MIRI spectra of 30 Doradus reveal a widespread detection of the 3.4 and 6.85 micron emission features attributed to aliphatic C--H stretch and deformation, respectively, as well as the 4.65 micron feature attributed to aliphatic C--D stretch. Notably, the 6.85 micron feature exhibits three complex substructures at ~6.83, 6.86 and 6.88 micron that have never been reported before.",
+      "url": "https://arxiv.org/abs/2608.14984v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14984v1",
+      "tldr": "基于JWST NIRSpec/MIRI IFU对30 Doradus的ERO光谱数据，采用PAHFIT分解，研究未知红外发射（UIE）载体的脂肪族与氘代特征。结果显示3.3、3.4、6.85和4.65微米发射普遍存在；6.85微米脂肪族C–H变形带首次分解为约6.83、6.86、6.88微米三个子成分；3.4与4.65微米强度相关（r≈0.91），支持其为脂肪族C–D伸缩。这表明30 Doradus的芳香族UIE分子被氘代，并含有可观的脂肪族含量。",
+      "affiliations": [
+        "University of Missouri",
+        "Xiangtan University"
+      ],
+      "score": 3.4,
+      "categories": [
+        "astro-ph.GA",
+        "astro-ph.SR"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.16149",
+      "title": "Catalytic formation of H_2 on carbonaceous dust grains - implications for interstellar observations",
+      "authors": [
+        "Aryav Das",
+        "Julia Gao",
+        "Daniel Vrinceanu",
+        "H. R. Sadeghpour"
+      ],
+      "abstract": "We use kinetic Monte Carlo (KMC) simulations to study molecular hydrogen formation on carbonaceous dust grain surfaces, validated against recent laboratory measurements of H$_2$ formation on coronene films at temperatures from 10 to 250 K. The model uses a three-dimensional amorphous carbon lattice with heterogeneous physisorption ($45 \\pm 5$ meV) and chemisorption ($1.75 \\pm 0.25$ eV) sites, and tracks both Langmuir--Hinshelwood (LH) and Eley--Rideal (ER) formation channels within a stochastic Gillespie event-driven framework. The model reproduces the measured efficiency curve within the experimental uncertainties, including the isothermal (constant surface temperature) measurements at 100 - 250 K. The simulations correctly describe the phase boundary between the LH and ER driven processes as functions of grain temperature and the observed crossover. Under interstellar medium conditions, 10 - 250 K and n = 10 - 10$^4$ cm$^3$, the model predicts three distinct regimes for the formation efficiency $\\epsilon$, the fraction of impinging H atoms released as H$_2$. At 10 K diffusion is slow and $\\epsilon \\approx 0.06$. Between 20 K and 80 K, LH dominates and $\\epsilon \\approx 0.28$. Above 150 K, an ER plateau at $\\epsilon = 0.19$ is sustained by chemisorption-trapped H atoms. The LH-to-ER crossover occurs between 100 and 120 K. At 100 K we observe a 16\\% density-dependent stochastic enhancement, which rate-equation models cannot capture. At T$_{dust}$ = 60 K, n = 10$^3$ cm$^3$ we find the ratio of H$_2$ formation to free-fall time $t_{{\\rm H}_2}/t_{\\rm ff} \\approx 0.93$, so dust-catalysed H$_2$ chemistry can keep pace with gravitational collapse in high-redshift star-forming environments.",
+      "url": "https://arxiv.org/abs/2608.16149v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16149v1",
+      "tldr": "**研究简报：碳质尘埃表面H₂形成的动力学蒙特卡洛模拟**\n\n本研究采用动力学蒙特卡洛（KMC）方法，系统模拟碳质星际尘埃颗粒表面的分子氢形成过程，并利用Grieco等（2023）的冠状烯薄膜实验数据（10–250 K）进行验证。模型再现了实验效率曲线，并揭示出Langmuir-Hinshelwood（LH）与Eley–Rideal（ER）机制间的相变：低于100 K时LH主导（约97%），100–120 K间ER占比跃升至75%以上，150 K以上完全由ER通道维持，效率平台约0.19。模拟还发现100 K处存在16%的密度依赖随机增强效应，此特征为平均场速率方程所缺失。宇宙学应用方面，在T_dust=60 K、n_H=10³ cm⁻³条件下t_H₂/t_ff≈0.93，表明碳质尘埃催化可匹配高红移星系的引力坍缩时标。",
+      "affiliations": [
+        "Fairview High School",
+        "Park Tudor School",
+        "Center for Astrophysics | Harvard & Smithsonian",
+        "Texas Southern University"
+      ],
+      "score": 3.4,
+      "categories": [
+        "astro-ph.GA",
+        "astro-ph.SR"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.14939",
+      "title": "Local Interstellar Flow Parameters from the First Intersection of IMAP-Lo's Parameter Tubes",
+      "authors": [
+        "Nathan A. Schwadron",
+        "Mitchell M. Shen",
+        "Fatemeh Rahmanifard",
+        "Eberhard Moebius",
+        "Hafijul Islam",
+        "Jonathan S. Bower",
+        "Maciej Bzowski",
+        "Eric R. Christian",
+        "Ken Fairchild",
+        "Herbert O. Funsten",
+        "Stephen A. Fuselier",
+        "Andre Galli",
+        "Jonathan Gasser",
+        "Matina Gkioulidou",
+        "David Heirtzler",
+        "Izabela Kowalska-Leszczyska",
+        "Marzena A. Kubiak",
+        "David J. McComas",
+        "Jonathan T. Niehof",
+        "Jamie S. Rankin",
+        "Justyna Sokol",
+        "Pawel Swaczyna",
+        "Jamey R. Szalay",
+        "Carol Weaver",
+        "Peter Wurz",
+        "Gary P. Zank",
+        "Eric J. Zirnstein"
+      ],
+      "abstract": "The Sun's motion through the interstellar medium creates a flow of interstellar neutral (ISN) atoms through the heliosphere. ISN He, due to its high universal abundance and relatively low ionization rate, is the most abundant of the interstellar species near 1 au and ideal for flow parameter determination. The Interstellar Boundary Explorer (IBEX) measurements of ISN He flow parameters (speed, temperature, and direction) yielded a tube in 4D parameter space -- narrow in cross-section but highly extended along one parameter axis (e.g., ecliptic longitude direction). This ``4D parameter tube'' results in large systematic uncertainties, a direct consequence of IBEX-Lo's fixed viewing orientation on the spacecraft. On the Interstellar Mapping and Acceleration Probe (IMAP), the articulation of the IMAP-Lo boresight using its pivot platform enables multiple viewing orientations of the ISN flow for significant systematic uncertainty reduction. We provide first results that definitively intersect ISN parameter tubes for elongation angles $79^\\circ$, 94$^\\circ$, and 109$^\\circ$, resulting in precise interstellar parameters: speed $26.37 \\pm 0.82$ km s$^{-1}$, ecliptic longitude direction $74.85^\\circ \\pm 0.96^\\circ$, ecliptic latitude direction $-5.212^\\circ \\pm 0.035^\\circ$, and temperature $7740^{+770}_{-730}$ K. The inferred flow of the Very Local Interstellar Medium is not consistent with either the Local Interstellar Cloud or the G-Cloud, but rather an intermediate state. IMAP is now positioned to study the detailed physics of this complex, nearby interstellar region. By resolving and understanding its physics, we determine how the heliosphere responds to the local interstellar flow, and how it may evolve in time",
+      "url": "https://arxiv.org/abs/2608.14939v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14939v1",
+      "tldr": "研究简报：IMAP-Lo通过多角度观测破解星际流参数简并。针对IBEX固定视角导致星际中性氦参数管退化、系统不确定度大的问题，IMAP-Lo利用转向平台在79°、94°、109°伸长角交叉ISN参数管；以H⁻计数和ESA步骤3（约56 eV）数据为主，修正次级中性氦、电离损失及溅射效率，并采用加权χ²拟合。测得VLISM流速26.37±0.82 km/s，黄经74.85°±0.96°，黄纬-5.212°±0.035°，温度7740(+770/-730) K。结果表明VLISM处于局部星际云（LIC）与G云之间的中间态，与两者均不一致；系统不确定性较IBEX降低约2–3倍，成功破除参数简并。",
+      "affiliations": [
+        "University of Bern",
+        "Space Research Centre PAS",
+        "University of New Hampshire",
+        "University of Alabama in Huntsville",
+        "NASA Goddard Space Flight Center",
+        "Princeton University",
+        "Los Alamos National Laboratory",
+        "Southwest Research Institute",
+        "Johns Hopkins University",
+        "University of Texas at San Antonio"
+      ],
+      "score": 3.3,
+      "categories": [
+        "astro-ph.GA",
+        "astro-ph.SR"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.15364",
+      "title": "Determining low-$\\ell$ p-mode frequency shifts in Sun-like stars: Enhancing the cross-correlation technique with filters",
+      "authors": [
+        "Samarth G. Kashyap",
+        "Laurent Gizon",
+        "Jesper Schou",
+        "Rachel Howe"
+      ],
+      "abstract": "Acoustic mode frequencies in the Sun and Sun-like stars change due to magnetic activity, on time-scales much larger than the star's rotation and much smaller than its evolution. Given the poor S/N of the observed stellar p-modes, it is challenging to measure the changes of individual mode frequencies. Typically, power spectra of different time series segments are cross-correlated to estimate a mean p-mode frequency change, which ends up averaging over the individual mode contributions. We seek to enhance the cross-correlation method, by introducing a novel and computationally cheap method, thus enabling us to disentangle p-mode frequency changes for different spherical harmonic degree $\\ell$. Assuming that the inclination angle and rotation rate are already measured, filters are designed, which enable the isolation of $\\delta\\omega_\\ell$, frequency changes of modes with a given $\\ell$, while preventing bias creeping in from neighbouring modes. Monte-Carlo simulations are performed to quantify uncertainty in the estimation of $\\delta\\omega_\\ell$. We validate our method against well-studied solar data (SOHO/VIRGO and BiSON) and demonstrate its applicability to the solar-like Kepler star KIC 8006161.",
+      "url": "https://arxiv.org/abs/2608.15364v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15364v1",
+      "tldr": "本研究针对类太阳恒星中低角度数p模频率变化难以精确测量的问题。传统互相关方法仅能给出平均频移，无法区分不同球谐度ℓ的贡献。作者提出一种廉价的新滤波方法，在已知倾角和自转速率的前提下，设计滤波器以隔离给定ℓ的频移δω_ℓ，避免邻近模式干扰。利用蒙特卡洛模拟量化不确定性，并基于SOHO/VIRGO与BiSON太阳数据验证，进而应用于开普勒恒星KIC 8006161。结果表明该方法有效且适用。",
+      "affiliations": [],
+      "score": 3.3,
+      "categories": [
+        "astro-ph.SR",
+        "physics.data-an"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.16767",
+      "title": "A posteriori correction of Gaia CRF proper motions using conditional probability and zero-parallax prior",
+      "authors": [
+        "Valeri V. Makarov"
+      ],
+      "abstract": "Precision of proper motions and positions given in the Gaia Celestial Reference Frame (CRF) catalog can be statistically improved introducing conditional probability based on the prior knowledge of zero parallax for these extremely distant sources. The method developed in this study produces statistically conditioned proper-motion estimates under the assumed per-source Gaussian covariance model. It is demonstrated that thus corrected proper motion vectors of 1.2 million CRF objects in Gaia DR3 show a tighter distribution around zero and a general reduction in the rate of outliers by approximately 15\\%. A general vector spherical harmonic fit to degree 4 is produced with the corrected data for a filtered subset of CRF quasars with redshifts between 1 and 1.5. This application, predicated on the unknown stochastic component of the global parallax field, shows a 3-sigma change in the estimated magnitude of the Galactocentric acceleration of the solar system barycenter, quantifying the sensitivity of this fundamental determination to the proposed conditioning of proper motions.",
+      "url": "https://arxiv.org/abs/2608.16767v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16767v1",
+      "tldr": "针对Gaia CRF星表自行与位置精度问题，利用极远源零视差先验引入条件概率，在单源高斯协方差模型下获得统计修正的自行估计。对Gaia DR3中120万CRF天体的修正显示，自行分布更集中于零，异常值率约降低15%。对红移1至1.5的类星体子集进行4阶矢量球谐拟合，发现太阳系质心银心加速度估值出现3σ变化，表明该修正对此基本测定具有显著影响。",
+      "affiliations": [],
+      "score": 3.2,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.16665",
+      "title": "Two domains of extended Lyman-alpha emission around galaxies: from local radiation to environmental regulation",
+      "authors": [
+        "Daria Kozlova",
+        "Lutz Wisotzki",
+        "John Pharo",
+        "Tanya Urrutia",
+        "Ramona Augustin",
+        "Yucheng Guo",
+        "Haruka Kusakabe",
+        "Joop Schaye",
+        "Daniil Smirnov",
+        "Ismael Pessa"
+      ],
+      "abstract": "We examine the relation between extended Ly$\\alpha$ halos around high-redshift galaxies and the main factors responsible for driving the emission in such halos, in particular at distances around and beyond one virial radius $r_\\mathrm{vir}$. To reach the required surface brightness sensitivity we take advantage of the MUSE eXtremely Deep Field (MXDF) survey, allowing us to probe levels as faint as $\\sim 10^{-20}$ erg cm$^{-2}$ s$^{-1}$ arcsec$^{-2}$ in individual Ly$\\alpha$ halos. Our sample consists of the 21 apparently core- and halo-brightest (yet intrinsically low luminosity $\\log_{10}$L$_{\\mathrm{Ly}\\alpha} < 42.3$ erg s$^{-1}$) Ly$\\alpha$ emitters (LAEs) in the MXDF at $3<z<4$, with typical virial radii around 20 kpc. We measure their radial surface brightness profiles out to 50 kpc (more than $2r_{\\mathrm{vir}}$) and investigate the correlations between surface brightness and internal (star formation rates of the host galaxies, SFR) or external influences (environmental density, $\\delta+1$). We find a clear break in these correlations at radii around or just below $1r_{\\mathrm{vir}}$. Below this break the emission correlates tightly with SFR (as expected) and not at all with $\\delta+1$. Beyond $\\sim 1r_\\mathrm{vir}$(20 kpc) we observe the opposite trend with no dependence on SFR, but an emerging correlation with $\\delta+1$. We compare our measurements with the expected integrated surface brightness from ultrafaint, individually undetected LAEs and find that the latter is insufficient to drive the observed correlation. We conclude that Ly$\\alpha$ emission from the outer halos is regulated by the surrounding environment, but originates mostly from diffuse gas rather than discrete sources.",
+      "url": "https://arxiv.org/abs/2608.16665v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16665v1",
+      "tldr": "研究问题：高红移星系周围扩展Lyα晕在约一个维里半径内外的发射由何驱动？数据与方法：利用MUSE极深场（MXDF）观测，选取21个红移3<z<4、低光度Lyα发射体，测量至50 kpc的面亮度轮廓，并分别与恒星形成率（SFR）及环境密度（δ+1）做相关分析。主要结果：在约1 r_vir处存在明显转折：内侧发射与SFR紧密相关，与环境无关；外侧则相反，与SFR无关，却随环境密度增强。外部发射不能用未探测的暗弱离散源解释，应主要来自弥散气体，受环境调控。",
+      "affiliations": [],
+      "score": 3.2,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.16089",
+      "title": "The H$\\alpha$ specific angular momentum of dwarf galaxies",
+      "authors": [
+        "Simon Deeley",
+        "Sarah Sweet",
+        "Dilyar Barat",
+        "Matthew Colless",
+        "Luca Cortese",
+        "Francesco D'Eugenio"
+      ],
+      "abstract": "The relationship between a galaxy's specific angular momentum $j$ and its mass $M$, parameterised by $j \\propto M^\\alpha$ and known as the Fall relation, has emerged as a fundamental scaling relation reflecting key physical and morphological properties of galaxies. This relation has been well studied for galaxies with masses above $10^{9}$ $M_{\\odot}$. However, whether or not it holds for the low-mass dwarf galaxies, especially given their varied morphologies, remains uncertain. Here we use H$\\alpha$ observations of 49 star-forming dwarf galaxies from the SH$\\alpha$DE survey, as well as 20 high-mass `control' galaxies, to investigate the stellar $j_{*}$-$M_{*}$ relation down to masses below $10^{6}$ M$_{\\odot}$. We find that the star-forming dwarf galaxies follow the same $j_{*}$-$M_{*}$ relation as high-mass disk-like galaxies, with $\\alpha = 0.53 \\pm{0.4}$, demonstrating that the relation holds across 5 orders of magnitude in mass. We then select a matching sample from the IllustrisTNG cosmological simulation and create mock observations resembling the SH$\\alpha$DE survey. We find that the simulated dwarf galaxy population follows the extrapolated $j_{*}$-$M_{*}$ relation with a flattening and significant scatter towards lower $j_{*}$ values. Following the evolution of these galaxies, we find that dwarf galaxies experience a gradual loss in $j_{*}$ with time, while high-mass galaxies experience a sudden jump in $j_{*}$ before settling into a stable state. This dynamical evolution leads to a redshift dependence in $\\alpha$, with $\\alpha = 0.45$ at $z = 2$ and 0.55 at $z = 0$. Despite the apparent simplicity in the present-day $j_{*}$-$M_{*}$ relation over a wide mass range, the evolution of $j$ leading to this relation is complex and dynamic.",
+      "url": "https://arxiv.org/abs/2608.16089v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16089v1",
+      "tldr": "**研究简报：矮星系Hα比角动量**\n\n矮星系比角动量与质量的Fall关系此前缺乏验证。本文用SHαDE巡天49个恒星形成矮星系的Hα观测和20个高质量对照星系，把恒星比角动量-质量关系拓展到10^6太阳质量以下。发现矮星系与高质量盘状星系遵循同一关系，α=0.53，关系跨越五个数量级成立。结合IllustrisTNG模拟并构造类似SHαDE的mock观测，模拟矮星系整体符合外推关系，但在低比角动量端更平、更散。演化显示矮星系j\\*随时间逐渐损失，高质量星系则突然上升后稳定，使α从z=2的0.45变为z=0的0.55，表明关系背后动力学演化复杂。",
+      "affiliations": [],
+      "score": 3.2,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.16301",
+      "title": "Characterizing Stellar Flares in Ariel Targets: Activity Analysis and Transit Contamination",
+      "authors": [
+        "G. Galletta",
+        "S. Colombo",
+        "G. Micela"
+      ],
+      "abstract": "Stellar flares are sudden releases of magnetic energy that can distort exoplanet transit photometry and transmission spectroscopy, biasing planet radius estimates, transit timings, and atmospheric characterization. Understanding flare activity in Ariel targets is therefore essential to identify stars where flares may compromise observations and to characterize the radiation environment affecting atmospheric escape and photochemistry. We analyzed 290 Ariel target stars using TESS light curves. Flares were identified via iterative Gaussian process detrending, and their energy distributions were modeled with two-segment power laws. We performed injection-recovery tests by adding synthetic flares to detrended light curves and running the full pipeline to quantify completeness and detection biases. We detected 15,857 flares across 1,638 TESS sectors, with 2-86 events per sector. We defined a normalized flare index GF.01 to compare activity across stellar luminosities. Near 3% of the sample exhibits enhanced flare activity (GF.01 > 1). AU Mic and HD 28109 show a high likelihood of flare contamination during transit observations. GF.01 correlates negatively with stellar bolometric luminosity, indicating higher relative flare output in lower-luminosity stars. AU Mic is an extreme case: four of five observed transits of AU Mic b are affected by flares, consistent with statistical expectations. We validate the framework by comparing predicted flare-contamination probabilities with observed flare occurrences in a representative subset of transits, finding agreement within uncertainties. These results confirm that energetic flares can significantly impact transit observations and provide quantitative guidance for Ariel target selection and analysis strategies.",
+      "url": "https://arxiv.org/abs/2608.16301v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16301v1",
+      "tldr": "**表征Ariel目标恒星耀斑：活动性分析与凌星污染**\n\n恒星耀斑是磁能突然释放，会扭曲凌星测光和透射光谱，影响行星参数与大气表征。为评估Ariel目标星的耀斑污染，我们分析290颗目标星的TESS光变曲线，用迭代高斯过程去趋势识别耀斑，以双段幂律模拟能量分布，并做注入-回收测试。共探测15,857个耀斑，定义归一化耀斑指数GF.01。约3%样本耀斑活动增强；GF.01与恒星光度负相关。AU Mic和HD 28109凌星观测受耀斑污染概率高。结果定量指导Ariel目标选择与观测策略。",
+      "affiliations": [],
+      "score": 3.1,
+      "categories": [
+        "astro-ph.SR",
+        "astro-ph.EP"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.14888",
+      "title": "High-spectral-resolution Observations of the [S II] Emission-line Doublet in the Filamentary Nebula Surrounding NGC 1275",
+      "authors": [
+        "Benjamin Vigneron",
+        "Julie Hlavacek-Larrondo",
+        "Carter Lee Rhea",
+        "Christoph Pfrommer",
+        "Greg L. Bryan",
+        "Megan Donahue",
+        "Alastair Edge",
+        "Andrew Fabian",
+        "Michael McDonald",
+        "Annabelle Richard-Lafferri\\`ere",
+        "Laurie Rousseau-Nepton",
+        "G. Mark Voit",
+        "Norbert Werner"
+      ],
+      "abstract": "We analyze new high-spectral resolution SITELLE observations (R = $\\lambda/\\Delta\\lambda$ = 7000) of the filamentary nebula surrounding NGC 1275, central galaxy of the Perseus cluster. We present here analysis of the \\sii$\\lambda6716$ and \\sii$\\lambda6731$ emission line doublet, using its ratio to determine the electron density of the optically emitting filaments. We compare these measurements with electron densities derived from deep Chandra X-ray observations of the intra-cluster medium (ICM) to determine if any correlations in density can be found. We report the detection of a clear dichotomy between the outer filaments, displaying on average lower \\sii\\text{ }emission line ratio of $\\sim 1.1$ and the inner filaments displaying higher ratios of $\\sim 1.3$. These results indicate that most of the gaseous filaments lie close to the low-density threshold for the density measurement of $\\sim 10^2\\text{ cm}^{-3}$. Using radial profiles, we find that the inner filaments have a roughly constant density, whereas the ICM density decreases with radius. In the outer filaments, we observe hints of local connections between the densities of the ICM and optical filaments, but no clear correlation seems to be observed overall. We also combined these density measurements with cold molecular CO gas observations to derive a relationship between temperature, density and pressure for the multiphase environment surrounding NGC 1275. Finally, we investigated potential models to explain the observed density measurements and explored similar studies of filamentary nebula around other central galaxies of cool-core galaxy clusters.",
+      "url": "https://arxiv.org/abs/2608.14888v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14888v1",
+      "tldr": "**标题：** 对NGC 1275周围丝状星云[S II]发射线双线的高光谱分辨率观测\n\n**摘要：** 本研究利用SITELLE高光谱分辨率数据（R=7000），分析NGC 1275周围丝状星云的[S II] λ6716与λ6731发射线双线，通过比值测定电子密度，并与Chandra X射线观测到的星系际介质（ICM）密度比较。结果显示内外丝状物存在明显差异：外丝平均比值约1.1，内丝约1.3，表明多数气体丝接近约10² cm⁻³的低密度阈值。径向轮廓显示内丝密度大致恒定，而ICM密度随半径下降；外丝中两者仅呈局部关联，整体无清晰相关。研究还结合CO观测推导温度、密度与压力关系，并探讨相关模型。",
+      "affiliations": [],
+      "score": 3.1,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.16802",
+      "title": "JWST Whirlpool Galaxy Treasury: Mid-Infrared Emission in M51 and its Relation to Gas Column and Star Formation",
+      "authors": [
+        "Mansi Padave",
+        "Karin M. Sandstrom",
+        "Daniel A. Dale",
+        "Adam K. Leroy",
+        "Eric W. Koch",
+        "Tony D. Weinbeck",
+        "Angela Adamo",
+        "Jessica Sutter",
+        "Lindsey Hands",
+        "Torsten B\\\"oker",
+        "Martha L. Boyer",
+        "Ryan Chown",
+        "Bruce T. Draine",
+        "Ilse de Looze",
+        "Brandt A. L. Gaches",
+        "Simon C. O. Glover",
+        "Dario Colombo",
+        "Robert C. Kennicutt Jr.",
+        "Hannah Koziol",
+        "Ralf S. Klessen",
+        "Sean T. Linden",
+        "Desika Narayanan",
+        "Alex Pedrini",
+        "Julia Roman-Duval",
+        "Eva Schinnerer",
+        "J. D. T. Smith",
+        "Sophia K. Stuber",
+        "Fabian Walter"
+      ],
+      "abstract": "Using JWST/MIRI imaging of M51 in eight broadband filters, we investigate correlations of mid-infrared emission from polycyclic aromatic hydrocarbons (PAHs) and dust continuum with molecular, atomic, and ionized gas traced by CO(1-0), HI, and Pa-alpha, respectively. In molecular gas-dominated regions, PAH-dominated filters (F560W, F770W, F1130W, F1280W) exhibit near-linear correlations with CO(1-0) at 40 pc scale, indicating that PAHs are well-mixed with gas and experience relatively constant radiation field intensities. The F1500W, F1800W, and F2100W dust continuum-dominated filters show shallower slopes with CO(1-0), reflecting contributions from star-forming regions with high radiation field intensities. This is reinforced by the near-linear scaling between F2100W and Pa-alpha. PAH-dominated bands do not show this linear trend with Pa-alpha, likely due to their destruction in ionized regions. F1000W behaves similarly to PAH bands in its correlations with CO(1-0) and Pa-alpha. Modeling mid-infrared emission with an empirical decomposition into gas- and star-formation-associated components shows that PAH-dominated filters receive comparable contributions from both, while the relative contribution associated with the Pa-alpha template increases toward longer wavelengths, reaching $\\sim$75% in F2100W. These results demonstrate that mid-infrared simultaneously traces the gas column and star formation, but with a systematic wavelength-dependent shift in what drives the correlations: PAHs being more gas-tracing and dust-continuum reflecting star formation. Lastly, considering both HI and H$_2$ at 440 pc resolution, we find a tight, linear relation between $\\Sigma_{HI+H_2}$ and PAH-dominated filters. Although most of our coverage is in H$_2$-dominated regions, we note similar observations with HI, suggesting that PAHs are also well-mixed with atomic gas.",
+      "url": "https://arxiv.org/abs/2608.16802v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16802v1",
+      "tldr": "《JWST涡状星系巡天：M51中红外发射与气体柱及恒星形成的关系》\n\n利用JWST/MIRI对M51的八个中红外波段成像，结合CO(1-0)、HI和Paα分别追踪分子、原子和电离气体，我们研究了PAH和尘埃连续辐射与气体柱及恒星形成的关系。结果显示：在分子气体主导区，PAH主导波段（如F770W）与CO在40pc尺度呈近线性相关，表明PAH与气体充分混合且辐射场强度近似恒定；尘埃连续辐射波段（如F2100W）与CO关系较平缓，却与Paα呈近线性相关，反映恒星形成贡献。经验分解显示，PAH波段同时受气体和恒星形成影响，而长波连续辐射约75%来自恒星形成。440pc尺度上，HI+H2柱密度与PAH波段存在紧密线性关系，说明PAH同时示踪分子和原子气体。",
+      "affiliations": [],
+      "score": 3.0,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.16654",
+      "title": "Galaxy Morphology Classification: Uncertainty Modeling and Out of Distribution Detection",
+      "authors": [
+        "Prem Prakash",
+        "Shantanu Desai",
+        "P. K. Srijith"
+      ],
+      "abstract": "We present a comprehensive framework for galaxy morphology classification that combines enhanced ``out-of-distribution (OOD)'' detection with improved uncertainty quantification. Using ``Galaxy Zoo DECaLS'', we trained a ResNet-34 architecture under three configurations: standard cross-entropy loss as a baseline, IsoMaxPlus loss function for OOD detection, and hybrid IsoMaxPlus+MonteCarlo Dropout for enhanced uncertainty quantification. IsoMaxPlus replaces the conventional SoftMax logits with distance-based class representations, preserving inter-class separability and enabling reliable OOD detection, without requiring additional architectural modifications or hyperparameter tuning. Coalescing IsoMaxPlus with MC Dropout provides a fast Bayesian approximation by performing multiple stochastic forward passes during inference. Our results show that IsoMaxPlus substantially improves OOD detection, increasing TNR@TPR95 by nearly $90\\%$ relative to the cross-entropy baseline, while maintaining a competitive accuracy of 97\\% across nine morphological classes. Additionally, with MC Dropout, the model yields more stable predictions and a reduction in calibration error, providing more reliable uncertainty estimates. The Expected Calibration Error (ECE) is reduced from $0.0095$ to $0.0026$ ($\\approx73\\%$) for IsoMaxPlus and $0.0033$ ($\\approx65\\%$) when combined with MC Dropout, compared to the baseline. Misclassified or underconfident predictions exhibit higher predictive entropy and lower minimum distance scores, providing an interpretable metric for identifying unreliable predictions. These methods are well-suited for current and upcoming large-scale surveys, where reliable automated morphological classification and awareness of uncertainty are essential for identifying rare or previously unseen galaxy morphologies.",
+      "url": "https://arxiv.org/abs/2608.16654v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16654v1",
+      "tldr": "针对星系形态分类的分布外检测与不确定性量化问题，使用Galaxy Zoo DECaLS训练ResNet-34，比较交叉熵、IsoMaxPlus及IsoMaxPlus+MC Dropout。IsoMaxPlus显著提升OOD检测，TNR@TPR95较基线提高近90%，准确率保持97%；加入MC Dropout后，ECE由0.0095降至0.0026（约73%），预测更稳定。该框架为大规模巡天识别罕见形态提供可靠不确定性估计。",
+      "affiliations": [],
+      "score": 3.0,
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.16448",
+      "title": "Detection and Characterization of Microlensing Events due to Isolated Black Holes towards the Magellanic Clouds in the Rubin Observations",
+      "authors": [
+        "Sedighe Sajadian",
+        "Martin Makler"
+      ],
+      "abstract": "Gravitational microlensing surveys potentially discover isolated black holes (IBHs) at large distances through their gravitational effects on apparent brightness and motion of collinear stars. Here, we study detecting and characterizing IBHs within the mass range $[3,~5000]M_{\\odot}$ with either stellar or dark matter origins in the upcoming observations by Vera~C.~Rubin Observatory towards the Large and Small Magellanic Clouds (LMC and SMC). We consider four lens mass functions (MFs:~$dN/dM\\propto M^{-\\beta}$ for $\\beta=0,~0.5,~1,~2$), and generate long-duration microlensing events due to IBHs detectable by Rubin. By assuming the fraction of IBHs's mass in total Galactic mass as $\\mathcal{F}$, Rubin potentially detects $\\sim0.3,~\\rm{and}~2$ microlensing events towards SMC and LMC due to IBHs if $\\beta=1,~\\rm{and}~\\mathcal{F}=5\\times10^{-3}$. These IBHs are inside our galaxy with the probability $\\gtrsim70\\%$. These events have on average $\\theta_{\\rm{E}}\\sim30-50~\\rm{mas}$, so that the probabilities of resolving their lensing-induced images through the Rubin astrometric observations are $\\sim1.4,~\\rm{and}~16.3\\%$ towards LMC and SMC. In $\\sim1,~5.2\\%$ of these events their astrometric deflections are realizable. The probabilities of discerning their parallax are $\\sim40,~25\\%$. We evaluate relative errors with simulating synthetic data points and by assuming the true models as the best-fitted ones. We conclude for a log-uniform MF for $\\lesssim0.1,~\\rm{and}~0.3\\%$ of photometrically detectable microlensing events towards in LMC and SMC the relative errors in the lens mass, distance and velocity are $\\lesssim3\\%$. We calculate the number of detectable IBHs versus by assuming their complete contribution of compact objects in halos' darkmatter, and conclude Rubin specifies $95\\%$~C.L. upper-limit on IBHs exclusion by masses $\\lesssim208,~8M_{\\odot}$ for $\\mathcal{F}\\simeq4\\times10^{-3}$.",
+      "url": "https://arxiv.org/abs/2608.16448v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16448v1",
+      "tldr": "针对银河系孤立黑洞（IBH）的探测问题，本研究利用Vera Rubin天文台即将对大小麦哲伦云（LMC/SMC）的观测，模拟不同质量函数下的微引力透镜事件。假设IBH占银河系总质量比例F=5×10⁻³、质量幂律指数β=1时，Rubin在SMC和LMC可探测约0.3和2个事件，且事件主要位于银河系内（>70%）。通过合成光变与天体测量数据评估参数精度，部分事件可实现质量、距离和速度相对误差≲3%。Rubin还可对质量≲208和8倍太阳质量的IBH给出95%置信上限。",
+      "affiliations": [],
+      "score": 3.0,
+      "categories": [
+        "astro-ph.SR"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.15663",
+      "title": "The reddening of NGC 7469 and evidence for variable extinction",
+      "authors": [
+        "C. Martin Gaskell",
+        "Ananya R. Kamath",
+        "Emily I. Kwan",
+        "Divya G. Subramonian"
+      ],
+      "abstract": "We estimate the reddening of the broad-line region and continuum of the active galactic nucleus NGC 7469 during the 1996 International AGN Watch multi-wavelength monitoring campaign using seven different reddening indicators. As was found for NGC 5548, these indicators support velocity-integrated broad hydrogen line ratios being close to Case B values. All the indicators point to substantial reddening of E(B-V) = 0.44 +/-0.03 for NGC 7469 during mid-1996. We find evidence for a gradual increase of about 10% in the reddening during the seven weeks of the 1996 campaign. Decades-long optical monitoring before and after the campaign is also consistent with modest changes in the extinction from year to year.",
+      "url": "https://arxiv.org/abs/2608.15663v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15663v1",
+      "tldr": "本研究利用1996年国际AGN Watch多波段监测数据，通过七种红化指示器估算活动星系核NGC 7469宽线区与连续谱的红化。结果显示，各指示器均支持宽氢线积分比值接近Case B值，并一致表明该天体在1996年年中具有显著红化，E(B-V)=0.44±0.03。同时发现七周监测期间红化逐渐增加约10%；此前数十年的光学监测也提示年度间存在中等程度的消光变化。",
+      "affiliations": [],
+      "score": 3.0,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.16200",
+      "title": "A Radio-Bright Local Little Red Dot Analog",
+      "authors": [
+        "Luis F. Rodriguez",
+        "I. FElix Mirabel",
+        "Rosa A. Gonzalez-Lopezlira",
+        "Laurent Loinard"
+      ],
+      "abstract": "The James Webb Space Telescope revealed the existence in the early Universe ($z >$ 4) of large populations of little red dots (LRDs), compact red luminous sources that host rapidly growing supermassive black holes (SMBHs) surrounded by coeval nuclear starbursts. LRDs have defining properties, one of which is the absence of radio detections. LRDs could be radio-undetected because of their large distances. A way to investigate the radio properties of LRDs is to search for radio emission in their local analogs, the Local Little Red Dot (LLRD) galaxies at $z <$ 1 with analogous properties to LRDs. We report the radio continuum detection of the LLRD analog J204837.26${-}$002437.2 ($z$ = 0.4332, hereinafter J2048). This adds to the previous radio detection of two other LLRDs. However, with a flux density of 3.0$\\pm$0.2 mJy at 3.0 GHz, J2048 is two orders of magnitude more radio luminous than the previous detections. The spectral index of $\\alpha$ = -0.39$\\pm$0.04 is consistent with moderately optically-thick synchrotron emission. The radio luminosity of J2048 is $1.2 \\times 10^{41}~ \\mathrm{erg ~s^{-1}}$, in the lower end of the range defined by radio-loud giant elliptical galaxies and quasars of $L_R$ = $10^{41-46} ~\\mathrm{erg ~s^{-1}}$. The expected radio luminosity of the SMBH associated with J2048 is estimated to be about an order of magnitude larger, suggesting that its radio luminosity could potentially be strongly dimmed. A cosmological ($z >$ 4) LRD with radio luminosity similar to that of J2048 would be detectable using the VLA with moderately long integrations.",
+      "url": "https://arxiv.org/abs/2608.16200v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16200v1",
+      "tldr": "**一个射电明亮的局域小红点类似体**\n\n研究简报：JWST揭示早期宇宙存在大量“小红点”（LRD），其定义特征之一是未探测到射电辐射。为探究原因，本研究搜索z<1、性质类似LRD的局域类似体（LLRD）的射电连续谱。在J204837.26−002437.2（z=0.4332）探测到3.0 GHz射电辐射，流量密度3.0±0.2 mJy，其射电光度比此前两个LLRD探测高约两个数量级；谱指数α=-0.39±0.04，符合中等光厚同步辐射。射电光度为1.2×10^41 erg/s，处于射电亮巨椭圆星系和类星体范围低端，仅约为所关联SMBH预期射电光度的十分之一，提示辐射可能被强烈减弱。红移>4的LRD若具有类似射电光度，VLA用中等积分时间即可探测。",
+      "affiliations": [],
+      "score": 3.0,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.14900",
+      "title": "VAPOLA - A multiyear, multiband polarization survey of AGNs and Sgr A* at millimeter wavelengths with ALMA II. Spectropolarimetric properties and their evolution from 2017 to 2023",
+      "authors": [
+        "Douglas Carlos",
+        "Ciriaco Goddi",
+        "Alejandro Mus",
+        "Nicola Marchili",
+        "Kazi L. J. Rygl",
+        "Ezequiel Albentosa-Ru\\'iz",
+        "Iv\\'an Mart\\'i-Vidal",
+        "The Event Horizon Telescope Collaboration"
+      ],
+      "abstract": "We present a systematic analysis of the spectropolarimetric properties of a sample of 39 active galactic nuclei and Sagittarius A* observed with the Atacama Large Millimeter/submillimeter Array during five VLBI campaigns between 2017 and 2023. We characterize the compact cores in total intensity and polarization, focusing on the behavior or the linear polarization fraction (LP), electric vector position angle (EVPA), and Faraday rotation measure (RM) over time and spectral domains. We investigate both individual objects--such as M87, Sgr A*, 3C273, and 3C279--and ensemble properties of different source classes, including flat-spectrum radio quasars, BLLac objects, and other active galaxies. While total intensity and spectral index are generally stable on weekly timescales, polarization properties often exhibit strong variability, with significant day-to-day changes in LP, EVPA, and RM. Several sources display large EVPA rotations accompanied by variations in LP and RM, in some cases coinciding with flaring activity. We observe that the magnitude of RM increases with observing frequency for all sources for which we have reliable multi-band measurements, consistent with Faraday rotation arising in a magnetized sheath surrounding the relativistic jet, although an origin in the accretion flow--particularly in the case of Sgr A*--cannot be ruled out.",
+      "url": "https://arxiv.org/abs/2608.14900v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14900v1",
+      "tldr": "研究简报：本文利用ALMA在2017至2023年五次VLBI观测的数据，对39个活动星系核及Sgr A*进行谱偏振系统分析。研究聚焦致密核的总流量、偏振、线偏振分数、电矢量位置角及法拉第旋转量的时间与频谱行为。结果表明：总流量与谱指数在周尺度稳定，但偏振性质常逐日剧变；多个源出现大角度EVPA旋转，伴随LP与RM变化，部分对应耀发。所有具可靠多频数据的源，其RM幅度随观测频率增加，与喷流磁化鞘层产生法拉第旋转的模型一致，但Sgr A*的吸积流起源不能排除。",
+      "affiliations": [],
+      "score": 3.0,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.16392",
+      "title": "Machine Learning in Application to Automatic Noise Processing of Solar Spectrograms",
+      "authors": [
+        "I. I. Yakovkin",
+        "A. O. Bartenev",
+        "N. V. Petrova"
+      ],
+      "abstract": "In this paper, a machine learning approach for processing solar spectral data were developed. Its performance was demonstrated using the example of the limb solar flare on July 17th, 1981. The results indicated that machine learning can be effectively utilized to transform between differently digitized spectra, fill gaps in unique experimental data, and undertake spectrum cleaning. Specifically, convolutional neural networks were devised to transform between reflective and transmissive scans of a solar flare spectrogram.\n  This can be a convenient technique for treating the spectrograms of unique solar events, most notably increasing the proportion of observational spectra that can be further analyzed. Namely, in subsequent research, we will be able to confidently incorporate data such as that captured on the edges of spectrograms, which was previously deemed insufficiently reliable due to limitations of available processing techniques. This will consequently increase the number of spectral lines studied for certain observed events, which is paramount for constructing physical models, as the spectral peculiarities are expected to manifest consistently across different spectral lines.\n  The developed approach also notably facilitates the detection and removal of impurities in the spectrograms. Previously, each distinct feature in the spectra was manually scrutinized to check its integrity in order to be excluded if identified as an impurity, such as a scratch or a dust particle. By employing the suggested protocol for treating the spectrogram, which includes scanning the spectrogram using multiple distinct techniques and then leveraging machine learning for comparison, the process of excluding impurities can now be automated. Furthermore, the spectrum areas affected by such exclusions can be restored, enabling further analysis.",
+      "url": "https://arxiv.org/abs/2608.16392v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16392v1",
+      "tldr": "研究问题：太阳光谱图处理中，不同数字化扫描方式转换、独特实验数据填补及杂质剔除常依赖手动，效率低且不可靠。  \n方法：以1981年7月17日临边太阳耀斑光谱为例，开发机器学习流程，采用卷积神经网络实现反射式与透射式扫描间的转换，并通过多扫描对比自动化检测和去除杂质。  \n结果：该方法能有效转换不同数字化光谱、填补数据空白并恢复受杂质影响的光谱区域，显著提高可分析光谱的比例，为后续物理建模提供更可靠的观测数据。",
+      "affiliations": [],
+      "score": 2.9,
+      "categories": [
+        "astro-ph.SR",
+        "physics.optics"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.16304",
+      "title": "Coronal gas excitation as a tracer of supermassive black hole mass: on the mid-IR coronal [Ne v] lines",
+      "authors": [
+        "J. S. Elford",
+        "A. Prieto",
+        "A. Rodr\\'iguez-Ardila"
+      ],
+      "abstract": "Coronal lines (CL) may be a reliable proxy of supermassive black hole (SMBH) masses in active galactic nuclei (AGN) because the production of these high ionisation potential (IP) lines is sensitive to the shape of the ionising continuum which, for a thin accretion disc, relies on the black hole mass. In this work we study the connection between the [Ne\\,v] coronal lines and the SMBH mass. We analyse the \\textit{Spitzer spectra} of a sample of 27 AGN spanning three orders of magnitude in SMBH mass. Fluxes and the electron density in the coronal gas medium were measured after fitting Gaussians to both the $\\rm [Ne\\,v]14\\mu m$ and $\\rm [Ne\\,v]24\\mu m$ lines where detected at high signal to noise. Line fluxes were normalised to the Br$\\gamma_{\\rm broad}$ emission from the broad line region. We found strong correlations between the $\\rm [Ne\\,v]14\\mu m/Br\\gamma_{\\rm broad}$ and $\\rm [Ne\\,v]24\\mu m/Br\\gamma_{\\rm broad}$ line ratios and the SMBH mass. For this sample of 27 AGN we find scatters of 0.54 and 0.53 dex, respectively. These correlations support the theory that the coronal gas excitation is sensitive to a range of SMBH masses because of the dependence on the shape of the ionising continuum. The electron densities of the coronal medium are of the order 1000$\\rm cm^{-3}$ supporting their nuclear origin. A comparison with density values derived from JWST for a subsample of objects confirm this conclusion. These results further demonstrate the ability to use CL as a SMBH mass proxy, allowing for accurate SMBH mass measurements in AGN.",
+      "url": "https://arxiv.org/abs/2608.16304v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16304v1",
+      "tldr": "本研究探讨活动星系核中冕线[Ne v]作为超大质量黑洞质量示踪物的可行性。利用斯皮策光谱分析27个活动星系核样本，通过高斯拟合测量[Ne v]14微米与24微米谱线通量及电子密度，并以宽线区Brγ通量归一化。结果发现[Ne v]/Brγ宽线与黑洞质量存在强相关，散射分别约0.54和0.53 dex；冕区电子密度约1000 cm⁻³，支持其核区起源，并与JWST子样本密度一致。这表明冕线可作为黑洞质量探针。",
+      "affiliations": [],
+      "score": 2.8,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.14964",
+      "title": "Infrared Spectroscopy of Cyanonaphthalenes under Interstellar Relevant Conditions and Their Potential Connection with Astronomical Aromatic Infrared Bands",
+      "authors": [
+        "Jiaqi Xin",
+        "Jianzhi Xu",
+        "Piero Ferrari",
+        "Gao-Lei Hou"
+      ],
+      "abstract": "Context. Aromatic infrared bands (AIBs) are widely observed in diverse astrophysical environments and are generally attributed to vibrational emission from polycyclic aromatic hydrocarbons (PAHs). The recent interstellar detection of 1-cyanonaphthalene (1-CNN) and 2-cyanonaphthalene (2-CNN) has motivated detailed infrared spectroscopic studies of cyano-substituted PAHs. Aims. We aim to characterize the infrared spectra and vibrational modes of neutral 1-CNN and 2-CNN under cold and gas-phase conditions and to assess their possible spectroscopic relevance to the astronomical AIBs. Methods. The gas-phase infrared spectra of neutral 1-CNN and 2-CNN were measured in a cold molecular beam using ion-dip spectroscopy. The observed bands were assigned with the aid of harmonic and anharmonic calculations at the B3LYP/N07D level. Infrared emission spectra were subsequently simulated from the experimental spectra within a single-photon approximation framework. Results. We report the infrared spectra of neutral 1-CNN and 2-CNN measured under cold and gas-phase conditions relevant to the interstellar medium. Their vibrational features were assigned in detail, including fundamental vibrations as well as overtone and combination bands. The simulated emission spectra exhibit features in several wavelength regions associated with prominent AIBs, including the aromatic CH stretching region near 3.3 micron, the CC stretching region near 6.2 micron, the mixed CH in-plane bending and CC stretching region at 8.6-8.9 microns, and the CH out-of-plane bending region between 10 and 15 microns. Conclusions. The present spectra provide laboratory reference data for small cyano-substituted PAHs and offer useful clues for interpreting selected AIB regions. These results suggest that cyanonaphthalene molecules are promising contributors to the aromatic infrared bands.",
+      "url": "https://arxiv.org/abs/2608.14964v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14964v1",
+      "tldr": "研究问题：芳香红外带通常归因于多环芳香烃的振动发射；星际探测到1-氰萘和2-氰萘后，需要中性氰萘在冷气相条件下的红外光谱数据。方法：利用冷分子束离子-浸渍光谱测量两种氰萘的中性气相红外光谱，并以B3LYP/N07D简谐和非简谐计算辅助指认；实验谱在单光子近似下模拟红外发射。结果：获得冷气相光谱，指认了基频、泛频和组合频；模拟发射在3.3微米、6.2微米、8.6至8.9微米和10至15微米等显著AIB区域出现特征。结论：这些数据为小尺寸氰基取代多环芳香烃提供参照，氰萘可能是芳香红外带的贡献者。",
+      "affiliations": [],
+      "score": 2.8,
+      "categories": [
+        "astro-ph.GA",
+        "physics.chem-ph"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.15430",
+      "title": "Wide field Slitless Spectroscopy with JWST's MIRI",
+      "authors": [
+        "Andreea Petric",
+        "Sarah Kendrew",
+        "David Law",
+        "Alberto Noriega Crespo",
+        "Bryan Holler",
+        "Jane Morrison",
+        "Jonathan Aguilar",
+        "Misty Cracraft",
+        "Ian Wong",
+        "Stacey Alberts",
+        "Dean Hines",
+        "Kate Rowlands",
+        "Ned Molter",
+        "G. C. Sloan",
+        "Mike Engesser"
+      ],
+      "abstract": "We present a snapshot of the ongoing efforts to obtain background-subtracted, wavelength-, and flux-calibrated spectra taken with the new Wide-Field Slitless Spectroscopy (WFSS) mode for the MIRI instrument on the James Webb Space Telescope (JWST), offered for the first time in JWST Cycle 5 (starting July 2026). We describe here the capabilities of the new mode, the operational concept, and an overview of the calibration and pipeline development activities that are currently ongoing.",
+      "url": "https://arxiv.org/abs/2608.15430v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15430v1",
+      "tldr": "本文概述了JWST MIRI仪器新型宽场无缝光谱（WFSS）模式的当前工作进展。该模式首次在JWST第5周期（2026年7月起）提供。研究问题是如何获取经过背景扣除、波长定标与流量定标的光谱。方法上，我们描述了该模式的能力、操作概念，以及正在进行的定标与数据处理流程开发。主要结果显示该模式已具备基本观测条件，并给出了当前校准与管线开发的状态。",
+      "affiliations": [],
+      "score": 2.7,
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.14864",
+      "title": "An open-source data processing pipeline for Keck / NIRC2-Polarimetry",
+      "authors": [
+        "Briley L. Lewis",
+        "Maxwell A. Millar-Blanchaer",
+        "Rebecca Zhang",
+        "Jayke Nguyen",
+        "Max Brodheim",
+        "Ashish Uhlmann"
+      ],
+      "abstract": "The Keck/NIRC2 infrared imager was recently upgraded with a new suite of polarimetric observing modes. This polarimetry upgrade (referred to as NIRC2-Pol) will open up a wide range of new astronomical studies, including investigations of exoplanets, the Galactic center, active galactic nuclei and the solar system. Astronomical polarimeters require sophisticated data reduction, especially for quantitative polarimetry requiring the use of a Mueller Matrix model for instrumental polarization calibration. This work presents the design of a flexible, user-friendly, open-source data processing pipeline intended for use with NIRC2-Pol, summarizing its key steps and details of its ongoing implementation.",
+      "url": "https://arxiv.org/abs/2608.14864v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14864v1",
+      "tldr": "凯克望远镜NIRC2红外相机新增偏振观测模式（NIRC2-Pol），但定量偏振数据处理需借助穆勒矩阵模型校准仪器偏振，现有流程复杂。为此，研究设计了一套灵活、易用的开源数据处理管道，概述其关键步骤与当前实施细节，旨在支持系外行星、银心、活动星系核及太阳系等偏振观测研究。",
+      "affiliations": [],
+      "score": 2.7,
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.15204",
+      "title": "Design and Realization of the LST Main Structure for the Cherenkov Telescope Array",
+      "authors": [
+        "T. Schweizer",
+        "J. Eder",
+        "H. Wetteskind",
+        "C. Jablonski",
+        "R. Stadler",
+        "R. Mirzoyan",
+        "D. Paneque",
+        "T. Masahiro",
+        "A. Fiasson",
+        "N. Geffroy",
+        "G. Deleglise",
+        "O. Blanch",
+        "J. Mundet",
+        "R. Garcia",
+        "A. J. Penuela Lopez"
+      ],
+      "abstract": "The 23 m diameter Large Size Cherenkov Telescope (LST) for CTA, located at 2250 m a.s.l. on the Canary Island of La Palma, is the next-generation Cherenkov telescope following MAGIC, H.E.S.S., and VERITAS. To enable rapid repositioning (180{\\deg} in 18 s) for gamma-ray burst observations, the mechanical structure was designed to be ultra- lightweight (110 tons). The space-frame structure consists of slender struts made of carbon fibre, aluminium (dish and camera mast), and steel. The telescope is designed to withstand extreme environmental conditions at the ORM observatory on La Palma, including wind speeds up to 200 km/h, uplift forces, and ice loads of up to 30 tons. We present the structural design developed to meet these functional and environmental requirements. MPP Munich is responsible for the telescope's mechanical structure together with partner institutes in France (LAPP) and Spain (IFAE). The prototype, LST-1, has been operational since 2019, and three additional LSTs are curre1ntly under construction.",
+      "url": "https://arxiv.org/abs/2608.15204v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15204v1",
+      "tldr": "为满足切伦科夫望远镜阵列对伽马射线暴快速响应的需求，二十三米口径大型切伦科夫望远镜主结构需在十八秒内旋转一百八十度，总重仅一百一十吨。设计采用碳纤维、铝（盘面和相机桅杆）和钢构成的超轻空间框架结构，以承受拉帕尔马天文台两百公里每小时风速、上拔力及三十吨冰载等极端环境。该结构由慕尼黑马普研究所与法国、西班牙合作完成；样机一号自二零一九年运行，另有三个望远镜在建。",
+      "affiliations": [
+        "IFAE",
+        "MPP Munich",
+        "LAPP"
+      ],
+      "score": 2.6,
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.15316",
+      "title": "Stability of circumbinary orbits in misaligned triple star systems",
+      "authors": [
+        "Stephen Lepp",
+        "Rebecca G. Martin"
+      ],
+      "abstract": "We investigate the stability of circumbinary orbits in hierarchical triple star systems, focusing on the effects of a misaligned outer companion star. Test particles are subject to competing gravitational torques from the inner binary and the outer binary companion. With secular theory we estimate the outer radius of particle stability, where the torques balance. We find good agreement with $n$-body simulations across a wide range of triple star configurations. Stable circumbinary orbits can exist even in strongly misaligned triples. Polar and highly inclined orbits with respect to the inner binary can remain stable over a substantial radial range, which is insensitive to the triple star misalignment. Orbits that are close to coplanar or retrograde coplanar to the inner binary are more susceptible to instability when the mutual inclination between the binaries is large. These findings indicate that misaligned and polar circumbinary disks and planets can survive in triple star systems under a broad set of conditions. The analytic criterion identifies where stable material may exist, with implications for the formation and detection of circumbinary planets in multiple-star systems.",
+      "url": "https://arxiv.org/abs/2608.15316v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15316v1",
+      "tldr": "研究问题：三星系统中倾斜伴星对环绕双星轨道稳定性的影响。方法：用长期摄动理论估算内双星与外伴星力矩平衡处的稳定外半径，并与N体模拟对照。结果：理论判据与广泛构型下的模拟吻合；强倾斜三星中仍存在稳定轨道，极轨道和高倾角轨道可在较大径向范围保持稳定，且几乎不随三星倾斜度变化，而近共面与逆共面轨道在相互倾角大时更易失稳。这有助于理解三星系统中倾斜环双星盘和行星的存续与探测。",
+      "affiliations": [],
+      "score": 2.6,
+      "categories": [
+        "astro-ph.SR"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.14874",
+      "title": "Sub-Pixel Calibration of CMOS Sensors for Precision Astrometry",
+      "authors": [
+        "M. Shao",
+        "I. Hahn"
+      ],
+      "abstract": "Many sources of systematic error are important to centroid the position of a star below the level of $10^{-4}$ of the FWHM of the stellar image. One of the more important sources of centroiding error is the imperfect position of the pixels in a focal plane array. In this paper, we discuss the calibration of pixel position of multiple commercial CMOS detectors. Focal plane arrays are semiconductor devices fabricated with 10's nanometer precision. However, the effective location of a pixel can be biased if there's a QE gradient across the pixel. We typically see pixel position variations of 1--3\\% of a pixel in most CMOS imagers. This paper describes how we measure the position of each pixel below the $10^{-3}$ pixel level. We also describe how this information might be used in a least square fitting of an airy spot to obtain a higher accuracy position of the centroid of the PSF.",
+      "url": "https://arxiv.org/abs/2608.14874v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14874v1",
+      "tldr": "《CMOS传感器亚像素校准用于精密天体测量》研究指出，恒星质心定位需达FWHM的10⁻⁴以下，像素位置不完美是主要误差源。方法上，对多个商用CMOS探测器逐像素测量有效位置，校准精度优于10⁻³像素，并将该信息用于艾里斑最小二乘拟合。结果显示，多数CMOS像元位置偏差为像素的1%–3%；该校准可提高恒星PSF质心测定精度。",
+      "affiliations": [],
+      "score": 2.6,
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.15883",
+      "title": "A Social Network Analysis of JWST General Observer Programs: The Emergence of a Decentralized Heterarchy",
+      "authors": [
+        "Christopher Williams"
+      ],
+      "abstract": "Developing proposals to execute programs on space telescopes involves networks of astronomers coalescing around ideas and plans for observations. When aggregated, these program level networks allow a collective structure of the overall social network of astronomers using a telescope to be created and analysed. We do this using program level investigator data over the first five cycles of accepted General Observer (GO) programs on the James Webb Space Telescope (JWST). The aggregate network contains 5252 unique astronomers with 144740 connections between them based on their program level participation. We apply a modularity class coefficient to visualize the sub communities that evolved within the aggregate network. Ten dominant sub communities emerge that are shown to correlate at various levels with the JWST scientific categories as defined by the Space Telescope Science Institute (STScI). These sub communities vary in size as well as diversity of countries and institutions represented. Analysis of the research interests of investigators within sub communities reveals that separation along the long axis of the graph is associated with the scale of science performed at community level (AU scale vs kpc Gpc scale). While the social network structures based on institutional affiliation and country of institution are highly centralized, the aggregate network at the investigator level is highly heterarchical and decentralized. It appears to be supportive of cross disciplinary interaction, and institutionalized integration between planetary system and cosmic structure science that is wide and redundant, rather than mediated by a small set of critical brokers. Results have implications for access policy (time allocation processes on telescopes leaving behind a legacy of heterarchical social networks) and access strategy (astronomer need to access networks before accessing telescopes).",
+      "url": "https://arxiv.org/abs/2608.15883v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15883v1",
+      "tldr": "针对JWST获准项目所形成天文学家合作网络的结构问题，本研究利用前五个周期GO项目研究者数据，构建含5252位天文学家、144740条连接的聚合网络，并采用模块度分类系数识别子社群。结果显示：出现十个主导子社群，与STScI科学分类相关，社群规模及国家/机构多样性各异。尽管机构与国家层面的网络高度集中，研究者层面的网络呈高度去中心化的非等级结构，支持行星科学与宇宙结构科学之间广泛冗余的跨学科整合，而非依赖少数关键中介。这对望远镜时间分配政策与获取策略具有启示。",
+      "affiliations": [],
+      "score": 2.6,
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.15221",
+      "title": "A self-consistent solar coronal heating model by Alfvenic waves",
+      "authors": [
+        "Hidetaka Kuniyoshi",
+        "Richard J. Morton"
+      ],
+      "abstract": "Alfvenic waves are prevalent throughout the solar atmosphere and are believed to play an essential role in coronal heating, classified as alternating current (AC) heating in contrast to direct current (DC) heating associated with quasi-static magnetic field line braiding. The relative importance of AC versus DC heating depends on the details of the photospheric driver and on the configuration of the magnetic field. Moreover, even if AC heating prevails, several wave dissipation mechanisms have been proposed, and which of them dominates remains unclear, as its efficiency depends on plasma compressibility and density inhomogeneity. We address these issues by performing three-dimensional radiative magnetohydrodynamic (MHD) simulations of a coronal loop spanning from the upper convection zone to the corona, which self-consistently capture many relevant physical processes. We find that the corona is predominantly heated by AC heating, with Alfven wave turbulence providing the primary contribution, accounting for at least 80% of the entire coronal heating in the present simulation. Our results strongly support the use of Alfven wave turbulence-based models employed in space weather and stellar activity research, such as the Alfven Wave Solar Model (AWSoM) and the Magnetohydrodynamic Algorithm outside a Sphere (MAS).",
+      "url": "https://arxiv.org/abs/2608.15221v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15221v1",
+      "tldr": "针对日冕加热中交流（AC）与直流（DC）加热的相对重要性及主要阿尔文波耗散机制不明的问题，我们采用从对流区上部延伸至日冕的日冕环三维辐射磁流体力学（MHD）模拟，自洽捕捉相关物理过程。结果显示，该模拟中日冕主要由AC加热主导；阿尔文波湍流是最主要贡献，至少占日冕加热的80%。此结果支持基于阿尔文波湍流的空间天气与恒星活动模型（如AWSoM、MAS）。",
+      "affiliations": [],
+      "score": 2.4,
+      "categories": [
+        "astro-ph.SR",
+        "physics.plasm-ph"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.14873",
+      "title": "Enabling Quantitative Polarimetry for Keck/NIRC2: Preliminary Mueller Matrix Model Calibration",
+      "authors": [
+        "Manxuan Zhang",
+        "Briley L. Lewis",
+        "Maxwell A. Millar-Blanchaer",
+        "Eduardo Marin",
+        "Jayke S. Nguyen",
+        "William Melby",
+        "Carlos Alvarez",
+        "Jaren N. Ashcraft",
+        "Mahawa Cisse",
+        "Charles-Antoine Claveau",
+        "Jacques-Robert Delorme",
+        "Greg Doppmann",
+        "Michael P. Fitzgerald",
+        "Matthew Freeman",
+        "Percy Gomez",
+        "Trisha Hammen",
+        "Ryan Hersey",
+        "Nemanja Jovanovic",
+        "Marc Kassis",
+        "Scott Lilley",
+        "Jessica Lu",
+        "James E. Lyke",
+        "Keith Matthews",
+        "Dimitri Mawet",
+        "Thomas McIntosh",
+        "Max Service",
+        "Lauren Simmons",
+        "Jacob Taylor",
+        "Rob G. van Holstein",
+        "Ed Wetherell"
+      ],
+      "abstract": "The Keck/NIRC2 infrared imager was upgraded in 2025 with dual-beam polarimetric observing modes spanning approximately 1.1--4.1 microns (JHKL' bands). We present a preliminary JHK calibration of NIRC2 Polarimetry using a wavelength-dependent Mueller matrix model of the Keck tertiary mirror (M3), half-wave plate (HWP), image rotator (IMR), downstream optics, and Wollaston prism. We constrain the model downstream of M3 using dome flat sequences spanning ten HWP and nine IMR angles in each band. Although the model reproduces the dominant modulation, the residuals show structure dependent on HWP and IMR angle. Measurement matrix inversion of unpolarized standard star observations gives M3 diattenuations of 0.0119+/-0.0009, 0.0098+/-0.0004, and 0.0068+/-0.0005 in J, H, and Kp, substantially closer to Fresnel predictions for aluminum than the values derived from dome flats. The larger dome flat modulation may indicate polarization in the incident dome illumination or Mueller matrix model inaccuracies. These results establish an initial calibration framework while motivating improved input polarization constraints, fixed HWP parameters from previous laboratory measurements, model validation with polarized standard stars, and extension to L'.",
+      "url": "https://arxiv.org/abs/2608.14873v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.14873v1",
+      "tldr": "针对凯克NIRC2 2025年新增双光束偏振模式，需校准仪器偏振串扰。方法上，用含三镜、半波片、影像旋转器及沃拉斯顿棱镜的波长相关穆勒矩阵模型，结合JHK波段穹顶平场与未偏振标准星观测约束。结果显示，反演的M3二向衰减在J、H、Kp分别为0.0119、0.0098、0.0068，接近铝反射菲涅耳预期，明显优于穹顶平场导出的值；但残差仍随波片和旋转器角度变化，表明入射照明偏振或模型尚不完善。研究建立了初步校准框架，后续需固定波片参数、用偏振标准星验证并扩展L'波段。",
+      "affiliations": [],
+      "score": 2.3,
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.15201",
+      "title": "Adapting the 23m LST-North mechanical structure design for the strong Chile seismic environment",
+      "authors": [
+        "Thomas Schweizer",
+        "Josef Eder",
+        "Teshima Masahiro",
+        "Holger Wetteskind",
+        "Razmik Mirzoyan"
+      ],
+      "abstract": "The 23-meter-diameter Large-Sized Telescope (LST) is the largest size telescope of the next generation Cherenkov Telescope Array (CTA). The first telescope, LST-1, was installed at the Roque de los Muchachos Observatory (ORM) on La Palma at an altitude of 2,250 m in 2018 and has been in operation since 2019. Its ultra-lightweight structure (110 tons) enables extremely rapid repositioning (180{\\deg} in 18 seconds) and has been designed to withstand extreme environmental conditions, including storms and winds exceeding speed up to 200 km/h. To deploy the same solid telescope design at the CTA Southern Observatory in Chile, the structure must be adapted to the significantly higher seismic demands of the site. To address this challenge, the Max Planck Institute for Physics (MPP) has proposed the integration of a seismic isolation system with the proven LST-1 structural design. This approach substantially reduces seismic loads and dynamic amplification, thereby avoiding extensive structural modifications and enabling the existing telescope design to be transferred to the Chilean site with only minor adaptations. In this contribution, we present the proposed seismic isolation concept and its feasibility studies. MPP is responsible for the mechanical structure of the LST and has validated the concept through detailed finite-element analyses and long-term structural lifetime assessments.",
+      "url": "https://arxiv.org/abs/2608.15201v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15201v1",
+      "tldr": "为将23米LST望远镜结构用于智利强震台址，需应对显著更高的地震需求。研究提出在成熟的LST-1结构设计中集成地震隔离系统，并通过有限元分析与长期结构寿命评估进行可行性验证。结果表明，该系统大幅降低地震荷载与动力放大效应，避免大规模结构修改，使现有设计仅需少量适配即可转移至智利站址。",
+      "affiliations": [],
+      "score": 2.3,
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.16257",
+      "title": "Direct Imaging and Gradient-Based Analysis of the 12 August 2026 Partial Solar Eclipse from a Freely Rotating High-Altitude Balloon",
+      "authors": [
+        "Bjoern Poppe",
+        "Enno Gronewold",
+        "Matti Gehlen",
+        "Jona Schrader",
+        "Delia Gauk",
+        "Lisa Cordes",
+        "Maike I. Schmitz",
+        "Peter Schoenfeld",
+        "Simon Jaeger",
+        "Gerhard Drolshagen"
+      ],
+      "abstract": "We report a proof-of-concept observation of the partial solar eclipse of 12 August 2026 using a freely rotating high-altitude balloon launched from Oldenburg, northern Germany. The payload carried two Insta360 ONE RS cameras equipped with 4K Boost wide-angle lenses; covered by filter material taken from a BRESSER eclipse viewing glass. Interval photographs were acquired every 10 s at ISO 800 and 1/1000 s. Of approximately 1,300 images, 21 contained a directly visible image of the eclipsed Sun, spanning 19:19:15-20:38:21 CEST and both sides of the local eclipse maximum. To test whether quantitative eclipse information could be recovered from these small, non-stabilized wide-angle images, the visible solar area was estimated using a two-dimensional gradient-based solar edge analysis and normalized to the first observation. The image-derived obscuration followed the independently calculated eclipse geometry with Pearson r = 0.959, a mean absolute difference of 9.5 percentage points, and an RMSE of 11.5 percentage points. Systematic deviations are consistent with the limitations of an uncalibrated action-camera system, including point-spread function, field-dependent lens response, filter geometry, and camera-to-camera differences. The results demonstrate that passive payload rotation can yield both visually useful and semi-quantitative direct eclipse observations without active solar pointing, and define a calibration strategy for future balloon-borne eclipse measurements.",
+      "url": "https://arxiv.org/abs/2608.16257v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16257v1",
+      "tldr": "为验证自由旋转高空气球能否定量观测日偏食，本研究在德国奥尔登堡发射气球，搭载两台Insta360 ONE RS相机及日食眼镜滤膜，每10秒拍摄；约1300张图像中21张包含日偏食。采用二维梯度太阳边缘分析估算可见日面面积并归一化，与独立理论食分比较，相关系数r=0.959，平均绝对差9.5个百分点，RMSE=11.5个百分点。结果表明无主动指向也可获得半定量日食观测，并提出了未来校准策略。",
+      "affiliations": [],
+      "score": 2.3,
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.15148",
+      "title": "Parameter estimation in differential equations: Mathematical foundation for satellite gravimetry, review and perspectives",
+      "authors": [
+        "Peiliang Xu"
+      ],
+      "abstract": "Satellite gravimetry has become essential in many areas of earth science. However, the resolution of satellite gravitational models remains low at scales of a few hundreds km and no gravity recovery methods can take full advantages of unprecedented high accuracy of satellite tracking measurements. We first provide a unified theoretical framework of parameter estimation in differential equations for satellite gravimetry and then briefly review the mathematical methods to compute the gravity field of the Earth from satellite tracking. We focus on the collocation method, Kaula linear perturbations, two-point boundary value problems and orbit-energy-based methods. The numerical integration method is also included in this review, though it has been proved to be mathematically incorrect and physically not permitted. The reason is that it has become the standard method to routinely produce global gravitational models from satellite tracking data, which have been widely applied in many different areas of earth science. Because it is not clear how the incorrect foundation would affect gravity products from satellite tracking, we do not review any applications of these products. We then present a measurement-based perturbation theory to estimate the gravity field of the Earth, which can fully utilize both precise satellite orbits of arbitrary length and unprecedented high accuracy of satellite and inter-satellite tracking. The method is theoretically free of modeling errors, is capable of extracting any small forces from satellite and inter-satellite tracking data and provides a guarantee for high-precision and high-resolution global gravity models. Finally, we assume a reference gravity model and derive local solutions to the Newton's nonlinear governing differential equations of satellite motion for scattered tracking data that can still be important in some applications.",
+      "url": "https://arxiv.org/abs/2608.15148v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15148v1",
+      "tldr": "卫星重力测量在数百公里尺度分辨率仍低，现有方法无法充分利用卫星跟踪数据的高精度。本文给出了微分方程参数估计的统一理论框架，回顾了配点法、Kaula线性摄动、两点边值问题和轨道能量法，并指出数值积分法虽数学上不正确但已成标准。作者提出基于测量的摄动理论，能利用任意长度卫星轨道与星间跟踪数据，理论上无模型误差，可提取微小力，为高精度高分辨率全球重力模型提供保障。最后，在参考模型下推导了局部解。",
+      "affiliations": [],
+      "score": 2.3,
+      "categories": [
+        "astro-ph.IM",
+        "astro-ph.EP",
+        "math-ph",
+        "math.DS",
+        "math.MP"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.16479",
+      "title": "Tradeoff between segment density and IWA for high-contrast imaging of exoplanets with a large segmented space mission",
+      "authors": [
+        "Lucie Leboulleux",
+        "Rapha\\\"el Pourcelot",
+        "Laurent Pueyo",
+        "Bryony Nickson"
+      ],
+      "abstract": "Imaging Earth-like exoplanets with coronagraphs on future large segmented space telescopes such as the Habitable Worlds Observatory requires contrasts down to $10^{-10}$ at separations below 100 mas, imposing segment phasing control down to a few picometers. We evaluate how this constraint can be relaxed by optimizing telescope and instrument design, quantifying the impact on performance stability under segment phasing aberrations. We propose a system-level approach, adjusting the primary mirror segmentation and the focal-plane mask size (inner working angle). We compare the passive robustness to segment phasing errors across systems, and the ability of a Zernike low-order wavefront sensor to reconstruct aberrations and recover target performance. Increasing the focal-plane mask radius or decreasing segment count improves both passive robustness and sensor reconstruction: Increasing the mask radius from 3.5 to 6.5{\\lambda}/D relaxes phasing constraints by up to a factor 4 near the IWA, and reducing the segment count from 85 (5 rings) to 7 (1 ring) relaxes them by up to a factor 2; The same mask radius increase also doubles, on average, the sensor's sensitivity to photon noise across segment piston, tip, and tilt modes. To conclude, jointly optimizing the segmentation scheme and mask size, so the low-order PSD envelope is blocked by the mask, can significantly relax phasing requirements, complementing active correction, with direct implications for HWO.",
+      "url": "https://arxiv.org/abs/2608.16479v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16479v1",
+      "tldr": "**研究简报：分段密度与内工作角对系外行星高对比成像的权衡**\n\n针对未来大型分段空间望远镜（如宜居世界天文台）直接成像类地系外行星需达到10⁻¹⁰对比度、分段定相控制达皮米级的问题，本研究提出系统级优化方案：调整主镜分段方案与焦面掩模尺寸（内工作角），并比较不同系统对分段定相误差的被动鲁棒性，及Zernike低阶波前传感器的重构能力。结果表明：将掩模半径从3.5增至6.5 λ/D，内工作角附近定相约束放松最多4倍；将分段数从85（5环）减至7（1环），约束放松最多2倍。同一掩模半径增大还使传感器对光子噪声的平均灵敏度翻倍。联合优化分段与掩模，可显著放松定相要求，补充主动校正。",
+      "affiliations": [],
+      "score": 2.2,
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.15166",
+      "title": "Stress-Testing DANTE under Detector Domain Shift: a Representation-Coherent Reanalysis of LIGO O4a",
+      "authors": [
+        "Luca Cirfeta"
+      ],
+      "abstract": "This sixth version of the Domain-Adaptive Network for Transient Evaluation (DANTE) preprint stress-tests an unsupervised transient-noise pipeline under representation mismatch and observing-run adaptation. We reanalyse 10,429 detector-time strain candidates from 42 LIGO O4a sessions using frozen DINOv2 patch embeddings and a Top-k multiple-instance score. Candidate and native-background Q-transforms share Q in [4,64], and detector-specific thresholds are calibrated from 5,000 run-native windows by temporal-block bootstrap. The coherent analysis yields 6,365 ROBUST, 1,275 AMBIGUOUS, and 2,789 BACKGROUND statistical dispositions; 4,676 of 10,372 paired historical dispositions differ from the cross-representation v5 analysis. Direct controls resolve an O3b-O4a score shift and reduction after native adaptation for H1, but not L1, while known-glitch separation is detector- and morphology-dependent. Replicated studies quantify population-dependent sensitivity to background draw, clustering seed, dictionary size, and whitening, demonstrate native-index absorption, and identify conditional low-Q blindness. A conservative H1-L1 max-shift screen yields 13/8,806 values above threshold, but its on-source values and pooled per-event null maxima are not exchangeable. The primary two-null PEM endpoint shows no resolved ROBUST-BACKGROUND enrichment (p=1.000), and two catalogue overlaps are consistent with a circular-shift coverage proxy (p=0.651). Simulation-only compact-binary controls show detector- and distance-dependent disagreement between novelty, native disposition, and physical coincidence. We withdraw the v5 discovery, rate-limit, catalogue-recall, and survey-wide stability interpretations. The supported result is a measured set of failure modes and validity conditions for unsupervised detector characterization, not a new glitch class or an astrophysical search.",
+      "url": "https://arxiv.org/abs/2608.15166v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15166v1",
+      "tldr": "本研究对无监督瞬态噪声管线DANTE进行领域漂移压力测试（v6）。利用冻结DINOv2补丁嵌入与Top-k多实例评分，重新分析来自42次LIGO O4a观测的10,429个候选应变样本，并用5,000个原生窗口校准检测器阈值。结果：6,365个稳健、1,275个模糊、2,789个背景分类；4,676/10,372个历史判定与v5不同。双零假设PEM终点无富集（p=1.000），目录重叠与循环位移代理一致（p=0.651）。作者撤回v5的发现、限率、目录召回及巡天稳定性解释；支持的结果是测量到无监督探测器表征的失效模式与有效性条件，而非新的瞬态噪声类别或天体物理搜索。",
+      "affiliations": [],
+      "score": 2.1,
+      "categories": [
+        "astro-ph.IM",
+        "gr-qc"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.15989",
+      "title": "Exact spherical-wave forward model for radio reflection from stratified media",
+      "authors": [
+        "Paramita Dasgupta"
+      ],
+      "abstract": "Radio detection of ultra-high energy particles ($\\gtrsim10^{18}$ eV) depends on how broadband radio pulses reflect from natural media boundaries. We extend the spherical-wave (Sommerfeld--Weyl) treatment of a single homogeneous interface to stratified media by replacing the Fresnel coefficient of each plane-wave component with the characteristic-matrix reflection coefficient of a layered medium, evaluated in the local tangent plane on the spherical surface. The calculation reduces to the single-boundary result at machine precision when the layer contrast is removed and agrees with the published spherical-surface calculation to better than $1.1\\%$ at ten HiCal-2 elevation angles, with a mean deviation of $0.6\\%$.\n  We apply the formalism to shallow firn stacks proposed as explanations for anomalous-polarity ANITA events. For realistic firn contrasts, layering changes the reflected amplitude but does not reverse the pulse polarity over $150$--$850$ MHz for the elevations studied. In a reference $s$-polarized two-layer model, a coefficient sign change requires buried refractive index $n_2\\simeq2.56$, $2.04$, and $1.79$ at local elevations of $8^\\circ$, $15^\\circ$, and $25^\\circ$, respectively. We also test the specular factorization used in fast propagation models, finding $0.2\\%$ agreement with the full angular integral for high-altitude balloon geometries, while near-boundary sources require the full integral. The calculated reflected pulses reproduce the expected polarity inversion in $101$ of $106$ HiCal-1 direct/reflected pulse pairs. Because the medium enters through its complex refractive index, the framework applies to ice, lunar regolith, and conducting media.",
+      "url": "https://arxiv.org/abs/2608.15989v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.15989v1",
+      "tldr": "针对分层介质上无线电脉冲反射的精确建模问题，本文将球面波的Sommerfeld–Weyl单界面解法推广到分层媒质：用特征矩阵反射系数替代各平面波分量的菲涅尔系数，并在球面局部切平面求值。当层对比消失时，计算与单边界结果在机器精度内一致；与已发表的球面计算在十个HiCal-2仰角处偏差小于百分之一点一，平均百分之零点六。将该方法用于解释ANITA异常极性事件的浅层firn模型，分层只改变反射幅度，在150–850 MHz内不反转极性；在参考二层s偏振模型中，需埋藏折射率约2.56、2.04、1.79（仰角8°、15°、25°）才会出现符号反转。HiCal-1的106对直接/反射脉冲中，101对极性反转被正确重现。",
+      "affiliations": [],
+      "score": 2.0,
+      "categories": [
+        "astro-ph.IM",
+        "astro-ph.HE",
+        "hep-ex",
+        "physics.class-ph",
+        "physics.ins-det"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.16297",
+      "title": "A NICE (Nulling Interferometry Cryogenic Experiment) update: Beyond 1e-5 and towards cryogenic operation",
+      "authors": [
+        "Jonah T. Hansen",
+        "Thomas Birbacher",
+        "Germain Garreau",
+        "Julio Pino-Jim\\'enez",
+        "Emilie Bouzerand",
+        "Felix A. Dannert",
+        "David Eglin",
+        "Lee Feinberg",
+        "Adrian M. Glauser",
+        "Maximilian Kirchhoff",
+        "Oliver Pitz",
+        "Eckhart Spalding",
+        "Sascha P. Quanz"
+      ],
+      "abstract": "The Nulling Interferometry Cryogenic Experiment (NICE) is a mid-infrared laboratory testbed at ETH Z\\\"urich that aims to not only reproduce the deep ($<1\\times10^{-5}$) broadband nulls of the nulling testbeds of the early 2000s, but also at the required sensitivity levels expected for the LIFE space mission. This sensitivity enforces the experiment to go cryogenic at temperatures around 15 K; an ambitious task for an ultra-precise interferometer. We share our results of the ambient precursor experiment, demonstrating repeatable $<1\\times10^{-5}$ nulls at a single wavelength and high throughput, and investigations into the nulling performance across a broader bandpass and with dual polarisation states. We will also highlight the push towards cryogenic operation, with the instalment of a new 15 K test cryostat that will inform our choices of materials and optomechanical mounting techniques.",
+      "url": "https://arxiv.org/abs/2608.16297v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.16297v1",
+      "tldr": "标题：NICE低温零差干涉实验：超越1e-5并迈向低温运行\n\n研究问题：NICE是中红外实验室测试台，旨在不仅复现早期<1e-5的宽带零差，还达到LIFE太空任务所需的灵敏度。该灵敏度要求实验在约15 K低温下运行。方法：开展环境温度前驱实验，测量单波长可重复零差与高通量，并考察宽波段和双偏振态的零差性能；安装新的15 K测试低温恒温器以指导材料和光机安装选择。结果：环境温度下已实现可重复<1e-5单波长零差和高通量，并正推进低温运行。",
+      "affiliations": [],
+      "score": 1.9,
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    }
+  ]
+}
