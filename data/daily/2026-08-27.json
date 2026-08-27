@@ -1,0 +1,1452 @@
+{
+  "date": "2026-08-27",
+  "papers": [
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24826",
+      "title": "The Mass Dependence of the Fundamental Metallicity Relation in Observations and Simulations",
+      "authors": [
+        "Laura Carnevale",
+        "Alex M. Garcia",
+        "Paul Torrey",
+        "Sara L. Ellison",
+        "Shweta Jain",
+        "Peixin Zhu",
+        "Kathryn Grasha",
+        "Ryan L. Sanders",
+        "Lars Hernquist",
+        "Lisa J. Kewley",
+        "Jillian M. Scudder"
+      ],
+      "abstract": "The metal content of galaxies provides direct insight into the underlying physical processes that drive galaxy evolution. An example of this is the three-parameter relationship between stellar mass, gas-phase metallicity, and star formation rate, commonly referred to as the Fundamental Metallicity Relation (FMR). Previous studies have suggested that the FMR is redshift-invariant (at $z \\lesssim 4$) and fully accounts for the scatter in the mass-metallicity relation (MZR). In this work, we test this 'fundamental' relation in both cosmological simulations (EAGLE, SIMBA, Illustris, IllustrisTNG) and Sloan Digital Sky Survey (SDSS) observations. We find that the canonical anti-correlation between metallicity and specific star formation rate (sSFR) inverts in massive galaxies ($M_\\star \\gtrsim 10^{10.5} \\mathrm{M}_\\odot$) in EAGLE, IllustrisTNG, and SDSS. When including lower star forming galaxies, the positive correlation appears for all four simulations and SDSS. We speculate that this inversion may being driven by strong nuclear outflows (from, e.g., active galactic nuclei or stellar feedback), which quench star formation while simultaneously expelling preferentially enriched gas from the center of the galaxy. We also find that this 'inversion' appears in a number of metallicity diagnostics in observations (though the details depend on diagnostic) and persists out to $z \\sim 1$ in the simulations. These results demonstrate that these strong nuclear outflows challenge simple gas regulator-type models and provide a new framework to test models of the baryon cycle in both future simulations and observations.",
+      "url": "https://arxiv.org/abs/2608.24826v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24826v1",
+      "tldr": "本研究检验恒星质量-金属丰度-恒星形成率关系是否“基本”。我们利用Illustris、TNG、EAGLE、SIMBA四种宇宙学模拟及SDSS观测，按0.25 dex恒星质量分箱，以η_SFR量化金属丰度偏离质量-金属丰度关系与比恒星形成率的相关，并改变sSFR选择阈值。结果显示：全样本中η_SFR为负，但在恒星质量约10^10.5太阳质量以上，SDSS、TNG和EAGLE出现反转（高sSFR星系金属丰度更高）；纳入更多低sSFR星系会增强反转；TNG与EAGLE的反转在红移小于等于1时仍存在，且对九种金属诊断稳健。贡献是提出量化该反相关随质量变化的框架，并推测强核外流如AGN反馈可能是驱动机制。",
+      "affiliations": [
+        "Oberlin College",
+        "Australian National University",
+        "University of Victoria",
+        "The NSF-Simons AI Institute for Cosmic Origins",
+        "University of Virginia",
+        "University of Kentucky",
+        "Harvard-Smithsonian Center for Astrophysics",
+        "Boston University"
+      ],
+      "score": 4.4,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24483",
+      "title": "Evolutionary Period-Change Modeling of Delta Cephei with MESA Tracks",
+      "authors": [
+        "Zuhoor Elahi",
+        "Christopher Sirola",
+        "Wafa Gull"
+      ],
+      "abstract": "Cepheid period changes provide a direct evolutionary diagnostic because the pulsation period responds to changes in stellar radius as a star crosses the instability strip. We present a controlled MESA evolutionary-track analysis for Delta Cephei using nonrotating, no-wind models. The period is estimated from the period-mean-density relation, P = Q [(R/Rsun)^3/(M/Msun)]^(1/2), with Q = 0.033 d. The adopted comparison values are P = 5.366531 d and dP/dt = -0.1006 s yr^-1. A solar-metallicity mass and overshoot grid identifies clean blueward solutions with negative dP/dt near the observed period, but the best such case has dP/dt = -0.6813 s yr^-1, a factor of 6.77 too large in magnitude. A metallicity pilot grid improves the result substantially, with a best clean-blueward model at M = 5.90 Msun, Z = 0.012, and fov,core = 0.010, giving P = 5.370677 d and dP/dt = -0.2460 s yr^-1. A local refinement around this solution does not improve beyond the same model. Thus, metallicity refinement reduces the period-change mismatch by a factor of about 2.77 relative to the solar-metallicity baseline, but the final nonrotating, no-wind, fixed-Q model still overpredicts the observed magnitude of dP/dt by a factor of about 2.45. The result supports a blueward evolutionary interpretation while identifying rotation, mass loss, binary-related effects, and structure-dependent pulsation periods as the natural scope of a follow-up study.",
+      "url": "https://arxiv.org/abs/2608.24483v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24483v1",
+      "tldr": "研究问题：仅用固定Q周期近似能否同时再现δ Cephei的周期及其负向长期周期变化。方法：基于MESA非转动、无风演化网格，用P=Q(R^3/M)^1/2和局部线性拟合估计周期变化，筛选蓝向穿越、Ṗ<0且接近观测周期的模型。数据：81个模型，P_obs=5.366531 d，Ṗ_obs=-0.1006 s/yr。结果：仅匹配周期不可靠；最优模型为M=5.90 M☉、Z=0.012、f_ov=0.010，P=5.370677 d，Ṗ=-0.246 s/yr，符号正确但幅度仍约为观测的2.45倍。贡献：证明需同时考虑穿越方向与Ṗ符号，金属丰度降低可改进匹配。",
+      "affiliations": [
+        "University of Karachi",
+        "University of Southern Mississippi"
+      ],
+      "score": 4.0,
+      "categories": [
+        "astro-ph.SR"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.23618",
+      "title": "Constraining the Inner Dark-Matter Slope of Sculptor: A Comparative Analysis of Dynamical Methods",
+      "authors": [
+        "Rishi Sanjeev"
+      ],
+      "abstract": "The core-cusp problem is a discrepancy between simulations and observations of the slopes of inner dark matter density profiles. The two-population estimator, separating dwarf spheroidals into metallicity-split subcomponents, is a standard method to break the mass-anisotropy degeneracy. Four dynamical methods are applied to the 1339-star Tolstoy et al. (2023) VLT/FLAMES Sculptor catalog: spherical Jeans, GravSphere, the Walker and Penarrubia (2011) two-population estimator, and a continuous $f(J,[\\mathrm{Fe/H}])$ action-based distribution function. This work finds $\\Gamma=2.49^{+0.23}_{-0.20}$, with 99.6% of the posterior lying above $\\Gamma=2$ (84.4% after $\\lambda$ calibration), robust to membership cuts and metal-poor contamination; GravSphere gives $\\gamma=0.46^{+0.40}_{-0.28}$. Controlled mocks that hold tracer geometry fixed while breaking the metallicity-kinematics link attribute 77-83% of the recovered bias to geometry rather than decomposition itself; thus, mock-based claims about population splitting must control for geometry. The continuous distribution function encodes a metallicity-action coupling $k_J$ inaccessible to any split-based method; a direct action-space computation on 575 stars with Gaia proper motions finds [Fe/H] declining by 0.3 dex across three decades in radial action. On the central-density diagnostic of Read et al. (2019), the same posteriors give $\\rho_{DM}(150 \\mathrm{pc})=1.77 \\times 10^8 M_\\odot \\mathrm{kpc}^{-3}$, agreeing with their independent Sculptor measurement at $0.74\\sigma$ and placing Sculptor in their cusp-like class; the shallow $\\gamma$ of this work is an asymptotic quantity, and the local slope at 150 pc is consistent with the Navarro-Frenk-White profile. Any tension with feedback-driven core formation therefore rests on the slope axis alone.",
+      "url": "https://arxiv.org/abs/2608.23618v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23618v1",
+      "tldr": "本研究利用 VLT/FLAMES 的 1339 颗 Sculptor 矮星系恒星，采用球面 Jeans、GravSphere、Walker 双星族估计器和连续作用量分布函数四种动力学方法，约束其内部暗物质密度斜率。Fornax 数据用于交叉验证。双星族方法给出 Γ=2.49⁺⁰·²³/₋₀.₂₀（γ≈0.50），GravSphere 得 γ=0.46，球面 Jeans 为 γ=0.97；连续 DF 链未收敛，未提供 k_J。结果显示两种方法支持浅的渐近内斜率，与文献金属丰度斜率 γ≈0.39–0.50 一致，但方法间残余差异仍待解释。",
+      "affiliations": [
+        "Independent researcher"
+      ],
+      "score": 4.0,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.23724",
+      "title": "Periodic activity on the (sub)mm surface of the AGB star Mira A",
+      "authors": [
+        "M. Andriantsaralaza",
+        "B. Bojnordi Arbab",
+        "W. Vlemmings",
+        "T. Khouri",
+        "L. Planquart",
+        "J. Alcolea",
+        "E. Humphreys",
+        "S. del Palacio",
+        "M. Wittkowski",
+        "K. T. Wong"
+      ],
+      "abstract": "Evolved stars on the asymptotic giant branch (AGB) lose mass through stellar winds launched from their dynamic extended atmospheres. Recent high-angular-resolution observations of the archetypal AGB star Mira A (o Ceti) have revealed compact hotspots on its submillimetre (submm) surface, whose origin remains unclear. We aim to characterise the submm photosphere of Mira A and investigate the properties and temporal behaviour of the compact hotspots detected on its surface. We analysed 19 epochs of high-angular-resolution observations obtained with the Atacama Large Millimetre/submillimetre Array in Bands 4, 6, 7, and 9, ranging from 134.34 to 669.25 GHz. The complex visibilities were fitted with parametric models to derive the flux density, size, morphology, and brightness temperature of the stellar disc and an additional more compact component across multiple pulsation phases and observing frequencies.Our results show that the flux density of the stellar disc increases with frequency while its apparent size decreases, in agreement with the expected stratified radio photosphere. In Band 6, both the flux density and the size of the stellar disc vary with pulsation phase, reaching maximum values close to optical maximum light and decreasing toward minimum light. Compact hotspots are detected in Bands~6 and 7 near maximum light, with their brightness temperatures exceeding those of the stellar disc by several thousand kelvins, reaching T>8600 K in Band 6. They are highly energetic and persist on timescales of weeks but evolve over longer timescales, showing changes in both position and intensity. Hotspot activity appears to occur repeatedly across multiple pulsation cycles and may be linked to strong shocks, magnetic activity, and/or episodic mass ejections, and could therefore play an important role in the mass-loss process in AGB stars.",
+      "url": "https://arxiv.org/abs/2608.23724v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23724v1",
+      "tldr": "本研究利用ALMA 4/6/7/9波段共19个历元数据，对Mira A亚毫米光球进行可见度建模（盘+高斯分量），旨在刻画其表面致密热斑的性质与时变行为。结果显示，多数历元需用盘+高斯模型；热斑在近最大光度时出现，亮度温度超出恒星盘数千K（Band 6可达>8600 K），并在数周内发生位置与强度变化。恒星几何直径约40–48 mas，随脉动相位变化；整体谱指数为1.96±0.03，与光学厚热辐射一致。热斑活动或与激波、磁场活动及质量损失过程相关。",
+      "affiliations": [
+        "European Southern Observatory (ESO)",
+        "Uppsala University",
+        "Chalmers University of Technology",
+        "Observatorio Astronómico Nacional (OAN-IGN)"
+      ],
+      "score": 3.7,
+      "categories": [
+        "astro-ph.SR"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24225",
+      "title": "An HI study of a large sample of ultra-diffuse galaxies",
+      "authors": [
+        "Ruilei Zhou",
+        "Ming Zhu",
+        "Chuan-Peng Zhang",
+        "Lin Du",
+        "Cheng Cheng",
+        "Qi Guo",
+        "Tian-Wen Cao",
+        "Wenzhe Xi"
+      ],
+      "abstract": "By cross-matching the SMUDGes catalog with the FASHI and ALFALFA HI surveys, we construct an HI-detected sample of 112 ultra-diffuse galaxies (UDGs) and 48 low-surface-brightness (LSB) galaxies, providing HI-based redshifts for 76 galaxies for the first time. Using DESI DR1 redshifts, we assemble an HI-non-detected sample of 168 galaxies for stacking analysis, with detections in two stellar mass bins below 10^{8.5} M_sun. Combining optical, UV, and HI data, we investigate stellar masses, star formation rates, gas fractions, and kinematics. We present a systematic analysis of the HI mass--optical size relation for UDGs and LSBs, showing both populations follow a mass--optical size scaling similar to normal galaxies, suggesting an average HI surface density, under the assumption that the optical size traces the extent of the HI distribution. Their stellar mass--size relation indicates nearly constant stellar surface densities for galaxies with central surface brightness mu_{0,g}>~24mag arcsec^{-2}, independent of UDG or LSB classification. Many UDGs and LSB galaxies are systematically offset from the baryonic Tully--Fisher relation toward higher baryonic masses at a given velocity, consistent with trends found in UDGs with resolved HI kinematics. Both populations exhibit low star formation efficiencies and long gas depletion times, supporting multiple formation pathways for UDGs.",
+      "url": "https://arxiv.org/abs/2608.24225v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24225v1",
+      "tldr": "研究问题：利用大样本超弥散星系（UDG）和低面亮度星系（LSB），研究其中性氢（H I）性质与形成机制。\n\n方法：将SMUDGes星表与FASHI、ALFALFA的H I巡天及DESI红移数据交叉匹配，构建含160个H I探测源（112个UDG、48个LSB）的样本，并对168个未探测源进行H I堆叠分析。\n\n结果：样本与母星表性质大体一致；UDG和LSB均显示低恒星形成效率和长气体耗竭时间，支持多种形成路径；该样本是当前最大的H I确认UDG样本之一。",
+      "affiliations": [
+        "Guizhou University",
+        "Chinese Academy of Sciences",
+        "University of Chinese Academy of Sciences",
+        "Beijing Normal University"
+      ],
+      "score": 3.6,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24201",
+      "title": "SDSS-IV MaNGA: Star Formation Cessation in Low-redshift Galaxies. III. Dependence on Quenching Criteria",
+      "authors": [
+        "Zhuo Cheng",
+        "Tao Jing",
+        "Cheng Li",
+        "Renbin Yan"
+      ],
+      "abstract": "This paper is the third in a series of studies investigating star formation cessation in nearby galaxies on kiloparsec scales. Using the final SDSS-IV MaNGA data release, we ask how the inferred importance of global, local, and environmental properties depends on the operational definition of quenched regions. We classify spaxels as star-forming, reliably quenched, or potentially quenched by accounting for measurement uncertainties, and train random forest classifiers with a parameter set chosen for direct comparison with previous work. For reliably quenched regions, the local stellar mass surface density $\\Sigma_\\ast$ consistently has the highest feature importance, independent of quenching definition. By contrast, the high importance of central velocity dispersion $\\sigma_c$, previously interpreted as evidence for galaxy-wide AGN feedback, is recovered mainly when potentially quenched regions are included. The leading parameter also varies with stellar mass: $\\Sigma_{\\rm 1kpc}$ is most important below $\\sim10^{10.2}\\,\\textrm{M}_{\\odot}$, whereas local quantities such as $\\Sigma_\\ast$ and $\\sigma_\\ast$ become more prominent at high masses. These results show that quenching criteria and uncertainty treatment can reconcile apparently discrepant feature-importance studies. AGN-related processes may contribute to ambiguous regions, but the reliably quenched population is most tightly linked to high local stellar density.",
+      "url": "https://arxiv.org/abs/2608.24201v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24201v1",
+      "tldr": "本研究基于SDSS-IV MaNGA最终数据，探讨星系尺度上停止恒星形成的“熄灭”区域定义如何影响特征重要性结果。通过区分可靠熄灭与受测量误差影响的潜在熄灭spaxel，并采用两种文献熄灭判据，训练随机森林分类器。结果显示：局部恒星质量面密度Σ*对可靠熄灭区域始终最重要；中心速度弥散σ_c的重要性仅在包含潜在熄灭区域时显现；主导特征随恒星质量变化，低质量端为Σ_1kpc，高质量端为局部量。该工作表明，熄灭判据与不确定处理可调和先前矛盾结论。",
+      "affiliations": [
+        "The Chinese University of Hong Kong",
+        "CUHK Shenzhen Research institute",
+        "Tsinghua University"
+      ],
+      "score": 3.6,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.23846",
+      "title": "The Evolution of Low-Ionization Electron Densities in Galaxies Across Cosmic Epochs",
+      "authors": [
+        "Mabel G. Stephenson",
+        "John Chisholm",
+        "Alberto Saldana-Lopez",
+        "Jorryt Matthee",
+        "Alaina Henry",
+        "Rohan P. Naidu",
+        "Sophia R. Flury",
+        "Taylor A. Hutchison",
+        "Steven L. Finkelstein",
+        "Natalia G. Guseva",
+        "Yuri I. Izotov",
+        "Rui Marques-Chaves",
+        "Pascal A. Oesch",
+        "Naveen A. Reddy",
+        "Daniel Schaerer"
+      ],
+      "abstract": "We investigate the low-ionization electron density in the interstellar medium of galaxies across $0$$<$$z$$<$$8$, derived with the [O II]$\\lambda\\lambda3727,3730$ and [S II]$\\lambda\\lambda6718,6733$ doublets, using both deep JWST NIRCam/grism and NIRSpec/MSA spectroscopy. Along with ancillary density samples from the literature at $0$$<$$z$$<$$6$, we assemble three samples containing a total of 703 galaxies spanning $3.7$$<$$z$$<$$7.8$ at $\\langle z\\rangle\\sim5.6$; 691 galaxies in the luminosity-complete NIRCam/grism programs CONGRESS and FRESCO at $\\langle z\\rangle \\sim4.3$ and $\\langle z\\rangle\\sim5.3$, respectively, and 12 galaxies with high-resolution NIRSpec/MSA spectra from the GO 1871 and GLASS programs. We find median electron densities of $n_{\\rm{e}}$[S II]$=$$463^{+281}_{-203}~{\\rm{cm}}^{-3}$ for CONGRESS, $n_{\\rm{e}}$[S II]$=$$301^{+388}_{-206}~{\\rm{cm}}^{-3}$ for FRESCO, and $n_{\\rm{e}}$[O II]$=$$202^{+145}_{-102}~{\\rm{cm}}^{-3}$ for the NIRSpec/MSA sample. The median low-ionization $n_{\\rm{e}}$ increases from $z= 0$ to $z=4$, in agreement with previous studies and those using JWST observations. However, beyond $z\\sim4$ median $n_{\\rm{e}}$ begins to deviate from a monotonically increasing evolution with $z$. We find a positive, but shallow, correlation between O$_{32}$ (a proxy for the ionization parameter) and $n_{\\rm{e}}$, while also confirming a positive correlation between O$_{32}$ and $z$. We suggest that these trends are possibly due to an evolving ISM gas density and ionization structure, and propose a toy model where the gas clumping evolves with $z$ to explain the observed density and ionization variations.",
+      "url": "https://arxiv.org/abs/2608.23846v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23846v1",
+      "tldr": "本研究利用JWST NIRSpec/MSA及NIRCam/grism（CONGRESS、FRESCO）光谱，探测z>4星系电子密度，并结合文献样本分析其演化。数据含12个NIRSpec/MSA星系及410、281个Hα发射线星系堆叠。测得CONGRESS中值n_e[S II]=463 cm⁻³（z≈4.3）、FRESCO为301 cm⁻³（z≈5.3）、NIRSpec/MSA的n_e[O II]=202 cm⁻³（z≈5.7）。三者1σ内一致，但与单一幂律演化不符，显示z>3后演化趋缓；n_e与O32相关但较理论预期平缓，与恒星质量、SFR等全局性质无显著相关。",
+      "affiliations": [
+        "The University of Texas at Austin",
+        "Stockholm University",
+        "University of California, Riverside",
+        "CNRS",
+        "National Academy of Sciences of Ukraine",
+        "Institute of Science and Technology Austria",
+        "University of Maryland, Baltimore County",
+        "Space Telescope Science Institute",
+        "Massachusetts Institute of Technology",
+        "NASA Goddard Space Flight Center",
+        "University of Geneva",
+        "University of Edinburgh",
+        "University of Copenhagen"
+      ],
+      "score": 3.6,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24701",
+      "title": "Improving the Physical Interpretability of Gaussian Processes in Stellar Activity Modeling: A Study Case on Photometric Variability Among Stellar Clusters",
+      "authors": [
+        "Leslie Moranta (Plan\\'etarium de Montr\\'eal",
+        "Montr\\'eal",
+        "Canada",
+        "Department of Astrophysics",
+        "American Museum of Natural History",
+        "New York",
+        "USA)",
+        "Jonathan Gagn\\'e (Plan\\'etarium de Montr\\'eal",
+        "Montr\\'eal",
+        "Canada",
+        "Trottier Institute for Research on Exoplanets",
+        "Universit\\'e de Montr\\'eal",
+        "Montr\\'eal",
+        "Canada)",
+        "Jacqueline K. Faherty (Department of Astrophysics",
+        "American Museum of Natural History",
+        "New York",
+        "USA)",
+        "Mark Popinchalk (Department of Astrophysics",
+        "American Museum of Natural History",
+        "New York",
+        "USA)",
+        "Jason Lee Curtis (Department of Astronomy",
+        "Columbia University",
+        "New York",
+        "USA)",
+        "Johanna M. Vos (Department of Astrophysics",
+        "American Museum of Natural History",
+        "New York",
+        "USA",
+        "School of Physics",
+        "Trinity College Dublin",
+        "The University of Dublin",
+        "Dublin",
+        "Ireland)",
+        "Alexandrine L'Heureux (Trottier Institute for Research on Exoplanets",
+        "Universit\\'e de Montr\\'eal",
+        "Montr\\'eal",
+        "Canada)",
+        "Andrew Ayala (Department of Astrophysics",
+        "American Museum of Natural History",
+        "New York",
+        "USA",
+        "Department of Physics and Astronomy",
+        "Hunter College",
+        "City University of New York",
+        "New York",
+        "USA)",
+        "Eleanor Johnson (Department of Astrophysics",
+        "American Museum of Natural History",
+        "New York",
+        "USA)",
+        "Dawn McCullough (Department of Astrophysics",
+        "American Museum of Natural History",
+        "New York",
+        "USA)",
+        "Nicole Munoz (Department of Astrophysics",
+        "American Museum of Natural History",
+        "New York",
+        "USA)",
+        "Hannah Park (Department of Astrophysics",
+        "American Museum of Natural History",
+        "New York",
+        "USA)",
+        "Xue Weng (Department of Astrophysics",
+        "American Museum of Natural History",
+        "New York",
+        "USA)",
+        "Livia Poliquin (Marianopolis College",
+        "Montr\\'eal",
+        "Canada)",
+        "Ilhem Lazizi (McGill Institute for Aerospace Engineering",
+        "McGill University",
+        "Montr\\'eal",
+        "Canada)"
+      ],
+      "abstract": "Gaussian Processes (GPs) are widely used to model stellar variability in photometric surveys, but a statistically successful fit does not guarantee that the inferred hyperparameters correspond to physically meaningful stellar properties. This is especially important for young, active stars, whose TESS light curves contain evolving spots, harmonics, and non-sinusoidal variability. We use stellar rotation as a case study to examine when the period hyperparameter of a quasi-periodic GP can be interpreted as a physical rotation period. We introduce a regularized GP likelihood that reweights the covariance-complexity term in the marginal likelihood, reducing the tendency of unconstrained models to converge toward preferred but misleading solutions.\n  We test this framework on 539 stars in IC2602, the Tucana-Horologium Association, Pisces-Eridanus, and GroupX, with independently reported and manually vetted rotation periods. This benchmark evaluates GP hyperparameter interpretability and automated period recovery with minimal human intervention. We compare regularized and unregularized models across several regularization strengths, {\\lambda}, using literature agreement, sector-level diagnostics, and consistency across TESS sectors. Relative to the standard GP likelihood, regularization improves successful rotation-period recovery by an average of 7%. It also generally reduces the median absolute fractional deviation of periods across sectors, showing that the improvement is not limited to catastrophic failures but also mitigates smaller systematic errors.\n  Regularization is particularly beneficial for non-sinusoidal or evolving modulation, where unconstrained GPs may recover harmonics or spurious timescales. These results show that likelihood regularization and cross-sector consistency are practical diagnostics for assessing when GP-based rotation periods are robust.",
+      "url": "https://arxiv.org/abs/2608.24701v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24701v1",
+      "tldr": "针对TESS测光中高斯过程（GP）易过拟合、周期超参数缺乏物理解释的问题，本文引入正则化因子λ，重加权边际似然中的复杂度项，并结合celerite2拟周期核与跨扇区一致性诊断，对IC 2602、杜鹃-时钟、双鱼-波江座及Group X共539颗恒星进行验证。结果显示，相对标准GP，正则化使周期恢复成功率平均提高约7%，跨扇区周期中位绝对偏差在λ>1时均下降，最高约降71%；中等正则化稳健性最佳，并减少谐波或伪周期解。该框架为判别GP周期是否物理可靠提供了实用诊断。",
+      "affiliations": [
+        "The University of Dublin",
+        "Université de Montréal",
+        "Marianopolis College",
+        "City University of New York",
+        "American Museum of Natural History",
+        "McGill University",
+        "Espace pour la Vie",
+        "Columbia University"
+      ],
+      "score": 3.6,
+      "categories": [
+        "astro-ph.SR",
+        "astro-ph.GA",
+        "astro-ph.IM"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.23695",
+      "title": "A giant magnetic eruption from the asymptotic giant branch star Mira A",
+      "authors": [
+        "W. Vlemmings",
+        "M. Andriantsaralaza",
+        "B. Bojnordi Arbab",
+        "T. Khouri",
+        "B. Lankhaar",
+        "L. Planquart",
+        "E. De Beck",
+        "S. Del Palacio",
+        "E. Humphreys",
+        "D. Jadlovsky",
+        "M. Maercker",
+        "H. Olofsson",
+        "M. Saberi",
+        "M. Siebert",
+        "R. Unnikrishnan",
+        "S. Wedemeyer",
+        "M. Wittkowski"
+      ],
+      "abstract": "Mass loss during the advanced evolutionary stages of low- and intermediate-mass stars is traditionally attributed to dust-driven winds, whereas the influence of magnetic fields remains poorly constrained. However, recent observations show massive directional mass ejections from the nearby asymptotic giant branch (AGB) star Mira~A that appear not to be driven by radiation pressure on the dust. We observationally investigate whether magnetic fields are responsible for the mass loss ejections from Mira A. We obtained full-polarisation ALMA observations of the SiO $v=1$, $J=5\\rightarrow4$ maser transition at 215 GHz with angular resolutions of 1.5-2.6 au. The observations reveal a highly magnetized loop-like mass ejection traced by strongly polarised SiO masers extending to approximately eight stellar radii. The morphology, polarisation pattern, energetics, and kinematics indicate a magnetically driven eruption analogous to a stellar coronal mass ejection. The observations demonstrate that magnetic eruptions can dominate mass loss from evolved stars and imply that magnetic fields must become an integral component of future models of AGB, and potentially other cool giant, winds.",
+      "url": "https://arxiv.org/abs/2608.23695v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23695v1",
+      "tldr": "研究問題：磁場是否導致 Mira A 的質量損失拋射。方法：利用 ALMA Band 6 全偏振觀測 SiO v=1 J=5→4 脈澤，經自校準與偏振成像分析。結果：發現延伸至約 12 au、約八倍恆星半徑的環狀橢圓偏振脈澤結構，電矢位置角追蹤磁環；由線性偏振推得磁場下限 ≥0.7 G。磁能、動能與熱能同量級，顯示磁場具動力學重要性，拋射類似恆星日冕物質拋射，表明磁爆發可主導 AGB 星質量損失，未來需納入恆星風模型。",
+      "affiliations": [
+        "European Southern Observatory",
+        "University of Oslo",
+        "Chalmers University of Technology",
+        "Masaryk University"
+      ],
+      "score": 3.6,
+      "categories": [
+        "astro-ph.SR"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24556",
+      "title": "Estimator forensics for the wide-binary gravity test: the eccentricity-triple coupling manufactures a pseudo-signal, and a pre-registered protocol for Gaia DR4",
+      "authors": [
+        "Hicham Boufourou"
+      ],
+      "abstract": "Analyses of Gaia DR3 wide binaries reach opposite verdicts on a claimed low-acceleration anomaly: gamma = Geff/G ~ 1.4 (Chae 2023-2026; Hernandez et al. 2024) versus Newtonian at high significance (Banik et al. 2024; Pittordis et al. 2025), from the same catalogue. We localize the disagreement experimentally. A generative model -- Keplerian binaries plus hierarchical triples with photocentre and time-averaging effects -- is validated without tuning against Pittordis et al. (2025). Synthetic catalogues of known truth are confronted with three estimator families: a full-median estimator, even with a perfect eccentricity correction, recovers gamma = 1.08-1.13 from purely Newtonian universes containing 20-30% residual triples -- half-way to the claimed anomaly -- while a tail-truncated estimator and a mixture likelihood recover <= 1.04 and 1.00. An injected MOND-like boost (gamma = 1.4 above 2 kau) is recovered at >= 1.26 by all three: the hypotheses never overlap under robust estimation, so the controversy is decidable. Applying the calibrated estimators to the 81,088-pair Chae (2024) sample we measure gamma = 1.045 [1.025, 1.068] (2-30 kau), and a joint mixture fit gives gamma = 1.05 [1.04, 1.07] with f_trip = 0.15, consistent with the independent 0.17; gamma = 1.4 is rejected at ~16 sigma. We freeze a pre-registered protocol, time-stamped on Zenodo, for Gaia DR4, where sigma_stat(gamma) < 0.005 will make estimator systematics fully dominant.",
+      "url": "https://arxiv.org/abs/2608.24556v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24556v1",
+      "tldr": "研究问题：Gaia DR3宽双星样本对低加速度引力异常的估计相互矛盾（γ≈1.4 vs 牛顿）。方法：用生成式星族模型构建已知真值的合成宇宙，对三种估计量进行注入-恢复实验；数据为81,088对，经筛选余41,760对。结果：在牛顿真值下，全中位数估计量因残余三合星尾部分布制造出γ=1.08–1.13的假信号；截断与混合估计量保持在1.00–1.04。贡献：将分歧定位于尾端处理方式，而非偏心轨道建模。",
+      "affiliations": [
+        "Independent Researcher"
+      ],
+      "score": 3.5,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.23868",
+      "title": "The Local Origin of a Host Dispersion Measure-Stellar Mass Relation in Fast Radio Bursts",
+      "authors": [
+        "Wasundara Athukoralalage",
+        "Liam Connor",
+        "Peter K. Blanchard",
+        "Edo Berger"
+      ],
+      "abstract": "The origin of fast radio bursts (FRBs) and the relationship to their host galaxy environments remain open questions. Using a sample of 37 FRBs with secure host associations at $z \\lesssim 0.25$, and including dwarf, elliptical, and edge-on hosts, we examine the host dispersion measure ($\\mathrm{DM_{host}}$) and its dependence on host stellar mass ($M_\\star$). We find a statistically significant anti-correlation between the host dispersion measure and host stellar mass (the $\\mathrm{DM_{host}}$-$M_\\star$ relation; Pearson $r \\approx -0.5$, $\\log_{10} p \\approx -2.8$) that extends across the full range of our sample, $\\log_{10}(M_\\star/M_\\odot) \\approx 8$-$11.4$. We find that the rest-frame Faraday rotation measure ($|\\mathrm{RM}|_{\\mathrm{host}}$) is largest in FRBs that reside in dwarf galaxies, but there is no evidence for a correlation across the full mass range. We show that the $\\mathrm{DM_{host}}$-$M_\\star$ trend does not arise from the galaxy-averaged interstellar medium (ISM) nor from the circumgalactic medium (CGM). Instead, we argue that the local ($\\lesssim 100$ pc) environment is responsible. The spatial statistics of star formation and metallicity-dependent FRB progenitor channels plausibly lead to denser ionized environments in low-mass galaxies and less nearby gas in massive hosts.",
+      "url": "https://arxiv.org/abs/2608.23868v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23868v1",
+      "tldr": "本研究利用37个红移≲0.25、有可靠宿主星系认证的快速射电暴（FRB）样本，计算静止系宿主色散量（DM_host）与宿主恒星质量的关系。发现二者存在显著反相关（Pearson r≈−0.5，log p≈−2.8），幂律斜率α=−0.245，低质量矮星系的FRB具有更高DM_host，大质量椭圆星系宿主则较低。作者认为该趋势不能用星系周介质或星系平均星际介质解释，而最可能源于FRB周围约100 pc尺度的局域环境，并与恒星形成空间分布及金属性依赖的前身星通道有关。",
+      "affiliations": [
+        "Harvard & Smithsonian",
+        "The NSF AI Institute for Artificial Intelligence and Fundamental Interactions"
+      ],
+      "score": 3.5,
+      "categories": [
+        "astro-ph.GA",
+        "astro-ph.HE"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24124",
+      "title": "Interplay of Compaction, Quenching, and Black Hole Growth in the Most Massive Galaxies since $z\\sim5$: Insights from JWST and Chandra Data",
+      "authors": [
+        "Novan Saputra Haryana",
+        "Masayuki Akiyama",
+        "Abdurro'uf",
+        "Suchetha Cooray",
+        "Itsna Khoirul Fitriana",
+        "Dian P. Triani",
+        "Bovornpratch Vijarnwannaluk",
+        "Juan Pablo Alfonzo",
+        "Irham Taufik Andika",
+        "Muhammad Nur Ihsan Effendi",
+        "Ibnu Nurul Huda",
+        "Takumi Kakimoto",
+        "Anton Timur Jaelani",
+        "Ronaldo Laishram",
+        "Naoki Matsumoto",
+        "Abdurrahman Naufal",
+        "Lucky Puspitarini",
+        "Ryo Albert Sutanto",
+        "Hesti Retno Tri Wulandari"
+      ],
+      "abstract": "The buildup of dense stellar cores is expected to mark an important transition in the star-formation and black-hole growth of massive galaxies. Using spatially resolved spectral energy distribution (SED) fitting of James Webb Space Telescope near-infrared imaging, combined with stacking analysis of Chandra X-ray data, we trace stellar mass buildup and average black hole accretion in the most massive galaxies at $z<5$, selecting 50 most massive galaxies per redshift bin at constant number density of $\\sim4.4\\times10^{-5}$ cMpc$^{-3}$. To robustly constrain central stellar populations, we separate active galactic nuclei (AGN) components affecting the photometry using multi-band morphological decomposition and SED analysis. We find that the sample selected with constant number density exhibits evolutionary trend of rapid central compaction at $z\\sim4$, during which the median central 1 kpc stellar mass increases by $\\sim0.60$ dex over $\\sim400$ Myr. The majority of X-ray detected AGN ($63\\%\\pm12\\%$) are hosted by galaxies undergoing the compaction, while we find neither individually detected X-ray sources nor a significant stacked X-ray signal at $z>4$, indicating that substantial average black-hole growth emerges primarily during, rather than before, the compaction. Following the compaction, central specific star formation rates (sSFR) decline by $\\sim1.24$ dex over $\\sim700$ Myr at $z\\sim3$ while remaining elevated galaxy-wide, signaling the onset of inside-out quenching. Despite this central suppression, specific black hole accretion rate remains coupled to the total sSFR. Our results suggest that dense-core formation in the most massive galaxies marks the onset of inside-out quenching and a transition toward enhanced black-hole to stellar growth ratio.",
+      "url": "https://arxiv.org/abs/2608.24124v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24124v1",
+      "tldr": "利用JWST近红外成像与Chandra X射线数据，对z<5内按恒定数密度选取的250个最亮大质量星系开展空间分辨SED拟合与X射线堆叠分析，并扣除AGN污染。结果显示，z~4时中心1 kpc恒星质量密度快速增加约0.6 dex；随后中心恒星形成受抑制并向外扩展，呈由内而外熄灭特征。z≲4时平均BHAR/SFR约为10^-3，表明黑洞与恒星质量近似同步增长；X射线亮AGN多位于高中心密度且仍活跃恒星形成的致密星系中。",
+      "affiliations": [
+        "Technical University of Munich",
+        "Institut Teknologi Bandung",
+        "Stanford University",
+        "Center for Astrophysics | Harvard & Smithsonian",
+        "Tohoku University",
+        "Academia Sinica",
+        "National Astronomical Observatory of Japan",
+        "National Research and Innovation Agency",
+        "Max-Planck-Institut für Astrophysik",
+        "Nanjing University",
+        "SLAC National Accelerator Laboratory",
+        "Indiana University",
+        "The Graduate University for Advanced Studies, SOKENDAI"
+      ],
+      "score": 3.5,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.23687",
+      "title": "Cool CGM MgII Absorption Across the Star-Forming, Green Valley, and Quiescent Transition",
+      "authors": [
+        "Simon Xinlin Wu",
+        "Rongmon Bordoloi",
+        "Robert A. Simcoe",
+        "Andrew J. Fox",
+        "Jessica K. Werk",
+        "Jason Tumlinson",
+        "J. Xavier Prochaska"
+      ],
+      "abstract": "We investigate the distribution and kinematics of cool circumgalactic medium (CGM) gas across the star-forming to quiescent transition using MgII absorption for 716 galaxies spanning $0.07<z<2.7$ (169 new and 547 archival galaxies). To compare galaxies uniformly across 10 billion years of cosmic time, we introduce a star-formation offset metric ($\\sigma_{\\mathrm{SFO}}$), which measures a galaxy's deviation from the star-forming main sequence of its epoch. A key advantage of $\\sigma_{\\mathrm{SFO}}$ is its ability to identify transitional green valley galaxies as a distinct population across redshift, which would otherwise be obscured by binary star-forming-passive classifications. We fit a virial-radius-normalized radial profile and find that the MgII absorption strength declines with increasing projected distance from the host galaxy. The scatter around this mean profile correlates strongly with star-formation activity: radial profile residuals correlate positively with $\\log sSFR$ and $\\sigma_{\\mathrm{SFO}}$, with star-forming galaxies showing excess absorption above the profile, green-valley galaxies showing intermediate residuals, and quiescent galaxies falling preferentially below it. The MgII covering fraction in the inner CGM ($R/R_{200} < 0.25$) follows the same sequence, declining monotonically from star-forming through green-valley to quiescent systems. MgII absorption kinematics are consistent with a predominantly bound cool CGM. Star-forming galaxies further exhibit a bimodal azimuthal dependence, with MgII absorption enhanced along both the polar and disk directions, consistent with bipolar outflows and co-planar accretion. Together, these results indicate that the cool CGM tracks the quenching of star-formation in galaxies, with $\\sigma_{\\mathrm{SFO}}$ revealing a gradual decline in cool gas across the green valley rather than an abrupt star-forming-to-passive transition.",
+      "url": "https://arxiv.org/abs/2608.23687v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23687v1",
+      "tldr": "基于716个星系（0.07<z<2.7）的Mg ii λλ2796,2803吸收线观测，研究冷环星系介质（CGM）在恒星形成星系向静止星系转变中的分布与运动学。引入恒星形成主序偏移量σ_SFO，统一比较不同红移处的星系。结果表明：Mg ii吸收强度随投影距离增加而下降；内CGM（R/R200<0.25）的覆盖比例从恒星形成星系、绿谷星系到静止星系单调递减。冷CGM的损耗在绿谷阶段逐渐发生而非突然转变；绝大多数吸收云受引力束缚。",
+      "affiliations": [
+        "University of Washington",
+        "MIT",
+        "Space Telescope Science Institute",
+        "North Carolina State University",
+        "University of California Santa Cruz"
+      ],
+      "score": 3.4,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24123",
+      "title": "Comparing the Nebular and Stellar Dust Attenuation Curves in Nearby Star-Forming Galaxies",
+      "authors": [
+        "Jong Chul Lee",
+        "Hyunjin Shim",
+        "Hyunmi Song",
+        "Ho Seong Hwang",
+        "Woong-Seob Jeong",
+        "Jong-Ho Shinn"
+      ],
+      "abstract": "Differences in the spatial distributions of stars and ionized gas relative to dust in galaxies imply that stellar and nebular dust attenuation curves need not be identical. Although stellar attenuation curves have been extensively studied, nebular attenuation curves remain less explored. In this work, we investigate nebular attenuation curves using Balmer line ratios for a sample of 90,958 nearby star-forming galaxies from the Sloan Digital Sky Survey with well-constrained stellar attenuation curves. In the H$\\alpha$/H$\\beta$ versus H$\\alpha$/H$\\gamma$ diagram, the nebular attenuation curves are, on average, significantly shallower than typical stellar attenuation curves, which can be qualitatively reproduced by source-dust geometric effects. The nebular attenuation curve slopes show weak positive correlations with the stellar attenuation curve slopes and weak dependences on galaxy properties that broadly follow those of the stellar attenuation curve slopes. These results suggest that nebular attenuation curves are distinct from stellar attenuation curves, while remaining consistent with a connection between them.",
+      "url": "https://arxiv.org/abs/2608.24123v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24123v1",
+      "tldr": "本研究利用约9万近邻恒星形成星系的Hα/Hβ与Hα/Hγ比值，约束星云消光曲线斜率，并与恒星消光曲线比较。结果显示，平均星云消光曲线斜率约1.34，显著浅于典型恒星消光曲线（1.40–1.53），且两者斜率呈弱正相关。星云消光曲线随恒星质量、恒星形成率、倾角增大而变浅，与金属度关系弱。研究表明常用“星云与恒星消光曲线相似”的假设需重新考虑，均匀混合几何等模型可解释其偏浅特征。",
+      "affiliations": [
+        "Kyungpook National University",
+        "Chungnam National University",
+        "Seoul National University",
+        "Korea Astronomy and Space Science Institute (KASI)"
+      ],
+      "score": 3.4,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24196",
+      "title": "Flare waiting time as a novel proxy of stellar magnetic activity",
+      "authors": [
+        "Henggeng Han",
+        "Song Wang",
+        "Chuanjie Zheng",
+        "Cunshi Wang",
+        "Xue Li",
+        "Jifeng Liu"
+      ],
+      "abstract": "Stellar flares have long served as stellar magnetic activity tracers. The flare waiting time, defined as the interval between two consecutive flares, provides a valuable diagnostic for probing underlying mechanisms of energy storage and release in stellar atmospheres. In this work, utilizing flaring M dwarfs observed by the Kepler satellite, we establish a simple yet effective activity proxy, i.e., median flare waiting time ($t_{\\rm{w, med}}$). Our results show that the $t_{\\rm{w, med}}$ can trace long-term activity levels similar to the flare rate. However, $t_{\\rm{w, med}}$ corresponding to different waiting time percentiles may encode richer physical insights than flare rate. In addition, for the first time we construct a clear relation between $t_{\\rm{w, med}}$ and stellar rotation period, which is quite similar to the canonical activity--rotation relation. More intriguingly, this relation exhibits a more notable supersaturation effect (i.e., below a critical rotation period, $t_{\\rm{w, med}}$ begins to increase instead of keeping constant) compared to other activity proxies. The filling factor--rotation period relation favors poleward migration of active regions as the explanation for supersaturation, rather than coronal stripping. With the dramatic increase in stellar flares detected by missions like TESS and the upcoming Earth 2.0 satellite, $t_{\\rm{w, med}}$ will become a powerful diagnostic for probing stellar magnetic activity and underlying physics.",
+      "url": "https://arxiv.org/abs/2608.24196v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24196v1",
+      "tldr": "本研究基于Kepler M矮星耀斑样本（540颗恒星、约103178个耀斑），提出中位耀斑等待时间（\\(t_{\\rm w, med}\\)）作为新的恒星磁活动指标。通过仅保留耀斑数多于17、能量高于\\(10^{31}\\)尔格且不跨季度的目标，计算相邻耀斑间隔的中位值。结果显示，\\(t_{\\rm w, med}\\)与耀斑率呈斜率-0.99的幂律关系，接近-1，表明其可有效追踪长期活动；同时与多种传统活动指标均显著相关。研究首次构建\\(t_{\\rm w, med}\\)–自转周期关系，揭示超饱和、饱和、快衰减和慢衰减四部分结构，其中\\(P_{\\rm rot}<1\\)天的超饱和区尤为突出。填充因子在该区随自转变快而下降，支持活动区极向迁移而非日冕剥离的解释。",
+      "affiliations": [
+        "Chinese Academy of Sciences",
+        "University of Chinese Academy of Sciences",
+        "Beijing Normal University"
+      ],
+      "score": 3.3,
+      "categories": [
+        "astro-ph.SR"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24164",
+      "title": "Decoupling candidate dual AGN from chance superpositions in the GOTHIC survey via a deep-learning framework",
+      "authors": [
+        "Bhavesh Mukheja",
+        "Snehanshu Saha",
+        "Anwesh Bhattacharya",
+        "Mousumi Das",
+        "Fran\\c{c}oise Combes",
+        "Sudhanshu Barway"
+      ],
+      "abstract": "Dual active galactic nuclei (DAGN) mark a critical phase in the evolution of merging galaxies and the pairing of supermassive black holes, yet they remain difficult to identify in large imaging surveys because of projection effects and limited spatial resolution. Compact foreground stars and unresolved substructure can mimic dual nuclei through chance superposition, complicating automated detection. We revisit the 46,061 galaxies flagged but rejected as DAGN candidates by the GOTHIC pipeline, primarily because the two nuclei fell within the SDSS fibre aperture or exceeded its separation threshold. We train a supervised deep-learning framework based on the YOLOv11 oriented-bounding-box architecture on annotated SDSS imaging to separate genuine dual nuclei from foreground stellar contaminants and other spurious alignments. The final model attains a validation precision of 0.919, recall of 0.905, and $F_1$ of 0.912 for the dual-nuclei class, and yields 29,605 dual-nucleus candidates after removing star-dominated and blended detections. Structured visual inspection indicates that $54.5$--$62\\%$ are consistent with genuine dual nuclei, implying $\\sim(1.4$--$1.8)\\times10^{4}$ plausible systems. Cross-calibrating the YOLO separation against the deterministic GOTHIC centroid measurement and restricting to the compact regime ($d \\le 6.87''$) gives a conservative subset of $\\sim 13{,}672$ candidates, reaching calibrated separations of $\\sim 0.56''$. Spectroscopy of the most compact ($\\le 1$~kpc) systems shows they are dominated by passive, absorption-line galaxies with no resolved double-peaked emission, so confirmation requires higher-resolution follow-up. The catalogue is a statistically refined list of candidates, not confirmed DAGN. Nonetheless, deep-learning detection substantially reduces contamination and expands the plausible DAGN census.",
+      "url": "https://arxiv.org/abs/2608.24164v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24164v1",
+      "tldr": "本研究重新审视GOTHIC流程剔除的46,061个双活动星系核候选体，这些源多因双核落入SDSS光纤口径或间距超限而被排除。方法上，采用YOLOv11x-OBB定向边界框检测器，直接在原始SDSS图像上训练“双核”与“前景恒星”两类模型，使用3,119张标注图像，并以46,021个被拒源为测试集。模型验证精度0.919、召回0.905、F1为0.912；经后处理得到29,605个双核候选，较原样本减少36%。人工抽查显示54.5%–62%为可靠双核，对应约1.4×10⁴–1.8×10⁴个系统；紧凑区（≤6.87″）保守估计约13,672个，约为GOTHIC确认数的20倍，表明深度学习可显著回收被忽略的候选体。",
+      "affiliations": [
+        "Mahindra University",
+        "University of Illinois Urbana–Champaign",
+        "Indian Institute of Technology Kharagpur",
+        "Indian Institute of Astrophysics",
+        "Observatoire de Paris"
+      ],
+      "score": 3.3,
+      "categories": [
+        "astro-ph.GA",
+        "cs.CV",
+        "cs.LG",
+        "math-ph",
+        "math.MP",
+        "physics.data-an"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.23688",
+      "title": "Agentic Active Learning Meets Visual Embeddings: Finding Anomalies among 370 000 Variable Stars from ASAS-SN",
+      "authors": [
+        "Milan Pesta",
+        "Yuan-Sen Ting"
+      ],
+      "abstract": "Unusual light-curve morphologies can point to rare physical configurations or new phenomena, but automatic searches for anomalies are often dominated by artifacts. Separating genuine anomalies from false positives has traditionally required manual vetting, which does not scale to modern surveys. We present an active learning framework for detecting anomalies in samples of periodic variable stars, with the vetting delegated to multimodal large language model agents. The initial ranking comes from isolation forests trained on DINOv2 ViT-g/14 embeddings of phase-folded light curves. The agents iteratively review the light-curve images of the top-ranked candidates and assign relevance scores, which are propagated through the embedding space to prioritize the next targets. A logistic regression step then extends the search beyond label propagation, and a multi-agent consensus review filters false positives. Using Gemini~3 Flash agents, we applied the pipeline to $373\\,646$ periodic variables from ASAS-SN Sky Patrol V2.0. Across $51$ iterations, the agents labeled ${\\sim}1\\%$ of the sample in roughly $3$ hours at a cost of ${\\approx}$ $$40$, yielding our final catalog of $24$ anomalies ($18$ newly reported) and $153$ potentially interesting objects. The anomalies include eclipsing binaries with extremely deep primary eclipses, high-amplitude contact binaries and pulsators, and a symbiotic nova in outburst for over two decades. At the same labeling budget, the initial ranking would have recovered only $30\\%$ of our catalog, while reaching its lowest-ranked anomaly would have required ${\\sim}70$ times the budget. These results demonstrate the feasibility of agentic active learning for anomaly detection in existing and upcoming photometric surveys.",
+      "url": "https://arxiv.org/abs/2608.23688v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23688v1",
+      "tldr": "针对大规模测光调查中人工检视难以扩展、全量LLM评审成本过高的问题，本文提出主动学习异常检测框架：用DINOv2嵌入相位折叠光变曲线，经孤立森林排序，由Gemini 3 Flash代理迭代标注并传播标签，辅以逻辑回归和五代理共识审查。应用于ASAS-SN约37万颗周期变星，共标注5100源，最终识别24个异常和153个潜在有趣天体，其中18个为新发现、需光谱跟进；全程约3小时，API成本约40美元。",
+      "affiliations": [
+        "Max-Planck-Institut für Astronomie",
+        "The Ohio State University",
+        "Charles University"
+      ],
+      "score": 3.2,
+      "categories": [
+        "astro-ph.SR",
+        "astro-ph.IM"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.23671",
+      "title": "More Numerous and Bluer: Companions of the Brightest Little Red Dots Differ from Control Galaxies at $>3\\sigma$, Hinting at Synchronized Black Hole Seed Formation",
+      "authors": [
+        "Fabio Pacucci",
+        "C. Megan Urry"
+      ],
+      "abstract": "The Little Red Dots (LRDs) are a population of compact, red sources, detected abundantly at $4 \\lesssim z \\lesssim 9$. While their nature is still debated, many models suggest they are powered by accreting massive black holes. Multiple studies have detected blue companions in their vicinity, motivating our analysis: we compare $253$ LRDs uniformly selected across several JWST deep fields against $>7000$ matched controls in the same mosaics. We find that $27.7\\%$ of the brightest LRD quartile host a blue ($\\beta<-1$) companion at $0.5-2$ kpc, versus $11.6\\%$ of redshift-matched controls: a $\\times 2.39$ excess, significant at $3.3\\sigma$. This phenomenon is limited to the brightest LRDs, as the full LRD sample pairs at a rate indistinguishable from controls. Moreover, the excess is confined to the close-pair window ($< 2$ kpc), outside which LRD environments are ordinary. The companions of the brightest LRDs are overwhelmingly ($92\\%$) blue, and significantly bluer, with a median $\\beta\\approx-2.32$, versus $\\beta\\approx-1.92$ for those of controls, rejecting a common parent distribution at $3.4\\sigma$. The signal is thus directional in three independent ways: luminosity, separation, and companion color, all expected for synchronized-pair seed formation. Therefore, we conclude that the association between the brightest LRDs and their close blue companions is physical, i.e., the two phenomena are causally connected: either one drives the other, or both emerge from the same synchronized formation event. A natural explanation for why the most luminous LRDs have nearby, young, star-forming neighbors is that the radiation from these neighbors enabled the direct collapse of the massive black holes powering the LRDs themselves.",
+      "url": "https://arxiv.org/abs/2608.23671v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23671v1",
+      "tldr": "研究问题：检验明亮LRD（小红光天体）是否异常频繁拥有近邻蓝色伴星系，以判断其是否与同步恒星形成触发直接塌缩黑洞种子有关。方法：基于JWST图像中253个LRD（4≤z≤8.5）与7000多个红移匹配对照星系，统一测量2 kpc内蓝伴比例及伴星UV斜率。结果：最亮四分位LRD的2 kpc内蓝伴比例27.7%，较严格对照富余2.17倍；伴星更蓝且更近，关联显著性>3σ。表明明亮LRD与近距离年轻蓝伴星存在物理因果联系。",
+      "affiliations": [
+        "Harvard & Smithsonian",
+        "Yale University"
+      ],
+      "score": 3.2,
+      "categories": [
+        "astro-ph.GA",
+        "astro-ph.CO",
+        "astro-ph.HE"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24481",
+      "title": "Fourier Morphology Diagnostics of Delta Cephei MESA-RSP Light Curves",
+      "authors": [
+        "Zuhoor Elahi",
+        "Christopher Sirola",
+        "Wafa Gull"
+      ],
+      "abstract": "Fourier morphology provides a compact test of whether a nonlinear Cepheid model reproduces the observed harmonic content and asymmetric light-curve shape, not only the pulsation period. We apply Fourier and time-domain morphology diagnostics to observed and synthetic Delta Cephei light curves. The observed Johnson V-band light curve is represented by a Fourier template and compared with MIST bolometric-correction V-band light curves generated from the calibrated MESA-RSP model sequence. This study is framed as a target-specific morphology assessment rather than as a new Fourier-decomposition method. The observed template has Delta V = 0.8390 mag, R21 = 0.3401, R31 = 0.1943, rise fraction = 0.2775, and asymmetry index = 0.4450. The final accepted model, with RSP_alfam = 0.400 and RSP_alfat = 0.095, gives Delta V_syn = 0.0367 mag, R21 = 0.0185, R31 = 0.0028, rise fraction = 0.4860, and asymmetry index = 0.0280. The accepted calibration sequence therefore improves the synthetic amplitude only modestly and leaves the synthetic curve much too sinusoidal. The result shows that the accepted sequence is period-calibrated and morphology-tested, but it is not yet an observed-amplitude solution for Delta Cephei.",
+      "url": "https://arxiv.org/abs/2608.24481v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24481v1",
+      "tldr": "本研究检验MESA-RSP合成V波段光变曲线能否复现Delta Cephei的AAVSO Johnson V波段形态。方法上采用MIST热改正将MESA-RSP输出转为合成星等，并以傅里叶振幅比、相位组合及上升分数等诊断比较。最终标定模型（alfam=0.400, alfat=0.095）的ΔV、R₂₁、R₃₁分别仅为观测值的4.4%、5.4%、1.4%；上升分数为0.486对0.278，不对称指数为0.028对0.445，合成曲线仍过于正弦化。贡献在于提供可重现的周期标定与形态检验序列，表明现有稳定参数范围无法匹配观测振幅与谐波结构。",
+      "affiliations": [
+        "University of Karachi",
+        "University of Southern Mississippi"
+      ],
+      "score": 3.2,
+      "categories": [
+        "astro-ph.SR"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24578",
+      "title": "The Interplay of Magnetic Fields, Turbulence and Vorticity in Core-Collapse Supernovae",
+      "authors": [
+        "David Calvert",
+        "Michael Redle",
+        "Bibek Gautam",
+        "Carles J. Stapleford",
+        "Carla Frohlich",
+        "James P. Kneller",
+        "Matthias Liebendoerfer"
+      ],
+      "abstract": "The convective turbulent motion of the fluid below the shock in a core-collapse supernova stretches and amplifies the magnetic field of the progenitor star. The energy contained in the field is sourced from the work done by the fluid on the field which comes at the expense of the fluid's kinetic and internal energy. In addition to the energy exchange with the fluid, the magnetic field also has a back-reaction upon the fluid via a contribution to the baroclinic vector and thus affects the fluid vorticity. In this paper we explore the interaction of the magnetic field with the fluid in core-collapse supernovae using the ELEPHANT code with solar-metallicity stars of 15 and 20 \\msun zero-age main sequence mass and purely toroidal initial magnetic fields of $B_0 = 0, 10^{10}, and 10^{12}$~G. We find that the magnetic field in the gain region does not become so large that it alters the global dynamics above the 10% level in the early post-bounce evolution. The turbulent kinetic energy of the fluid in the gain region is smaller in simulations with a strong initial magnetic field, but the exact amount of reduction is uncertain due to limitations of the methods for measuring turbulent kinetic energy. The structure of the field in the simulations quickly becomes a tangled mass of flux ropes as soon as convection begins, which leads to a large magnetic field contribution to the baroclinic vector that dominates over the hydrodynamic contribution. Although governed by very similar transport equations to the magnetic field, the fluid vorticity and magnetic field are always close to being randomly aligned at every stage of the evolution. The enstrophy, which is seen to be closely associated with the turbulent kinetic energy, is found to be reduced in simulations with a strong initial magnetic field supporting the inference that the magnetic field reduces the amount of turbulence in the fluid.",
+      "url": "https://arxiv.org/abs/2608.24578v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24578v1",
+      "tldr": "本研究针对核心坍缩超新星中磁场、湍流与涡度的相互作用，探究磁场是否改变增益区湍流。采用ELEPHANT代码进行理想MHD与中微子输运三维模拟，对15和20太阳质量前身星各设置无磁场、10^10 G、10^12 G初始磁场（共六模型）。结果显示：强初始磁场模型中湍流动能较小；磁场快速变为纠缠磁通绳，磁压对斜压矢量贡献超过流体项，涡度与磁场随即随机对齐；增益区密度加权涡度拟能相对总动能降低约30%。这些结果支持磁场减少湍流的推断。",
+      "affiliations": [
+        "University of Basel",
+        "North Carolina State University",
+        "Clausthal University of Technology",
+        "Oak Ridge National Laboratory"
+      ],
+      "score": 3.1,
+      "categories": [
+        "astro-ph.SR",
+        "astro-ph.HE"
+      ],
+      "summary_source": "full_text",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24678",
+      "title": "Spatially resolved molecular gas conditions in the circumnuclear disc of 3C 84",
+      "authors": [
+        "Bin Jia",
+        "Tom Oosterloo",
+        "Serena Viti",
+        "Raffaella Morganti"
+      ],
+      "abstract": "The brightest cluster galaxy NGC 1275, at the centre of the Perseus cluster, hosts the radio-loud AGN 3C 84 and a circumnuclear disc (CND) of cold molecular gas onto which large-scale CO filaments accrete, yet the physical and chemical conditions of the gas in the CND remain poorly constrained. We present a spatially resolved analysis of ALMA CO(2-1), HCN(3-2), and HCO$^+$(3-2) observations at 72 pc. The data are partitioned into beam-sized hexagonal regions and modelled with a Bayesian framework that couples a neural network emulator of time-dependent chemistry (UCLCHEM) with non-LTE radiative transfer (SpectralRadex) to infer the gas density, kinetic temperature, and cosmic ray ionisation rate in each region. All three line ratios peak in the inner disc and decline with radius. The inference shows radial gradients in density ($\\log_{10} n({\\rm H_2}) \\approx 6.3$ to $\\sim 5$), kinetic temperature (~200 K to ~160 K), and cosmic ray ionisation rate ($\\log_{10}(\\zeta/\\zeta_0) \\approx 4.9$ to $\\sim 3$). Despite the powerful radio AGN, the observed HCN(3-2)/HCO$^+$(3-2) ratio remains $\\lesssim 1$ across the disc. Our modelling attributes this to optical depth saturation of HCN(3-2) ($\\tau \\sim 1$-3), which suppresses the intensity ratio even when the HCN abundance exceeds that of HCO$^+$ by a factor of three or more. The HCN/HCO$^+$ intensity ratio therefore cannot be used as an abundance diagnostic without accounting for optical depth, and a low ratio does not necessarily imply weak AGN influence on the chemistry. Azimuthally resolved profiles suggest a localised HCO$^+$/CO enhancement at the western disc boundary, coinciding with the filament-disc accretion interface and consistent with shock processing by velocity shear between the infalling filaments and the rotating disc. These results indicate that the CND is shaped by accretion from its filamentary environment.",
+      "url": "https://arxiv.org/abs/2608.24678v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24678v1",
+      "tldr": "问题：星系NGC 1275中心射电噪活动星系核3C 84的环核分子盘（CND）气体物理化学条件受限。方法：利用ALMA的CO(2-1)、HCN(3-2)、HCO⁺(3-2) 72 pc分辨率观测，将数据分为波束大小六边形区域，用耦合神经网络模拟器UCLCHEM与非LTE辐射转移的贝叶斯框架推断各区域气体密度、温度与宇宙线电离率。结果：三者均呈内高外低的径向梯度；HCN(3-2)/HCO⁺(3-2)≲1由光深饱和所致，不能以低比值推断AGN化学影响弱；盘西边界HCO⁺/CO增强对应丝状吸积界面，显示CND受周围丝状气体吸积塑造。",
+      "affiliations": [],
+      "score": 3.0,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24395",
+      "title": "Interstellar Aromatic Infrared Bands: IR absorption spectroscopy of the lowest triplet state of naphthalene",
+      "authors": [
+        "Priyanka Arvind Paunikar",
+        "Hugo Maurer",
+        "Lars Reems",
+        "Alessandra Candian",
+        "Sandra Brunken",
+        "Jos Oomens",
+        "Piero Ferrari",
+        "Wybren Jan Buma"
+      ],
+      "abstract": "The aromatic infrared bands (AIBs), emission features observed ubiquitously across a wide variety of interstellar objects, are commonly attributed to radiative cooling of highly-excited ground-state vibrational levels of polycyclic aromatic hydrocarbons (PAHs) that are populated after UV absorption and internal conversion. However, for neutral PAHs intersystem crossing to the triplet manifold, followed by radiative cooling of vibrational levels within the lowest excited triplet state is expected to be a competing relaxation channel. This state differs in vibrational frequencies, transition moments and internal energy, and therefore gives rise to different emission spectra. Despite their significance, neutral PAHs in their triplet states have remained largely unexplored, primarily because of the lack of direct spectroscopic access. Here, we report the first measurement of the infrared absorption spectrum of the lowest triplet state of naphthalene. The spectrum is markedly different from the vibrational spectrum of the singlet electronic ground state, displaying features that can help identifying PAHs in the triplet states in astronomical spectra. We also show that experimental spectra are closely reproduced by anharmonic frequency calculations. These findings serve as a stepping stone for detecting triplet-state PAHs in the interstellar medium and provide a basis for developing more accurate infrared emission models.",
+      "url": "https://arxiv.org/abs/2608.24395v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24395v1",
+      "tldr": "星际芳香红外波段：萘最低三重态的红外吸收光谱研究\n\n研究问题：星际芳香红外波段通常归因于多环芳香烃紫外激发后的振动辐射冷却，但中性PAHs经系间窜越至最低三重态后的辐射冷却可能是竞争通道，其光谱特征未明。方法：首次测量萘最低三重态的红外吸收光谱，并与非谐频计算对比。结果：该光谱与单重基态振动光谱显著不同，呈现可用于识别天文谱中三重态PAHs的特征；实验谱与非谐频计算吻合。这为探测星际介质中三重态PAHs和建立更精确红外发射模型奠定基础。",
+      "affiliations": [],
+      "score": 3.0,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24445",
+      "title": "Forward modelling coronagraphic images with a fully physical, differentiable digital twin of MagAO-X: first laboratory results",
+      "authors": [
+        "Matthijs Mars",
+        "Sebastiaan Y. Haffert",
+        "Louis Desdoigts",
+        "Joseph D. Long",
+        "Rico Landman",
+        "Jared R. Males",
+        "Laird M. Close",
+        "Kyle Van Gorkom",
+        "Olivier Guyon",
+        "Alexander D. Hedglen",
+        "Sandrine Juillard",
+        "Jennifer Lumbres",
+        "Lauren Schatz"
+      ],
+      "abstract": "Post-processing of high contrast imaging data relies on an accurate model of the stellar point spread function (PSF). Current techniques build this model from the science images themselves, using observational diversity (e.g., angular, spectral or polarimetric diversity), which can cause self-subtraction of the companion signal and constrains the observing strategy. Telemetry-based forward modelling instead builds the stellar PSF model from wavefront sensor data that is already recorded during the observation. The wavefront sensor measures the coherent starlight and can therefore be used to create a PSF model that only models the stellar light and does not reproduce the incoherent light of a companion.\n  We present a fully physical and differentiable digital twin of the focal plane low-order wavefront sensor (FLOWFS) and the coronagraphic science beam of the MagAO-X instrument, implemented in \\texttt{dLux}, and calibrate it on laboratory data. When fitted directly to the science images, the model reproduces the coronagraphic PSF down to the photon and read noise floor of the data. When instead forward modelled from the FLOWFS telemetry alone, the residuals reach $6\\times10^{-5}$ of the stellar peak at $5\\ \\lambda/D$, a factor of 5 below the raw contrast, with the remaining residual set by how well the wavefront estimate transfers from the FLOWFS branch to the science branch of the model. An injected companion at $5\\ \\lambda/D$ with a peak contrast of $10^{-3}$ is recovered without measurable self-subtraction. We discuss the model improvements currently under development and the path towards on-sky validation.",
+      "url": "https://arxiv.org/abs/2608.24445v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24445v1",
+      "tldr": "研究问题：高对比度成像后处理需精确恒星点扩散函数模型；基于科学图像多样性的现有方法会造成伴星信号自减并限制观测策略。方法/数据：利用MagAO-X仪器焦平面低阶波前传感器与日冕仪科学光束的全物理可微数字孪生模型，基于实验室数据标定；分别直接拟合科学图像和仅由遥测正向建模。结果：直接拟合可重现至噪声底；仅用遥测建模时，5 λ/D处残差为恒星峰值的6×10⁻⁵，较原始对比度低5倍；注入峰值对比度10⁻³的伴星可恢复，无可测自减。残留受波前估计从波前传感器分支到科学分支的传递限制。",
+      "affiliations": [],
+      "score": 2.9,
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.23673",
+      "title": "A simulation-based quality-control framework for the broad-line region radius-luminosity relation",
+      "authors": [
+        "Juri Wladimir Seib",
+        "Francisco Pozo Nu\\~nez",
+        "Sarah Elena Ivana Bosman"
+      ],
+      "abstract": "The broad-line region (BLR) radius-luminosity (R-L) relation underpins single-epoch black hole mass estimates in active galactic nuclei (AGN). The published H\\beta sample is heterogeneous in observational quality, and it remains unclear how much of its scatter is intrinsic rather than caused by systematics in lag recovery. We quantify the contribution of unreliable lag recovery to the observed scatter of the H\\beta R-L relation and provide tools for quality control. We compile a publicly available database of reverberation mapping measurements for ~1200 AGN from 32 campaigns spanning more than three decades, including lags, luminosities, line widths, black hole masses, and observational metadata. We develop a simulation-based consistency framework in which damped random walk light curves are sampled according to each campaign's baseline, cadence, and signal-to-noise ratio, and lags are recovered with the interpolated cross-correlation function (ICCF). Comparing expected, reported, and simulation-retrieved lags defines a four-tier flagging scheme. We refit the R-L relation with UltraNest for progressively cleaner samples and construct consensus samples across three reference slopes to reduce model dependence. Of 248 H\\beta sources, ~40% show discrepancies between reported and simulation-retrieved lags, while ~5% show direct inconsistencies between expected and retrieved lags. Excluding flagged sources and correcting for model bias reduces the inferred intrinsic scatter from \\sigma = 0.26^{+0.02}_{-0.01} dex to 0.11\\pm0.01 dex, with a corrected slope of \\alpha = 0.48\\pm0.02. Our results indicate that a substantial fraction of the observed H\\beta R-L scatter arises from observational limitations and lag-recovery biases rather than intrinsic AGN diversity. The database, simulation code, and RM-Scout campaign-planning tool are publicly available.",
+      "url": "https://arxiv.org/abs/2608.23673v2",
+      "pdf_url": "https://arxiv.org/pdf/2608.23673v2",
+      "tldr": "研究问题：宽线区半径-光度（R-L）关系散色中，观测质量与时延恢复系统误差的贡献尚不明确。方法：汇编约1200个反响映射AGN的数据库，依据各观测基线、采样和信噪比模拟阻尼随机游走光变，用插值互相关函数恢复时延，建立四级质量标记。结果：约40%的Hβ源报告时延与模拟恢复不一致；剔除问题源并校正模型偏差后，内禀散色由0.26 dex降至0.11±0.01 dex，斜率修正为0.48±0.02。表明观测限制与时延恢复偏差显著贡献了表观散色。",
+      "affiliations": [],
+      "score": 2.9,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24321",
+      "title": "Synchrotron filaments in radio galaxies: rarity, stability, and environmental influences from LOFAR and ROSAT observations",
+      "authors": [
+        "Geoffrey Ong'alo",
+        "Martin J. Hardcastle",
+        "Willice Obonyo",
+        "Marcus Br\\\"uggen",
+        "Paul Baki"
+      ],
+      "abstract": "We present a systematic investigation of filamentary synchrotron structures in radio galaxies, using deep 144 MHz observations from the LOFAR Two-Metre Sky Survey (LoTSS) in combination with archival ROSAT X-ray data. These narrow, collimated features, linking radio lobes and often aligned with jet axes, are rare: our visual inspection of 548 cluster-associated sources identified 12 candidates (~2.2%), of which three exhibit clearly resolved filaments suitable for detailed X-ray and synchrotron minimum pressure analysis. Minimum pressures in these filaments are consistently lower than the ambient thermal pressure derived from X-ray measurements. This disparity implies a role for external confinement in filament stability, aligning with theoretical predictions of thermal pressure support and potentially toroidal magnetic field configurations. We discuss filament formation scenarios, including relic AGN outflows, magnetic draping, and plasma instabilities. Our findings highlight the utility of filamentary structures as probes of intracluster magnetic field topology and AGN feedback, and demonstrate the need for high-resolution, multi-frequency studies to constrain their origin and evolution.",
+      "url": "https://arxiv.org/abs/2608.24321v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24321v1",
+      "tldr": "针对射电星系中丝状同步辐射结构的稀有性与稳定性问题，利用LOFAR 144 MHz LoTSS巡天和ROSAT X射线数据，对548个与星系团相关源进行视觉检查，发现12个候选体（约2.2%），其中3个清晰可分辨。同步辐射最小压力一致低于环境热压力，表明外部约束对丝状结构稳定性起重要作用，支持热压力支撑及环向磁场构型。研究还讨论了遗迹AGN外流、磁 draping 与等离子体不稳定性等形成机制，强调高分辨率多频观测对揭示其起源与演化的必要性。",
+      "affiliations": [],
+      "score": 2.7,
+      "categories": [
+        "astro-ph.GA"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.23665",
+      "title": "Solar-Cycle Variation of Newly Emerging Coronal Holes during Solar Cycle 24",
+      "authors": [
+        "Akash Vinod Shirke",
+        "Khagendra Katuwal"
+      ],
+      "abstract": "Coronal holes (CHs) are regions of predominantly open magnetic field and important sources of high-speed solar wind streams. We present a manually compiled catalogue of newly emerging CHs during Solar Cycle 24 (2010-2019), identified from daily CHIMERA maps provided by SolarMonitor. Unlike existing area-based catalogues, our dataset tracks the daily emergence of new CHs in northern, southern, and equatorial latitude zones. The emergence rate of equatorial CHs is anti-correlated with the International Sunspot Number (Pearson r = -0.523, p = 6.2 x 10^-9), indicating reduced formation of low-latitude CHs near solar maximum. The hemispheric asymmetry of CH emergence is also anti-correlated with the hemispheric asymmetry of sunspot activity (r = -0.461, p = 5.2 x 10^-7), suggesting that new CHs preferentially emerge in the hemisphere with lower sunspot activity. The total CH emergence rate is lowest near solar maximum and highest during the declining phase. These results provide new observational constraints on the evolution of open magnetic flux over the solar cycle.",
+      "url": "https://arxiv.org/abs/2608.23665v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23665v1",
+      "tldr": "本研究针对太阳活动周24期间新浮现冕洞的太阳周变化问题。方法上，基于SolarMonitor的CHIMERA日图，人工编制了2010—2019年新浮现冕洞目录，并按北、南、赤道纬度带追踪其每日浮现。结果显示：赤道冕洞浮现率与黑子数反相关（r=-0.523）；冕洞浮现的半球不对称性与黑子活动不对称性亦反相关（r=-0.461），即新冕洞更倾向出现在黑子活动较低的半球；总浮现率在太阳极大期最低、下降期最高。这些结果为开放磁通量的太阳周演化提供了新的观测约束。",
+      "affiliations": [],
+      "score": 2.6,
+      "categories": [
+        "astro-ph.SR"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24645",
+      "title": "Broad Paschen lines as black hole mass tracers: A reverberation mapping calibration",
+      "authors": [
+        "Shengxiu Sun",
+        "Sarah E. I. Bosman",
+        "Frederick B. Davies",
+        "Klaudia Protu\\v{s}ov\\'a",
+        "Benedetta Spina",
+        "Linhua Jiang",
+        "Danyang Jiang"
+      ],
+      "abstract": "Single-epoch (SE) black hole mass estimators based on rest-frame ultraviolet or optical broad lines can be limited by dust attenuation or wavelength coverage. We calibrate estimators based on broad Paschen P$\\alpha$ and P$\\beta$ directly against reverberation mapping (RM) masses. We obtained LBT/LUCI near-infrared spectra of 27 SDSS-RM quasars and combined them with archival Paschen measurements for AGNs with RM masses. After continuum subtraction, we measured line luminosities and full widths at half maximum (FWHMs) using multi-component and single-Gaussian profile models. We fitted $\\log(M_{\\rm BH}/M_\\odot)=a+b\\log(L/10^{41}\\,{\\rm erg\\,s^{-1}})+c\\log({\\rm FWHM}/10^3\\,{\\rm km\\,s^{-1}})$, including intrinsic scatter. The fiducial relations use photometrically corrected line luminosities and FWHMs of the combined broad profiles. For P$\\alpha$, we obtain $(a,b,c)=(6.86^{+0.24}_{-0.25},0.47^{+0.11}_{-0.10},1.24^{+0.49}_{-0.48})$ with an intrinsic scatter of $0.28^{+0.08}_{-0.06}$ dex. For P$\\beta$, we obtain $(7.00\\pm0.24,0.48^{+0.10}_{-0.09},0.91^{+0.46}_{-0.47})$ with a scatter of $0.32^{+0.08}_{-0.06}$ dex. Relations using single-Gaussian widths, 5100 {\\AA} continuum luminosities, or fixed virial slopes have scatters consistent within the uncertainties. These relations provide complementary mass estimators when ultraviolet or optical broad lines are attenuated or unavailable. They should be applied within the parameter ranges of the calibration sample and remain subject to the systematic uncertainty associated with the RM virial factor.",
+      "url": "https://arxiv.org/abs/2608.24645v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24645v1",
+      "tldr": "研究问题：基于紫外/光学宽线的单历元黑洞质量估计会受尘埃消光或波长覆盖限制，需要以反响映射质量为基准校准帕申Pα、Pβ估算器。方法与数据：利用LBT/LUCI获得27个SDSS-RM类星体的近红外光谱，并合并有反响映射质量的帕申线档案数据；扣除连续谱后，用多分量与单高斯模型测量线光度和FWHM，拟合logMBH与线光度、FWHM的标定关系（含内禀弥散）。主要结果：基准关系采用光度校正后的线光度和合并宽轮廓FWHM；Pα得到(a,b,c)=(6.86,0.47,1.24)，内禀弥散0.28 dex；Pβ为(7.00,0.48,0.91)，弥散0.32 dex。使用单高斯宽度、5100 Å连续谱光度或固定维里斜率时弥散在误差内一致。该结果在紫外/光学宽线受消光或不可用时提供互补的质量估计，且需在样本参数范围内使用并注意维里因子系统不确定性。",
+      "affiliations": [],
+      "score": 2.6,
+      "categories": [
+        "astro-ph.GA",
+        "astro-ph.IM"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.23668",
+      "title": "BlueBird 6 is Fainter than Block 1 Satellites",
+      "authors": [
+        "Anthony Mallama",
+        "Richard E. Cole"
+      ],
+      "abstract": "The mean apparent magnitude for BlueBird 6, the first Block 2 satellite of the BlueBird constellation, is 3.85 +/- 0.10 while that for Block 1 spacecraft is 3.30 +/- 0.07. So, BlueBird 6 is 0.55 magnitudes fainter. Likewise, the means of apparent magnitudes adjusted to a uniform distance of 1,000 km are 4.32 +/- 0.08 and 3.77 +/- 0.06, respectively. This difference is also 0.55 magnitude. The dimming is unexpected because the Block 2 satellites are ~3.5 times as large as Block 1. BlueBird 6 is only 17% as bright as Block 1 spacecraft per unit surface area. Possible explanations are discussed. All BlueBird satellites exceed the brightness limits recommended by the International Astronomical Union. However, they will be fewer in number than other satellite constellations.",
+      "url": "https://arxiv.org/abs/2608.23668v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23668v1",
+      "tldr": "研究问题：比较蓝鸟星座首颗第二代卫星BlueBird 6与第一代卫星的光学亮度。方法/数据：采用视星等观测值，并将星等换算至1000公里统一距离。主要结果：BlueBird 6的平均视星等为3.85±0.10，第一代为3.30±0.07；统一距离后分别为4.32±0.08和3.77±0.06，差异均为0.55等。尽管第二代卫星面积约为第一代的3.5倍，BlueBird 6单位表面积亮度仅为第一代的17%，变暗出乎预期。作者讨论了可能的解释。所有蓝鸟卫星均超过国际天文学联合会建议的亮度限值，但数量较少。",
+      "affiliations": [],
+      "score": 2.6,
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24661",
+      "title": "NIRC2-Pol: First Light of Near-Infrared Polarimetry on Keck II",
+      "authors": [
+        "Briley L. Lewis",
+        "Manxuan Zhang",
+        "Maxwell A. Millar-Blanchaer",
+        "Eduardo Marin",
+        "Jayke S. Nguyen",
+        "Carlos Alvarez",
+        "Jaren N. Ashcraft",
+        "Mahawa Cisse",
+        "Charles-Antoine Claveau",
+        "Greg Doppmann",
+        "Michael P. Fitzgerald",
+        "Matthew Freeman",
+        "Trisha Hammen",
+        "Ryan Hersey",
+        "Nemanja Jovanovic",
+        "Scott Lilley",
+        "Jessica Lu",
+        "James E. Lyke",
+        "Keith Matthews",
+        "Dimitri Mawet",
+        "William Melby",
+        "Thomas McIntosh",
+        "Max Service",
+        "Jacob Taylor"
+      ],
+      "abstract": "NIRC2, the Near Infrared Camera 2 on the Keck II telescope, was recently upgraded with a new suite of polarimetric observing modes. The new polarimetry modes (referred to as NIRC2-Pol) open up a wide range of new studies, including investigations of exoplanets, the Galactic center, active galactic nuclei, and solar system objects. The new modes enabled by the upgrade span the 1.1 to 4.1 micron range (i.e. J through L' bands) and include imaging polarimetry, coronagraphic imaging polarimetry, and spectropolarimetry. NIRC2-Pol is unique, as Keck II is the largest telescope (10 m) on which AO-fed infrared polarimetry capabilities are available, one of few with L' polarimetric imaging, and the only one where there is both a polarimetric mode and a vortex coronagraph. Here, we introduce the design of NIRC2-Pol, its capabilities, and its current operational status. We also present its first on-sky results: the first L' polarimetric images of the AB Aurigae circumstellar disk. These images more clearly reveal the disk's iconic spiral arms than previous L' total intensity imaging.",
+      "url": "https://arxiv.org/abs/2608.24661v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24661v1",
+      "tldr": "研究问题：凯克II望远镜NIRC2升级后新增近红外偏振模式（NIRC2-Pol），以支持系外行星、银河系中心、活动星系核及太阳系天体等研究。方法/数据：新模式覆盖1.1–4.1微米（J至L'波段），包括成像偏振、日冕成像偏振和分光偏振；凯克II作为10米望远镜，是少数具备AO近红外偏振能力、且同时拥有偏振模式与涡旋日冕仪的平台。主要结果：首次获得AB Aurigae星周盘的L'波段偏振图像，较此前总强度图像更清晰地揭示其标志性旋臂结构。",
+      "affiliations": [],
+      "score": 2.5,
+      "categories": [
+        "astro-ph.IM",
+        "astro-ph.EP"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24308",
+      "title": "The Photonic Lantern Nuller: from concept to laboratory and on-sky demonstrations",
+      "authors": [
+        "Yinzi Xin",
+        "Nemanja Jovanovic",
+        "Dimitri Mawet",
+        "Daniel Echeverri",
+        "Yoo Jung Kim",
+        "Jonathan Lin",
+        "Julien Lozi",
+        "Sebastien Vievard",
+        "Olivier Guyon",
+        "Grace Piroscia",
+        "Vincent Deo",
+        "Sergio Leon-Saval",
+        "Rodrigo Amezcua-Correa",
+        "Stephanos Yerolatsitis",
+        "Sebastiaan Y. Haffert",
+        "Michael P. Fitzgerald",
+        "Pradip Gatkine",
+        "Suvinay Goyal",
+        "Barnaby Norris",
+        "Garreth Ruane",
+        "Steph Sallum"
+      ],
+      "abstract": "This thesis work presents the conceptual design and experimental characterization of the Photonic Lantern Nuller instrument, which uses a multimode-to-single-mode demultiplexing waveguide to cancel out starlight while maintaining planet light, allowing for the direct characterization of planets at a telescope's diffraction limit. The PLN was experimentally characterized in the lab, where it was further enhanced using common-path wavefront sensing and control techniques, and then demonstrated on sky at the Subaru Telescope. Highlights include measured in-lab null-depths of $\\sim 10^{-4}$ in three out of four ports simultaneously and on-sky null-depths of approximately $\\sim 10^{-1}$ (limited by jitter and atmospheric residuals). We provide an overview of these results and discuss avenues for future work.",
+      "url": "https://arxiv.org/abs/2608.24308v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24308v1",
+      "tldr": "本简报介绍光子灯笼日冕仪（PLN）的研究。研究问题是在望远镜衍射极限下直接表征系外行星，需抑制恒星光而保留行星光。方法采用多模到单模解复用波导，并在实验室结合共路波前传感与控制技术进行表征，随后在斯巴鲁望远镜上开展天观测。主要结果：实验室中四个端口中的三个同时实现约10⁻⁴的消光深度；天观测消光深度约10⁻¹，受抖动和大气残余限制。本文概述成果并讨论未来改进方向。",
+      "affiliations": [],
+      "score": 2.5,
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24071",
+      "title": "Validation and extension of the PAWS Zemax model as a first step in the development of a Compact Arrayed Waveguide Stacked Multi-Object Spectrograph (CAWSMOS)",
+      "authors": [
+        "Fabienne Mangelsdorff",
+        "Andreas Stoll",
+        "Lars Zimmermann",
+        "Stefan Lischke",
+        "Riya M. Pattery",
+        "Kalaga Madhav",
+        "Martin M. Roth"
+      ],
+      "abstract": "The linear size of a bulk optical astronomical spectrograph scales with the diameter of the primary mirror of the corresponding telescope. As modern telescopes continue to increase in aperture size, miniaturization of the spectrograph becomes crucial beyond the offered advantages in terms of multifunctional integration and photon efficiency. The presented concept of development for a Compact Arrayed Waveguide Stacked Multi-Object Spectrograph (CAWSMOS) includes the design of the Arrayed Waveguide Grating (AWG) chips, the stacking frame and cross-dispersion optics for the imaging of multiple spectral orders per AWG. It aims to reduce the cost and size of astronomical spectrographs while also improving efficiency. This will bring the AWG technology closer to the realization of its full potential for ground based, airborne and spaceborne astronomical applications. Part of this development is an extension of the Potsdam Arrayed Waveguide Spectrograph (PAWS). To do that, the Zemax model is compared to PAWS calibration data, finding that the position can be matched with the measurement within 28 px in x and 18 px in y-direction. It also shows a discrepancy between the measured PSF size and the Zemax model of around factor five, and that the detector area can only partially accommodate a second chip.",
+      "url": "https://arxiv.org/abs/2608.24071v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24071v1",
+      "tldr": "本研究针对天文光谱仪体积随望远镜主镜口径增大而线性增大的问题，提出紧凑型阵列波导堆叠多目标光谱仪（CAWSMOS）概念，以降低体积与成本并提高效率。方法上，为扩展Potsdam阵列波导光谱仪（PAWS），将其Zemax模型与PAWS标定数据对比。结果显示：模型位置与实测在x方向偏差28像素、y方向18像素以内；实测PSF尺寸与模型相差约5倍；探测器区域仅能部分容纳第二个芯片。这表明现有模型需进一步修正以支持CAWSMOS多芯片堆叠。",
+      "affiliations": [],
+      "score": 2.5,
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.23672",
+      "title": "Spin inference with the Black Hole Explorer. I. Fisher information matrix forecast",
+      "authors": [
+        "Joseph R. Farah",
+        "Daniel C. M. Palumbo",
+        "Michael D. Johnson",
+        "Dominic O. Chang"
+      ],
+      "abstract": "General relativity predicts the presence of a thin, bright ring of light superimposed on the image of a black hole (the ``photon ring''), whose geometry is sensitive to the spin of the black hole. Detecting this photon ring in observations of nuclear supermassive black holes would yield insight into gravity in the strong-field regime as well as their growth histories. The Black Hole Explorer (BHEX) is a mission being developed to detect the photon ring for the first time, raising the question of how precisely we can constrain spin from its observations. We use the method of Fisher information matrices (FIMs) along with a simple dual-cone semi-analytic emission model to forecast BHEX spin posterior widths for the primary science targets (M87* and Sgr~A*) in a variety of configurations. We find that BHEX can constrain the dimensionless spin of its targets to a precision of $\\sigma_{a_*} \\ll 0.1$ after 30 orbits, even in the presence of significant systematic errors. We validate our results via numerical checks for stability and robustness, as well as synthetic data cross-validation to assess handling of covariances and prior information in the FIM against a full posterior exploration.",
+      "url": "https://arxiv.org/abs/2608.23672v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23672v1",
+      "tldr": "广义相对论预言黑洞图像中存在光子环，其几何形状对黑洞自旋敏感。针对“黑洞探索者”（BHEX）任务能否首次探测光子环并约束自旋的问题，该研究使用Fisher信息矩阵和双锥半解析发射模型，对主要目标M87*和Sgr A*的多种观测配置进行后验宽度预报。结果表明，即使在显著系统误差下，BHEX在30个轨道后也能将无量纲自旋约束至σ_{a*}≪0.1的精度。数值稳定性检验与合成数据交叉验证支持结果的稳健性。",
+      "affiliations": [],
+      "score": 2.5,
+      "categories": [
+        "astro-ph.GA",
+        "astro-ph.HE"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24333",
+      "title": "Sub-diffraction-limited coronagraphic imaging with nano-printed PIAACMC phase masks",
+      "authors": [
+        "Elena Tonucci",
+        "Sebastiaan Y. Haffert",
+        "Warren B. Foster",
+        "Jared R. Males",
+        "Olivier Guyon",
+        "Laird M. Close",
+        "Kyle van Gorkom",
+        "Alexander D. Hedglen",
+        "Parker T. Johnson",
+        "Maggie Y. Kautz",
+        "Jay K. Kueny",
+        "Rico Landman",
+        "Jialin Li",
+        "Joshua Liberman",
+        "Joseph D. Long",
+        "Miles Lucas",
+        "Jennifer Lumbres",
+        "Matthijs Mars",
+        "Eden A. McEwen",
+        "Avalon McLeod",
+        "Tiffany Nguyen",
+        "Logan A. Pearce",
+        "Mar\\'ia Eugenia Redondo Gonz\\'alez",
+        "Lauren Schatz",
+        "Katie Twitchell"
+      ],
+      "abstract": "Imaging Earth-like exoplanets in the habitable zone of their host star is among the main science objectives of future ground-based and space-based observatories. However, the extreme contrast and small separations needed to image such planets cannot be reached with current technology. The Phase-Induced Amplitude Apodization Complex Mask Coronagraph (PIAACMC) is a promising coronagraph to reach this goal. The PIAACMC uses a set of aspheric lenses to apodize the entrance pupil without throughput losses and a phase-shifting focal plane mask for starlight suppression. These allow us to maintain high throughput and achieve a small inner-working angle (IWA), unlocking the capability to observe exoplanets at the diffraction limit. The masks are manufactured in-house at Leiden University with Nanoscribe, a micro-3D-printer that uses two-photon polymerization to achieve sub-micron precision in height. We present the first scientific results with a focal plane mask for the PIAACMC on the Magellan Adaptive Optics eXtreme (MagAO-X) instrument for the 6.5-meter Magellan Clay telescope at Las Campanas Observatory, Chile. We show laboratory and on-sky contrast curves with a broadband z' filter centered at 908 nm with a 14% bandwidth. We use the PIAACMC to detect binary companions at separations ~0.8-5 lambda/D (~23-144 mas). This demonstrates the PIAACMC's capability to observe at the diffraction limit and below, with a sub-lambda/D IWA. Future work includes exploring new mask designs to improve the contrast in broadband light and performing active focal plane wavefront sensing and control.",
+      "url": "https://arxiv.org/abs/2608.24333v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24333v1",
+      "tldr": "利用星冕仪直接成像宜居带类地系外行星，需极高对比度与极小角距，现有技术难以实现。本研究采用纳米打印PIAACMC相位掩模，在Magellan Clay望远镜MagAO-X仪器上开展宽带z'滤波（908 nm，14%带宽）观测，获得实验室及天上对比度曲线。结果显示，在约0.8–5 λ/D（23–144 mas）角距处探测到双星伴星，证明PIAACMC可实现亚λ/D内工作角，具备在衍射极限及以下成像的能力。",
+      "affiliations": [],
+      "score": 2.4,
+      "categories": [
+        "astro-ph.IM",
+        "astro-ph.EP",
+        "astro-ph.SR"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24343",
+      "title": "Digging dark holes on-sky with the Self-Coherent Camera: Preliminary results",
+      "authors": [
+        "Elena Tonucci",
+        "Sebastiaan Y. Haffert",
+        "Jared R. Males",
+        "Laird M. Close",
+        "Kyle van Gorkom",
+        "Olivier Guyon",
+        "Alexander D. Hedglen",
+        "Parker T. Johnson",
+        "Maggie Y. Kautz",
+        "Jay K. Kueny",
+        "Jialin Li",
+        "Joshua Liberman",
+        "Joseph D. Long",
+        "Jennifer Lumbres",
+        "Matthijs Mars",
+        "Eden A. McEwen",
+        "Avalon McLeod",
+        "Mar\\'ia Eugenia Redondo Gonz\\'alez",
+        "Lauren Schatz",
+        "Katie Twitchell"
+      ],
+      "abstract": "Current high-contrast imaging instruments are limited by wavefront errors originating from non-common path aberrations (NCPAs) due, for example, to manufacturing errors in the optics and temperature drifts in the system. These create quasi-static speckles in the final science image that are difficult to distinguish from companions. Therefore, focal plane wavefront sensing and control is needed to suppress speckles. The Self-Coherent Camera (SCC) is a wavefront sensor that allows us to estimate the stellar complex speckle field. In the Fast Atmospheric SCC Technique (FAST), the on-axis starlight hits a coronagraphic focal plane phase mask and is diffracted outside the Lyot stop where it is spatially filtered by a pinhole to create a reference beam. The reference beam and the leaked starlight are recombined on the science plane, creating interference fringes that do not affect the companion, because of incoherence. The focal plane mask was manufactured in-house at Leiden University with Nanoscribe, a micro-3D-printer that uses two-photon polymerization to achieve sub-micron precision in height. We present preliminary results of the first on-sky closed-loop SCC demonstration with the Magellan Adaptive Optics eXtreme (MagAO-X) instrument on the 6.5-meter Magellan Clay telescope at Las Campanas Observatory, Chile. We achieve a 1-sigma raw contrast improvement of a factor 10 in the desired dark hole region with FAST closed-loop control. In the future, we will show observations of stars with companions and use the SCC in post-processing as a Coherent Differential Imaging (CDI) technique to enhance the contrast even further.",
+      "url": "https://arxiv.org/abs/2608.24343v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24343v1",
+      "tldr": "本研究针对当前高对比度成像受非共路像差影响产生准静态散斑、难以区分伴星的问题。方法上采用自相干相机(SCC)结合快速大气SCC技术(FAST)，通过微3D打印制作焦面相位掩模，在麦哲伦克莱望远镜的MagAO-X仪器上首次实现闭环天观测。结果显示，在FAST闭环控制下，目标暗洞区域的1σ原始对比度提升10倍。未来将结合相干差分成像进一步优化。",
+      "affiliations": [
+        "Leiden University"
+      ],
+      "score": 2.4,
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24324",
+      "title": "The final design of GMagAO-X: the wavefront sensing and control (WFS&C) architecture of GMagAO-X",
+      "authors": [
+        "Sebastiaan Y. Haffert",
+        "Jared R. Males",
+        "Laird M. Close",
+        "Olivier Guyon",
+        "Olivier Durney",
+        "Maggie Kautz",
+        "Liam Koning",
+        "Louis Desdoigts",
+        "Matthijs Mars",
+        "Elena Tonucci",
+        "Adam K. Taras",
+        "Yinzi Xin",
+        "Rico Landman"
+      ],
+      "abstract": "The Giant Magellan Adaptive Optics eXtreme (GMagAO-X) instrument has now been selected as an official part of the Giant Magellan Telescope's (GMT) instrument suite. The instrument will be ready at first-light of the GMT in the mid 2030s. The instrument is now progressing towards its final design with a final design review planned for March, 2027. The high-density actuator deformable mirror with 21.000 actuators will allow GMagAO-X to create diffraction-limited images from visible to near-infrared. GMagAO-X will be coupled with high-performance coronagraphs to search for exoplanets at the diffraction-limit. The coronagraphs require wavefront control at sub-nm precision. We will provide an update on the wavefront sensing and control architecture and how the loops interact with each other through end-to-end simulations.",
+      "url": "https://arxiv.org/abs/2608.24324v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24324v1",
+      "tldr": "GMagAO-X（巨麦哲伦自适应光学极端系统）已正式纳入巨麦哲伦望远镜（GMT）仪器套件，计划于2030年代中期GMT首光时投入使用。针对高性能日冕仪探测系外行星所需的亚纳米级波前控制问题，该系统采用含21,000个致动器的变形镜，并设计了对应的波前传感与控制（WFS&C）架构。通过端到端仿真，研究者分析了WFS&C各控制回路之间的相互作用。目前仪器已进入最终设计阶段，最终设计评审定于2027年3月进行。本简报报告了该架构的最新设计进展及环路交互的仿真更新。",
+      "affiliations": [],
+      "score": 2.3,
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24526",
+      "title": "Cassiopee: Defining the next-generation deformable mirror and high-speed SWIR camera for adaptive optics applications",
+      "authors": [
+        "B. Neichel",
+        "T. Fusco",
+        "F. Oyarzun",
+        "V. Chambouleyron",
+        "J. -F. Sauvage",
+        "C. -T. H\\'eritier",
+        "J. Charton",
+        "C. Pravert",
+        "F. Clop",
+        "L. Maillet",
+        "M. Laslandes",
+        "J. -L. Gach",
+        "D. Boutolleau",
+        "P. Feautrier",
+        "P. Bruno",
+        "Y. Wanwanscappel",
+        "C. Bremond"
+      ],
+      "abstract": "Future adaptive optics (AO) systems for astronomy, optical communications, space situational awareness, and laser-based defense require a new generation of components operating at unprecedented speed, sensitivity, and precision. We present a systematic approach to defining the specifications of two key technologies: a large-format, high-cadence SWIR camera and a high-order deformable mirror (DM). Starting from four representative use-cases, high-contrast exoplanet imaging, free-space optical communications, satellite observation, and laser focusing, we derive detailed AO error budgets to identify the dominant performance drivers. This analysis defines quantitative requirements for the DM (actuator count, stroke, bandwidth, electronics) and the camera (read noise, quantum efficiency, frame rate, latency, and dark current), developed in close collaboration with industrial partners. We then describe an integrated experimental testbed designed to validate both components in a closed AO loop under atmospheric and system-level disturbances representative of astronomical and telecom applications. Finally, we outline the roadmap toward on-sky validation with EKARUS, the new AO facility at Asiago Observatory, bridging the gap between component qualification and deployment in future extremely large telescopes and ground-to-space optical links.",
+      "url": "https://arxiv.org/abs/2608.24526v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24526v1",
+      "tldr": "本研究针对未来自适应光学系统对高速、高灵敏度、高精度新组件的需求，提出系统化规格界定方法。基于系外行星高对比度成像、自由空间光通信、卫星观测与激光聚焦四类典型用例，推导AO误差预算，识别主要性能驱动力，量化了变形镜（执行器数、行程、带宽、电子学）与高速短波红外相机（读出噪声、量子效率、帧率、延迟、暗电流）的指标要求。同时介绍用于在闭环AO中验证两部件的集成测试台，并规划了阿夏戈天文台EKARUS设施的实测验证路线图。",
+      "affiliations": [],
+      "score": 2.3,
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24752",
+      "title": "Photospheric index of geomagnetic activity",
+      "authors": [
+        "Ismo T\\\"ahtinen",
+        "Timo Qvick",
+        "Timo Asikainen",
+        "Kalevi Mursula"
+      ],
+      "abstract": "Geomagnetic indices quantify the disturbances of the Earth's magnetic field. They form an important space weather and space climate record that tracks solar-terrestrial effects on the Earth. Although geomagnetic activity has its origins in the photospheric magnetic fields, the two have so far not been directly related. We develop a photospheric index of geomagnetic activity (PIGA) that measures the geoeffectiveness of the Sun based on photospheric magnetic field as presented in synoptic magnetograms. We construct the PIGA from synoptic magnetograms of Wilcox Solar Observatory by relating the equatorial and axial dipole components of the photospheric magnetic field to the geomagnetic Kp index by means of linear regression. PIGA captures well the evolution of the geomagnetic activity over the past 50 years at the resolution of solar rotation, having linear correlation of 0.71 with the geomagnetic Kp index. PIGA makes it straightforward to measure the geoeffectiveness of the Sun using the dominant structure of the global solar magnetic field. PIGA can for example be used to study the geoeffectiveness of the Sun using historical simulations or the predicted solar magnetic field. PIGA also allows to use observed geomagnetic activity as an additional constraint for the early magnetic field reconstructions of the solar magnetic field.",
+      "url": "https://arxiv.org/abs/2608.24752v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24752v1",
+      "tldr": "地磁活动指数是重要的空间天气记录，但尚未与光球磁场直接关联。我们利用威尔科克斯天文台的太阳综合磁图，将光球磁场的赤道和轴向偶极分量与地磁Kp指数进行线性回归，构建了光球地磁活动指数（PIGA）。该指数以太阳自转周为分辨率，较好地再现了过去50年地磁活动的演变，与Kp指数的线性相关系数为0.71。PIGA可用于利用历史模拟或预测的太阳磁场研究太阳的地球有效性，并为早期太阳磁场重建提供观测约束。",
+      "affiliations": [],
+      "score": 2.3,
+      "categories": [
+        "astro-ph.SR",
+        "physics.space-ph"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24339",
+      "title": "On-sky demonstration of self-learning predictive control with MagAO-X",
+      "authors": [
+        "Sebastiaan Y. Haffert",
+        "Jared R. Males",
+        "Parker T. Johnson",
+        "Laird M. Close",
+        "Olivier Guyon",
+        "Jay Kueny",
+        "Joshua Liberman",
+        "Joseph D. Long",
+        "Miles Lucas",
+        "Eden McEwen",
+        "Tiffany Nguyen",
+        "Adam K. Taras",
+        "Kyle Van Gorkom",
+        "Maggie Kautz",
+        "Katie Twitchell",
+        "Lauren Schatz"
+      ],
+      "abstract": "Direct imaging of exoplanets is very tricky and requires extremely well corrected wavefronts. Especially low-order order modes are detrimental to the performance of coronagraphs at their inner-working angle. However, that is precisely where conventional AO systems have the highest residuals that are caused by servo-lag errors. This servo-lag error can be reduced with predictive control where the control anticipates the future state of the atmospheric disturbance. We use a self-learning model predictive controller based on the concepts from sub-space predictive control (SPC). We present a novel implementation of the SPC by using an online QR-decomposition based recursive least squares approach. This approach has now been used for self-learning control of vibrations on the MagAO-X instrument. We see on average an Strehl increase of 15 percent and a decrease of the jitter to 0.9 mas. I will discuss how we have implemented the controller and its on-sky perfomance.",
+      "url": "https://arxiv.org/abs/2608.24339v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24339v1",
+      "tldr": "研究问题：直接成像系外行星需极佳波前校正，但传统自适应光学（AO）的伺服延迟误差使低阶模式残差增大，损害星冕仪内工作角性能。方法：采用基于子空间预测控制（SPC）的自学习模型预测控制器，利用在线QR分解递推最小二乘实现，并在MagAO-X仪器上用于振动控制。结果：平均斯特列尔比提升15%，抖动降至0.9毫角秒。",
+      "affiliations": [],
+      "score": 2.0,
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.23690",
+      "title": "A General Response Theory for Closure Phases through Visibility Nulls and Image Structure",
+      "authors": [
+        "Shokoufe Faraji",
+        "Avery E. Broderick"
+      ],
+      "abstract": "Closure phase is robust to station based phase errors, yet its connection to image structure is often interpreted only qualitatively and a nonzero closure phase is still interpreted mainly through qualitative symmetry arguments or source specific models. We develop, to our knowledge, the first unified response theory for an arbitrary brightness distribution and an arbitrary zero free observing triangle. Away from visibility zeros, closure phase is naturally a log-visibility observable. This structure yields an exact first order master kernel for image perturbations and a Cartesian moment hierarchy that separates the spatial content of the source change from the sensitivity of the sampled triangle. For a fixed image, the same framework gives a local expansion in Fourier plane displacement, providing a direct description of closure phase evolution along observing tracks. We then identify the boundary of this regular regime: at a true visibility null, the log-visibility expansion fails and the phase behavior is controlled by the local properties of the null, including its order and winding charge, distinguishing removable phase wraps, non-null visibility minima, and nulls for which the visibility phase is multivalued. We validate these expansions using structured ring models. We then apply both branches of the theory to EHT data of M87*, and demonstrate the ability to measure asymmetric image structure associated with higher image moments directly from the evolution of the closure phase. Finally, we show that the same formalism extends naturally to Phase Closure Nulling in optical and infrared interferometry. The resulting framework turns closure phase structure into a quantitative probe of faint and asymmetric source features across interferometric regimes.",
+      "url": "https://arxiv.org/abs/2608.23690v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.23690v1",
+      "tldr": "**标题：闭合相位的一般响应理论：从可见度零点到图像结构**\n\n**研究问题：** 闭合相位不受台站相位误差影响，但其与图像结构的关联常仅被定性解释，非零闭合相位多依赖对称性论证或特定模型。\n\n**方法与数据：** 本文建立任意亮度分布与任意无零点观测三角形的统一响应理论。远离可见度零点时，将闭合相位表达为对数可见度观测量，导出图像扰动的一阶主核与笛卡尔矩层级；在真实可见度零点处，用零点阶数与涡旋电荷刻画相位行为。采用环状模型验证，并应用于M87*的EHT数据。\n\n**主要结果：** 可直接从闭合相位演化测量与高阶图像矩相关的不对称结构，该框架还可推广至光学和红外干涉的闭合相位零化技术。",
+      "affiliations": [],
+      "score": 2.0,
+      "categories": [
+        "astro-ph.IM",
+        "astro-ph.HE",
+        "gr-qc"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24438",
+      "title": "No need to modulate: On-sky results of a Neural Network enhanced pyramid wavefront sensor and prospects for the ELTs",
+      "authors": [
+        "Rico Landman",
+        "Liam Koning",
+        "Sebastiaan Y. Haffert",
+        "Joseph D. Long",
+        "Jared R. Males",
+        "Matthijs Mars",
+        "Laird M. Close",
+        "Olivier Guyon",
+        "Warren B. Foster",
+        "Kyle Van Gorkom",
+        "Alexander D. Hedglen",
+        "Parker T. Johnson",
+        "Maggie Y. Kautz",
+        "Jay K. Kueny",
+        "Jialin Li",
+        "Joshua Liberman",
+        "Miles Lucas",
+        "Jennifer Lumbres",
+        "Eden A. McEwen",
+        "Avalon McLeod",
+        "Lauren Schatz",
+        "Elena Tonucci",
+        "Katie Twitchell"
+      ],
+      "abstract": "One of the main limitations of ground-based extreme adaptive optics systems (XAO) is the balance between the temporal and photon noise error. The unmodulated Pyramid Wavefront Sensor (uPWFS) promises significant gains in sensitivity over its modulated counterpart, but its practical use is limited by its linearity range. Nonlinear reconstructors provide a pathway to recover this dynamic range while preserving the sensitivity of the uPWFS, thereby reducing photon noise and improving contrast. We present the real-time implementation of a Convolutional Neural Network (CNN) reconstructor and show on-sky results with MagAO-X, demonstrating robust and stable correction across diverse atmospheric conditions. Significant gains over default operation are seen in the low and moderate Strehl regimes, while the performance is slightly degraded in the high Strehl regime. We diagnose this in simulation and mainly attribute this to a non-optimized training dataset for the high-Strehl regime, rather than a fundamental limitation of the approach. Furthermore, initial simulations of the NN-enhanced uPWFS for a downscaled version of the Extremely Large Telescope (ELT) show substantial gains for fast petal-piston control. These results demonstrate that NN-enhanced wavefront sensing is a viable technology for future high-contrast instruments.",
+      "url": "https://arxiv.org/abs/2608.24438v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24438v1",
+      "tldr": "地基极端自适应光学（XAO）受时间误差与光子噪声制约。未调制金字塔波前传感器（uPWFS）灵敏度更高，但线性范围有限。本研究用卷积神经网络（CNN）重建器进行实时非线性重构，并在MagAO-X上开展on-sky测试，同时模拟下尺度ELT。结果显示：低和中等Strehl条件下校正改善显著，高Strehl下略降，主要归因于训练数据集欠优化；ELT模拟中，对快速瓣-活塞控制增益明显。表明NN增强波前传感可用于未来高对比度仪器。",
+      "affiliations": [],
+      "score": 2.0,
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24289",
+      "title": "Demonstration of simultaneous PIAA- coronagraphy and wavefront sensing using a single metasurface-based focal-plane optic",
+      "authors": [
+        "Dhwanil Patel",
+        "Sebastiaan Y. Haffert",
+        "Skyler Palatnick",
+        "Adam Taras",
+        "Maxwell A. Millar-Blanchaer",
+        "Matthijs Mars",
+        "Elena Tonucci",
+        "Jared R. Males",
+        "Laird M. Close",
+        "Joshua Liberman",
+        "Warren B. Foster",
+        "Kyle Van Gorkom",
+        "Olivier Guyon",
+        "Alexander D. Hedglen",
+        "Parker T. Johnson",
+        "Maggie Y. Kautz",
+        "Jay K. Kueny",
+        "Jialin Li",
+        "Joseph D. Long",
+        "Jennifer Lumbres",
+        "Eden A. McEwen",
+        "Avalon McLeod",
+        "Lauren Schatz",
+        "Katie Twitchell",
+        "Robert J. Harris",
+        "Viktoria Kutnohorsky"
+      ],
+      "abstract": "Controlling residual wavefront aberrations downstream of an extreme adaptive optics (ExAO) system is a major challenge in high-contrast imaging. These aberrations produce quasi-static speckles due to differences between the wavefront-sensing and science paths. Highly sensitive wavefront sensors, such as Zernike wavefront sensors (ZWFSs), are used to mitigate these non-common path aberrations. High-performing coronagraphs, such as complex mask coronagraphs (CMCs), are also implemented in the focal plane. Both perform better with lossless apodization such as phase-induced amplitude apodization (PIAA) optics. Metasurfaces can have chromatic responses, allowing a single focal-plane optic to have different functionalities in different wavelength bands. We demonstrate such an optic by manufacturing a hybrid metasurface designed to function as a CMC and a ZWFS in two intermediate-band filters in the H band, each with a fractional bandwidth of approximately 1\\%. We show measured optical responses with phases of $\\sim \\pi/2$ at shorter wavelengths and $\\pi$ at longer wavelengths between $1500$ and $1700,\\text{nm}$. This would allow for wavefront sensing at the shorter wavelength of $\\sim1500\\,\\text{nm}$ and coronagraphy at the longer wavelength of $\\sim1700\\,\\text{nm}$. Additionally, we tested the mask on-sky with the MagAO-X instrument at the Magellan Clay 6.5 m telescope at Las Campanas Observatory, Chile. On-sky results show a contrast of $\\sim 10^{-1}$ at a non-ideal wavelength of $\\sim 1600\\,\\text{nm}$. This is comparable to simulated contrast curves using the measured optical responses around that wavelength. Finally, we evaluated the wavefront-sensing performance of the metasurface using the MagAO-X internal source at $1300\\,\\mathrm{nm}$. The measured reconstruction error is consistent with simulations of an ideal Zernike wavefront sensor, confirming its wavefront-sensing functionality.",
+      "url": "https://arxiv.org/abs/2608.24289v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24289v1",
+      "tldr": "高对比度成像中，极端自适应光学（ExAO）下游的残余像差会导致非共路准静态散斑，需结合波前传感与日冕仪加以抑制。本文制造一种混合超表面焦面器件，利用其色散响应在H波段两个约1%带宽的滤波带内分别实现泽尼克波前传感（短波~1500 nm，相位约π/2）与PIAA-日冕成像（长波~1700 nm，相位约π）。在Magellan Clay 6.5米望远镜MagAO-X上实测，非理想波长~1600 nm处对比度约10^-1，与基于实测响应的模拟曲线相当；用1300 nm内光源测得波前重构误差与理想泽尼克传感器仿真一致，验证了同时波前传感与日冕成像功能。",
+      "affiliations": [],
+      "score": 2.0,
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24775",
+      "title": "Calculation of Field Line Slippage Rates in Coronal Simulations",
+      "authors": [
+        "Valentin Aslanyan",
+        "David MacTaggart",
+        "Roger B. Scott",
+        "Chloe P. Wilkins",
+        "David I. Pontin",
+        "Anthony R. Yeates",
+        "Peter F. Wyper",
+        "Karen A. Meyer",
+        "Spiro K. Antiochos"
+      ],
+      "abstract": "We present the Universal Slippage calculator (\\texttt{USlip}), an extension of the Universal Fieldline Tracer (\\texttt{UFiT}), that computes magnetic field line slippage rates from an input magnetic field defined on a structured grid. The slippage rate provides a local, physically grounded diagnostic of non-ideal evolution, directly quantifying departures from ideal frozen-in motion. We outline the theoretical formulation and describe an efficient numerical implementation. The method is validated against analytical solutions and applied to simulations using three coronal codes treating varying spatial scales, all of which are standard inputs for \\texttt{USlip}. In all the examples considered, the slippage rate not only identifies where magnetic connectivity changes occur, but also accurately reproduces the observed direction of field-line slippage. The consistency of the results across analytical tests and multiple simulation platforms demonstrates that \\texttt{USlip} is a robust and versatile tool for diagnosing three-dimensional reconnection in dynamically evolving systems.",
+      "url": "https://arxiv.org/abs/2608.24775v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24775v1",
+      "tldr": "针对日冕模拟中磁力线滑移率计算缺乏通用工具的问题，本文提出通用滑移率计算器USlip，作为通用磁力线追踪器UFiT的扩展，基于结构化网格上给定的磁场直接计算磁力线滑移率。该量是局域的、有物理依据的非理想演化诊断量，可定量刻画对理想冻结运动的偏离。方法阐述理论公式并实现高效数值算法，通过解析解验证，并应用于三个覆盖不同空间尺度的日冕代码模拟（均为USlip的标准输入）。结果显示，滑移率不仅能识别磁连通性发生变化的位置，还能准确重现观测到的磁力线滑移方向。跨解析测试与多平台模拟的一致性表明，USlip是诊断动态演化系统中三维磁重联的稳健通用工具。",
+      "affiliations": [],
+      "score": 1.9,
+      "categories": [
+        "astro-ph.SR",
+        "physics.plasm-ph"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24515",
+      "title": "A quadratic balance relation for radial nonadiabatic pulsations",
+      "authors": [
+        "Jan Zalewski"
+      ],
+      "abstract": "Using a sesquilinear pressure - rate of volume change kernel and linear pulsation equations, we formulate a balance relation combining work integral, surface terms, norm integral and the real part of pulsation frequency (for $\\exp({\\omega t})$ time dependence) in terms of linear radial pulsation variables. The resulting relation is exact within the adopted radial nonadiabatic formulation. We apply the quadratic balance relation to radial pulsations in AGB envelopes and use it to check the accuracy of computation and to obtain information about mode excitation and damping. We also compare the balance relation with the classical formulation based on dissipation and kinetic energy integrals and discuss the meaning of the components made explicit by the present decomposition that appear in our balance equation and their relevance for ordinary and strange modes in AGB envelopes.",
+      "url": "https://arxiv.org/abs/2608.24515v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24515v1",
+      "tldr": "本文針對徑向非絕熱脈動，利用壓力-體積變化率的雙線性核與線性脈動方程，建立了包含功積分、表面項、範數積分及頻率實部的二次平衡關係。該關係在徑向非絕熱框架下精確成立，應用於AGB包層，可檢驗計算精度並獲取模激發與阻尼資訊；同時與經典耗散及動能積分表述比較，闡明分解項對普通模與奇異模的意義。",
+      "affiliations": [],
+      "score": 1.9,
+      "categories": [
+        "astro-ph.SR"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24442",
+      "title": "NEXT: The Netherlands EXoplanet Testbed I. Goals and opto-mechanical design",
+      "authors": [
+        "Rico Landman",
+        "Sebastiaan Haffert",
+        "Louis Desdoigts",
+        "Matthijs Mars",
+        "Dhwanil Patel",
+        "Daniel Smith",
+        "Remko Stuik",
+        "Adam Taras",
+        "Elena Tonucci",
+        "Yinzi Xin"
+      ],
+      "abstract": "We report on the goals, design, and ongoing development of the Netherlands EXoplanet Testbed (NEXT), a high-contrast imaging testbed under construction in Leiden. NEXT is designed to develop and validate technologies and algorithms for extreme adaptive optics (XAO) and coronagraphy at the performance levels required by the next generation of high-contrast imagers on the Extremely Large Telescopes (ELTs) and future space observatories. All powered optics in the common path are custom off-axis parabolas, making the bench fully reflective up to the science cameras, and it operates from the visible to the near-infrared (500-1800 nm). It combines a woofer-tweeter XAO module, using an ALPAO woofer and a Boston Micromachines kilo-DM as tweeter, with a coronagraphic arm that supports common coronagraph architectures and focal-plane wavefront control for dark-hole digging, and reserves space for a suite of wavefront sensors. The design targets a raw contrast of $10^{-7}$ (goal: $10^{-8}$) at $5\\lambda/D$ and 800 nm. We present the opto-mechanical design of the testbed, the key trade-offs made to reach these contrast levels, and Fresnel-propagation simulations of its predicted performance.",
+      "url": "https://arxiv.org/abs/2608.24442v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24442v1",
+      "tldr": "**NEXT：荷兰系外行星测试平台I. 目标与光机设计**\n\n荷兰EXoplanet测试平台(NEXT)旨在开发和验证用于极大望远镜及未来空间天文台高对比度成像的极端自适应光学(XAO)与日冕仪技术。测试台采用全反射光路（500-1800纳米），结合woofer-tweeter XAO模块、多种日冕仪架构及焦面波前控制。通过Fresnel传播模拟评估性能，设计目标为在800纳米、5λ/D处实现10^-7原始对比度（目标10^-8）。",
+      "affiliations": [],
+      "score": 1.8,
+      "categories": [
+        "astro-ph.IM"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24315",
+      "title": "Quantum-optimal instruments for high-contrast imaging with multi-plane light converters",
+      "authors": [
+        "Sebastiaan Y. Haffert",
+        "Yinzi Xin",
+        "Rico Landman"
+      ],
+      "abstract": "Spatial Mode Demultiplexers (SPADE) are devices that split an incoming wavefront into a particular set of electric field modes. SPADEs have been shown to be quantum-optimal for many measurement problems including coronagraphy, wavefront sensing and interferometric (nulling) beam combiners. We will show how quantum optimal SPADEs can be implemented using Multi Plane Light Converters (MPLC). MPLCs are devices that use several phase plates in sequence to achieve arbitrary unitary transformations. The phase plates themselves are implemented using liquid-crystal technology that allows us to create high-quality broadband phase plates. The accurate control of the local phase through the direct write method results in MPLCs with minimal background scatter. We will show the designs and simulated performance for each of the proposed use cases for the ELTs, HWO and LIFE and show how they improve over current concepts.",
+      "url": "https://arxiv.org/abs/2608.24315v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24315v1",
+      "tldr": "研究问题：空间模式解复用器（SPADE）可将入射波前分解到特定电场模式集，对日冕仪、波前传感和干涉零差光束合成等测量具有量子最优性；本研究关注如何用多平面光转换器（MPLC）实现此类SPADE，用于高对比度成像。方法：MPLC利用多个液晶相位板依次作用实现任意幺正变换，采用直接写入法精确控制局部相位以制造高质量宽带相位板，从而降低背景散射。结果：给出了面向极大望远镜（ELTs）、宜居世界观测站（HWO）和 LIFE 任务各使用场景的设计与模拟性能，表明它们优于现有概念。",
+      "affiliations": [],
+      "score": 1.5,
+      "categories": [
+        "astro-ph.IM",
+        "physics.optics"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    },
+    {
+      "source": "arxiv",
+      "arxiv_id": "2608.24459",
+      "title": "A high-isolation wideband channelizer for MKID readouts: a custom HLS implementation on RFSoC",
+      "authors": [
+        "Alberto Hernandez Fernandez",
+        "David Diaz Martin",
+        "Jose Javier Diaz Garcia",
+        "Roger John Hoyland",
+        "Luis Fernando Rodriguez Ramos",
+        "Diego Portero Rodriguez",
+        "Silvestre Rodriguez Perez"
+      ],
+      "abstract": "We present a high-performance channelizer for Microwave Kinetic Inductance Detectors (MKIDs), designed to mitigate spectral leakage and scalloping loss through a 50% overlapping polyphase filter bank (PFB). The design is implemented on a Xilinx Zynq UltraScale+ RFSoC ZCU111 using a custom design - primarily in Vitis High-Level Synthesis (HLS), with the time-critical output serializer and glue logic in VHDL - that processes a 4.096 GSPS input stream with a per-branch super-sample rate (SSR) of 16. Rather than relying on aggressive 512 MHz clocking and vendor IP cores, our split-path architecture computes the delayed and non-delayed polyphase branches concurrently, so that the bulk of the channelizer operates at a robust 256 MHz while a single 512 MHz subdomain is confined to the BRAM-to-FFT section. This architectural parallelism enables a deep 16-tap prototype filter that doubles the filter depth of comparable high-speed systems and substantially improves channel isolation. We report the complete internal architecture of the reordering engine that implements the overlap, including two implementation hazards not documented in prior art: a pipeline-stage skew affecting state toggles in HLS, and the state-preservation requirements of a restartable design. The 2/1 overlapped channel response is validated in simulation - recovering the ~3.9 dB scalloping loss of a critically sampled channelizer to below 0.1 dB across the full 2 MHz channel - and characterized systematically with a 100-tone batch frequency sweep, while the parent readout system has been operated cryogenically with an MKID array in an adiabatic demagnetization refrigerator (ADR), identifying individual resonators in total darkness. The result is a resource-efficient, high-isolation benchmark for wideband frequency-division-multiplexed readouts.",
+      "url": "https://arxiv.org/abs/2608.24459v1",
+      "pdf_url": "https://arxiv.org/pdf/2608.24459v1",
+      "tldr": "针对微波动力学电感探测器读出信道化器中的频谱泄漏与扇贝损耗问题，本研究在Xilinx Zynq UltraScale+ RFSoC ZCU111上用Vitis HLS实现50%重叠多相滤波器组，采用分裂路径架构使多数逻辑运行于256 MHz，并用16抽头原型滤波器提升隔离度。模拟验证表明，所提2/1重叠信道响应将临界采样信道化器的约3.9 dB扇贝损耗恢复至全2 MHz信道内低于0.1 dB；且父读出系统已在绝热退磁制冷机中对MKID阵列进行低温运行，识别出暗环境下的单个谐振器。该设计为宽带频分复用读出提供了资源高效、高隔离度的基准。",
+      "affiliations": [],
+      "score": 1.4,
+      "categories": [
+        "astro-ph.IM",
+        "eess.SP"
+      ],
+      "summary_source": "abstract",
+      "summary_error": null
+    }
+  ]
+}
